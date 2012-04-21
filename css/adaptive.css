@@ -1,0 +1,82 @@
+@media only screen and (min-width: 992px) {
+	div#navbar {
+		height: 66px;
+
+	}
+	div#navbar ul li {
+		width: 100px;
+	}
+	div#navbar ul li a {
+
+		padding: 6px 0 5px;
+
+	}
+	div#navbar ul li a span {
+		display: block;
+	}
+	#sitetitle {
+		position: absolute;
+		top: 0px;
+		right: 20px;
+		padding: 12px 20px;
+		float: right;
+		z-index: 100;
+	}
+}
+@media only screen and (min-width: 1152px) { 
+	html {
+		height: 100%;
+		overflow-y: hidden;
+	}
+	body {
+		height: 100%;
+	}
+	div#navbar {
+		background: #0b0b0b;
+		float: left;
+		height: 100%;
+		width: 100px;
+	}	
+
+	div#navbar ul {
+		padding: 15px 0;
+	}
+	div#navbar ul li {
+		clear: both;
+		display: block;
+		width: 100%;
+	}
+	div#navbar ul li a {
+		padding: 6px 0 5px;
+	}
+	div#navbar ul li a span {
+		display: block;
+		font-size: 32px;
+	}
+
+	div#navbar ul li.bottom a {
+		background: #0b0b0b;
+		top: auto;
+		left: 0px;
+		right: auto;
+		bottom: 0px;
+		position: absolute;
+		width: 100px;
+	}
+	div#main {
+		height: 100%;
+		overflow: auto;
+	}
+	#sitetitle {
+		position: absolute;
+		top: 0px;
+		right: 20px;
+		padding: 12px 20px;
+		float: right;
+		z-index: 100;
+	}
+	
+	.buttonpanel .button{
+	width: auto;
+	}
+}
