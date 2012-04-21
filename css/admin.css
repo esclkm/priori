@@ -230,34 +230,34 @@ h1 a:hover, #sitetitle a:hover {
 	text-decoration: underline;
 }
 h2 {
-	color: #898989;
+	color: #555;
     font-size: 11px;
     font-weight: bold;
     line-height: 40px;
     padding-left: 14px;
     text-shadow: 0 1px 0 #FFFFFF;
     text-transform: uppercase;
-    border-top: 1px solid #FAFAFA;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 	display: block;
     height: 40px;
 	margin: 20px 15px 0;
-	background: #E5E5E5;
-    background: linear-gradient(center top , #ebebeb, #e5e5e5);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#e5e5e5'); /* для IE6-9 */
-	background: -webkit-linear-gradient(top, bottom, #ebebeb, #e5e5e5); /* для webkit-браузеров */
-	background: -moz-linear-gradient(top,  #ebebeb,  #e5e5e5); /* для firefox 3.6+ */
-	background: -o-linear-gradient(top,  #ebebeb,  #e5e5e5); /* для Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ebebeb,  #e5e5e5); /* для IE10+ */
+	background: #E0E0E0;
+    background: linear-gradient(center top , #e8e8e8, #e0e0e0);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#e0e0e0'); /* для IE6-9 */
+	background: -webkit-linear-gradient(top, bottom, #e8e8e8, #e0e0e0); /* для webkit-браузеров */
+	background: -moz-linear-gradient(top,  #e8e8e8,  #e0e0e0); /* для firefox 3.6+ */
+	background: -o-linear-gradient(top,  #e8e8e8,  #e0e0e0); /* для Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e8e8e8,  #e0e0e0); /* для IE10+ */
 }
 h3 {
-	color: #898989;
+	color: #555;
     font-size: 11px;
     font-weight: bold;
     line-height: 40px;
     padding-left: 14px;
-    text-shadow: 0 1px 0 #FFFFFF;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
 
     border-top: 1px solid #FAFAFA;
@@ -266,13 +266,13 @@ h3 {
 	display: block;
     height: 40px;
 	margin: 0;
-	background: #E5E5E5;
-    background: linear-gradient(center top , #ebebeb, #e5e5e5);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#e5e5e5'); /* для IE6-9 */
-	background: -webkit-linear-gradient(top, bottom, #ebebeb, #e5e5e5); /* для webkit-браузеров */
-	background: -moz-linear-gradient(top,  #ebebeb,  #e5e5e5); /* для firefox 3.6+ */
-	background: -o-linear-gradient(top,  #ebebeb,  #e5e5e5); /* для Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ebebeb,  #e5e5e5); /* для IE10+ */
+	background: #E0E0E0;
+    background: linear-gradient(center top , #e8e8e8, #e0e0e0);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#e0e0e0'); /* для IE6-9 */
+	background: -webkit-linear-gradient(top, bottom, #e8e8e8, #e0e0e0); /* для webkit-браузеров */
+	background: -moz-linear-gradient(top,  #e8e8e8,  #e0e0e0); /* для firefox 3.6+ */
+	background: -o-linear-gradient(top,  #e8e8e8,  #e0e0e0); /* для Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e8e8e8,  #e0e0e0); /* для IE10+ */
 }
 h4 {
 	font-weight: bold;

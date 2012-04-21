@@ -3,14 +3,23 @@
 <h2>{PHP.L.adm_extrafields}</h2>
 <!-- BEGIN: TABLELIST -->	
 <div class="block">
-	<table class="cells">
 		<!-- BEGIN: ROW -->	
-		<tr>
-			<td><a href="{ADMIN_EXTRAFIELDS_ROW_TABLEURL}">{ADMIN_EXTRAFIELDS_ROW_TABLENAME}</a></td>
-		</tr>
+		<a href="{ADMIN_EXTRAFIELDS_ROW_TABLEURL}" class="ajax thumbicons" title="
+			<!-- IF {ADMIN_EXTRAFIELDS_ROW_TYPE} == 'module' -->{PHP.L.Module}<!-- ENDIF -->
+			<!-- IF {ADMIN_EXTRAFIELDS_ROW_TYPE} == 'plug' -->{PHP.L.Plugin}<!-- ENDIF -->
+			<!-- IF {ADMIN_EXTRAFIELDS_ROW_TYPE} != 'plug' AND {ADMIN_EXTRAFIELDS_ROW_TYPE} != 'module' -->{PHP.L.System}<!-- ENDIF -->
+			<!-- IF {ADMIN_EXTRAFIELDS_ROW_ITEMNAME} --> - {ADMIN_EXTRAFIELDS_ROW_ITEMNAME}<!-- ENDIF -->">
+		<!-- IF {ADMIN_EXTRAFIELDS_ROW_ICO} --> 
+		<img src="{ADMIN_EXTRAFIELDS_ROW_ICO}"/>
+		<!-- ELSE -->
+		<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>
+		<!-- ENDIF -->
+		{ADMIN_EXTRAFIELDS_ROW_TABLE}
+	</a>
 		<!-- END: ROW -->
-	</table>
-	<a href="{ADMIN_EXTRAFIELDS_ALLTABLES}">{PHP.L.adm_extrafields_all}</a>
+		<div class="clear">
+	<a href="{ADMIN_EXTRAFIELDS_ALLTABLES}" class="button">{PHP.L.adm_extrafields_all}</a>
+		</div>
 </div>
 <!-- END: TABLELIST -->
 <script type="text/javascript">
