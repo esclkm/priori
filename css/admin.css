@@ -1,8 +1,5 @@
 /* 1. General
 --------------------------------------------------*/
-html {
-	height: 100%;
-}
 body {
 	background-color: #dddddd;
 	min-width: 200px;
@@ -20,7 +17,7 @@ div#navbar {
 	background: #0b0b0b;
 	diplay:block;
 	clear:both;
-	height: 35px;
+	height: auto;
 	width: 100%;
 }	
 div#navbar ul {
@@ -31,24 +28,23 @@ div#navbar ul li {
 	float: left;
 }
 div#navbar ul li a {
-	color: #BBBEC2;
+	color: #eaeef4;
 	display: block;
 	font-size: 11px;
 	line-height: 24px;
-	padding: 6px 5px 5px;
+	padding: 6px 10px 5px;
 	text-align: center;
 	text-decoration: none;
 }
 div#navbar ul li a:hover, div#navbar ul li a.sel {
-	background: #232323!important;
+	background: #333!important;
 }
 div#navbar ul li a span {
 	display: none;
 	font-size: 32px;
 }
 div#navbar ul li.bottom{
-	display: block;
-	clear: both;
+	display: none;
 }
 div#navbar ul li.bottom a {
 	background: #0b0b0b;
@@ -65,6 +61,14 @@ div#main {
 
 #sitetitle {
 	padding: 12px 20px;
+	color: #000;
+}
+#footerbar {
+	position: relative;
+	/*height: 80px;*/
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
 }
 #footer {
 	position: absolute;
@@ -141,7 +145,7 @@ p {
 --------------------------------------------------*/
 
 .block {
-	background: none repeat scroll 0 0 #fafafa;
+	background: none repeat scroll 0 0 #f7f7f1;
     border-radius: 3px 3px 3px 3px;
 	margin: 20px 15px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -207,7 +211,6 @@ h1 {
 }
 h1, #sitetitle {
 	color: #fff;
-	text-shadow: 0 1px 0 #104266;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 16px;
@@ -215,9 +218,16 @@ h1, #sitetitle {
 	text-decoration: none;
 	outline: medium none;
 }
-h1 a, #sitetitle a {
+#sitetitle a {
+	color: #000;
+	text-decoration: none;
+}
+h1 a {
 	color: #fff;
 	text-decoration: none;
+}
+h1 a:hover, #sitetitle a:hover {
+	text-decoration: underline;
 }
 h2 {
 	color: #898989;
@@ -232,7 +242,7 @@ h2 {
     border-top-right-radius: 3px;
 	display: block;
     height: 40px;
-	margin: 20px 20px 0;
+	margin: 20px 15px 0;
 	background: #E5E5E5;
     background: linear-gradient(center top , #ebebeb, #e5e5e5);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#e5e5e5'); /* для IE6-9 */
@@ -364,16 +374,16 @@ table.cells {
 }
 table.cells td {
 	border-left: 1px solid #FFFFFF;
-    border-right: 1px solid #F4F4F4;
-    padding: 8px 10px;
-	border-bottom: 1px solid #EBEBEB;
+    border-right: 1px solid #e5e5e5;
+    padding: 4px 4px;
+	border-bottom: 1px solid #e5e5e5;
 }
 table.cells .coltop {
 	text-align: left;
 	vertical-align: middle;
-	padding: 12px 14px;
+	padding: 6px 4px;
 	border-top: medium none;
-	border-bottom: 2px solid #EBEBEB;
+	border-bottom: 2px solid #e5e5e5;
 	font-weight: bold;
 	background-color: inherit!important;
 }
