@@ -9,6 +9,7 @@
 
 <!-- BEGIN: ADMIN_USERS_DEFAULT -->
 		<div class="block">
+			<h3>{PHP.L.editdeleteentries}:</h3>
 			<table class="cells">
 				<tr>
 					<td class="coltop width5">&nbsp;</td>

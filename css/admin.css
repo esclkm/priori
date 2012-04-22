@@ -322,30 +322,37 @@ div.help {
 }
 
 a.thumbicons {
-
 	color: #666;
-
+	position: relative;
 	margin: 5px;
-	padding: 10px 2px;
-	text-align: center;
+	padding: 10px 5px 5px 50px;
+	text-align: left;
 	text-decoration: none;
 	zoom: 1;	
+	vertical-align: middle;
 	border: 1px solid transparent;
 	float: left;
-	width:130px;
+	width:160px;
 	text-shadow: 0 1px 0 white;
+	height: 30px;
 	/*  text-align: left;
 	  padding: 10px;
 	  margin: 2px 2px 5px 2px;
 	  height: 30px;*/
 }
 a.thumbicons img {
+	position: absolute;
+	top: 8px;
+	left: 10px;
 	text-align: center;
-	margin: 10px auto 0;
 	display: block;
-	font-size: 32px;
-	padding-bottom: 4px;
 } 
+a.thumbicons span {
+	position: relative;
+	display: block;
+	color: #999;
+	font-size:0.9em;
+}
 
 a.thumbicons:hover {
 	background-color: #EBEBEB;
@@ -388,8 +395,14 @@ table.cells .coltop {
 	background-color: inherit!important;
 }
 
-table.cells tr:last-child {
+table.cells tr:last-child, table.cells tr:last-child td{
     border-bottom: medium none;
+}
+table.cells tr td:last-child{
+    border-right: medium none;
+}
+table.cells tr td:first-child{
+    border-left: medium none;
 }
 table.nowrap td {
 	white-space:nowrap;

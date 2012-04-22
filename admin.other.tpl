@@ -9,7 +9,7 @@
 	<a href="{ADMIN_OTHER_URL_LOG}" class="thumbicons"><img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>{PHP.L.adm_log}</a>
 
 	<a href="{ADMIN_OTHER_URL_INFOS}" class="thumbicons"><img src="{PHP.cfg.system_dir}/admin/img/cfg_info.png"/>{PHP.L.adm_infos}</a>
-	<div class="clear"></div>
+	<div class="clear height0"></div>
 </div>
 
 <!-- BEGIN: SECTION -->
@@ -28,7 +28,7 @@
 	<!-- BEGIN: EMPTY -->
 	<p>{PHP.L.adm_listisempty}</p>
 	<!-- END: EMPTY -->
-	<div class="clear"></div>
+	<div class="clear height0"></div>
 </div>
 <!-- END: SECTION -->
 

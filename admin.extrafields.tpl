@@ -1,20 +1,23 @@
 <!-- BEGIN: MAIN -->
 		{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
-<h2>{PHP.L.adm_extrafields}</h2>
+
 <!-- BEGIN: TABLELIST -->	
 <div class="block">
+	<h3>{PHP.L.adm_extrafields}</h3>
 		<!-- BEGIN: ROW -->	
-		<a href="{ADMIN_EXTRAFIELDS_ROW_TABLEURL}" class="ajax thumbicons" title="
-			<!-- IF {ADMIN_EXTRAFIELDS_ROW_TYPE} == 'module' -->{PHP.L.Module}<!-- ENDIF -->
-			<!-- IF {ADMIN_EXTRAFIELDS_ROW_TYPE} == 'plug' -->{PHP.L.Plugin}<!-- ENDIF -->
-			<!-- IF {ADMIN_EXTRAFIELDS_ROW_TYPE} != 'plug' AND {ADMIN_EXTRAFIELDS_ROW_TYPE} != 'module' -->{PHP.L.System}<!-- ENDIF -->
-			<!-- IF {ADMIN_EXTRAFIELDS_ROW_ITEMNAME} --> - {ADMIN_EXTRAFIELDS_ROW_ITEMNAME}<!-- ENDIF -->">
+		<a href="{ADMIN_EXTRAFIELDS_ROW_TABLEURL}" class="ajax thumbicons">
 		<!-- IF {ADMIN_EXTRAFIELDS_ROW_ICO} --> 
 		<img src="{ADMIN_EXTRAFIELDS_ROW_ICO}"/>
 		<!-- ELSE -->
 		<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>
 		<!-- ENDIF -->
 		{ADMIN_EXTRAFIELDS_ROW_TABLE}
+		<span>
+			<!-- IF {ADMIN_EXTRAFIELDS_ROW_TYPE} == 'module' -->{PHP.L.Module}<!-- ENDIF -->
+			<!-- IF {ADMIN_EXTRAFIELDS_ROW_TYPE} == 'plug' -->{PHP.L.Plugin}<!-- ENDIF -->
+			<!-- IF {ADMIN_EXTRAFIELDS_ROW_TYPE} != 'plug' AND {ADMIN_EXTRAFIELDS_ROW_TYPE} != 'module' -->{PHP.L.System}<!-- ENDIF -->
+			<!-- IF {ADMIN_EXTRAFIELDS_ROW_ITEMNAME} --> - {ADMIN_EXTRAFIELDS_ROW_ITEMNAME}<!-- ENDIF -->
+		</span>
 	</a>
 		<!-- END: ROW -->
 		<div class="clear">
@@ -124,6 +127,7 @@
 </script>
 <!-- BEGIN: TABLE -->	
 <div class="block">
+	<h3>{PHP.L.editdeleteentries}:</h3>
 	<form action="{ADMIN_EXTRAFIELDS_URL_FORM_EDIT}" method="post">
 		<table class="cells">
 			<tr>

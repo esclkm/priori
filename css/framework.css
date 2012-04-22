@@ -26,6 +26,7 @@
 .padding0 {	padding: 0!important;}
 .border0 { border: 0!important;}
 
+.height0 {margin: 0; padding: 0!important; height: 0;}
 .width50px {width: 50px;}
 .width100px {width: 100px;}
 .width150px {width: 150px;}

@@ -61,7 +61,7 @@
 		{ADMIN_CONFIG_ROW_NAME}
 	</a>
 	<!-- END: ADMIN_CONFIG_ROW -->
-<div class="clear"></div>
+<div class="clear height0"></div>
 </div>
 <!-- END: ADMIN_CONFIG_COL -->
 
