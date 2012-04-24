@@ -17,7 +17,7 @@
 	<div class="clear height0"></div>
 </div>
 <div class="button-toolbar">
-	<a href="{ADMIN_STRUCTURE_URL_EXTRAFIELDS}" class="button large">{PHP.L.adm_extrafields_desc}</a>
+	<a href="{PHP.db_structure|cot_url('admin', '?m=extrafields&n=$this')}" class="button large">{PHP.L.adm_extrafields_desc}</a>
 </div>
 <!-- END: LIST -->
 
@@ -104,11 +104,11 @@
 					<td class="centerall {ADMIN_STRUCTURE_ODDEVEN}">{ADMIN_STRUCTURE_COUNT}</td>
 					<td class="action {ADMIN_STRUCTURE_ODDEVEN}">
 						<div class="buttonpanel">
-							<!-- IF {ADMIN_STRUCTURE_CONFIG_URL} --><a href="{ADMIN_STRUCTURE_CONFIG_URL}" title="{PHP.L.short_config}" class="button"><span class="pen icon"></span>{PHP.L.short_config}</a><!-- ENDIF -->
-							<!-- IF {ADMIN_STRUCTURE_RIGHTS_URL} --><a href="{ADMIN_STRUCTURE_RIGHTS_URL}" title="{PHP.L.short_rights}" class="button"><span class="unlock icon"></span>{PHP.L.short_rights}</a><!-- ENDIF -->
-							<!-- IF {ADMIN_STRUCTURE_OPTIONS_URL} --><a href="{ADMIN_STRUCTURE_OPTIONS_URL}" title="{PHP.L.short_options}" class="ajax button"><span class="cog icon"></span>{PHP.L.short_options}</a><!-- ENDIF -->
-							<!-- IF {PHP.dozvil} --><a href="{ADMIN_STRUCTURE_UPDATE_DEL_URL}" title="{PHP.L.short_delete}" class="confirmLink negative button"><span class="cross icon"></span>{PHP.L.short_delete}</a><!-- ENDIF -->
-							<!-- IF {ADMIN_STRUCTURE_JUMPTO_URL} --><a href="{ADMIN_STRUCTURE_JUMPTO_URL}" title="{PHP.L.short_open}" class="button special positive"><span class="book icon"></span>{PHP.L.short_open}</a><!-- ENDIF -->
+							<!-- IF {ADMIN_STRUCTURE_OPTIONS_URL} --><a href="{ADMIN_STRUCTURE_OPTIONS_URL}" title="{PHP.L.Edit}" class="ajax button"><span class="options icon"></span>{PHP.L.Edit}</a><!-- ENDIF -->
+							<!-- IF {ADMIN_STRUCTURE_CONFIG_URL} --><a href="{ADMIN_STRUCTURE_CONFIG_URL}" title="{PHP.L.short_config}" class="button"><span class="cog icon"></span>{PHP.L.short_config}</a><!-- ENDIF -->
+							<!-- IF {ADMIN_STRUCTURE_RIGHTS_URL} --><a href="{ADMIN_STRUCTURE_RIGHTS_URL}" title="{PHP.L.short_rights}" class="button"><span class="lock icon"></span>{PHP.L.short_rights}</a><!-- ENDIF -->
+							<!-- IF {ADMIN_STRUCTURE_JUMPTO_URL} --><a href="{ADMIN_STRUCTURE_JUMPTO_URL}" title="{PHP.L.short_open}" class="button special positive"><span class="file icon"></span>{PHP.L.short_open}</a><!-- ENDIF -->
+							<!-- IF {PHP.dozvil} --><a href="{ADMIN_STRUCTURE_UPDATE_DEL_URL}" title="{PHP.L.short_delete}" class="confirmLink negative button"><span class="trash icon"></span>{PHP.L.short_delete}</a><!-- ENDIF -->
 						</div>
 					</td>
 				</tr>

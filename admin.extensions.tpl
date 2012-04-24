@@ -85,17 +85,17 @@
 		<h3>{PHP.L.Action}:</h3>
 		<div class="button-toolbar">
 		<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL} -->
-		<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="button special large"><span class="book icon"></span>{PHP.L.Open}</a>
+		<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="button special large"><span class="file icon"></span>{PHP.L.Open}</a>
 		<!-- ENDIF -->
 		<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS} -->
-		<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="button special large"><span class="book icon"></span>{PHP.L.Administration}</a>
+		<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="button special large"><span class="admin icon"></span>{PHP.L.Administration}</a>
 		<!-- ENDIF -->
 		<!-- IF {ADMIN_EXTENSIONS_TOTALCONFIG} > 0 -->
 		<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_CONFIG_URL}" class="button large"><span class="cog icon"></span>{PHP.L.Configuration} ({ADMIN_EXTENSIONS_TOTALCONFIG})</a>
 		<!-- ENDIF -->	
-		<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS}" class="button large"><span class="unlock icon"></span>{PHP.L.short_rights}</a>
+		<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS}" class="button large"><span class="lock icon"></span>{PHP.L.short_rights}</a>
 		<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT} -->
-		<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="button large"><span class="fork icon"></span>{PHP.L.Structure}</a>
+		<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="button large"><span class="folder icon"></span>{PHP.L.Structure}</a>
 		<!-- ENDIF -->
 
 			</div>
@@ -274,16 +274,16 @@
 					<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_EDIT_URL}" class="button"><span class="cog icon"></span>{PHP.L.short_config}</a>
 <!-- ENDIF -->
 <!-- IF {PHP.ifstruct} -->
-					<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="button"><span class="fork icon"></span>{PHP.L.short_struct}</a>
+					<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="button"><span class="folder icon"></span>{PHP.L.short_struct}</a>
 <!-- ENDIF -->
 <!-- IF {PHP.totalinstalled} -->
-					<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS_URL}" class="button"><span class="unlock icon"></span>{PHP.L.short_rights}</a>
+					<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS_URL}" class="button"><span class="lock icon"></span>{PHP.L.short_rights}</a>
 <!-- ENDIF -->
 <!-- IF {PHP.ifthistools} -->
-					<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="button special"><span class="book icon"></span>{PHP.L.short_admin}</a>
+					<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="button special"><span class="icon admin"></span>{PHP.L.short_admin}</a>
 <!-- ENDIF -->
 <!-- IF {PHP.if_plg_standalone} -->
-					<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="button special"><span class="book icon"></span>{PHP.L.Open}</a>
+					<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="button special"><span class="file icon"></span>{PHP.L.Open}</a>
 <!-- ENDIF -->
 				</td>
 			</tr>

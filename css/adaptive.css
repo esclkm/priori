@@ -99,3 +99,36 @@
 		position: absolute;
 	}
 }
+
+@media only screen and (min-width: 1680px) { 
+
+	div#navbar {
+		background: #0b0b0b;
+		float: left;
+		height: 100%;
+		width: 200px;
+	}	
+
+	div#navbar ul {
+		padding: 15px 0;
+	}
+	div#navbar ul li {
+		clear: both;
+		display: block;
+		width: 100%;
+	}
+	div#navbar ul li a {
+		padding: 6px 0 10px;
+		text-align: left;
+		font-size: 14px;
+	}
+	div#navbar ul li a span {
+		display: block;
+		float: left;
+		font-size: 32px;
+		padding: 0 10px;
+	}
+		div#navbar ul li.bottom a {
+		width: 200px;
+	}
+}

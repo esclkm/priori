@@ -29,9 +29,9 @@
 					<td class="centerall">{ADMIN_USERS_ROW_GRP_DISABLED}</td>
 					<td class="centerall action">
 						<!-- IF !{ADMIN_USERS_ROW_GRP_SKIPRIGHTS} -->
-						<a title="{PHP.L.Rights}" href="{ADMIN_USERS_ROW_GRP_RIGHTS_URL}" class="button"><span class="unlock icon"></span>{PHP.L.short_rights}</a>
+						<a title="{PHP.L.Rights}" href="{ADMIN_USERS_ROW_GRP_RIGHTS_URL}" class="button"><span class="lock icon"></span>{PHP.L.short_rights}</a>
 						<!-- ENDIF -->
-						<a title="{PHP.L.Open}" href="{ADMIN_USERS_ROW_GRP_JUMPTO_URL}" class="button special"><span class="book icon"></span>{PHP.L.short_open}</a>
+						<a title="{PHP.L.Open}" href="{ADMIN_USERS_ROW_GRP_JUMPTO_URL}" class="button special"><span class="file icon"></span>{PHP.L.short_open}</a>
 					</td>
 				</tr>
 <!-- END: USERS_ROW -->

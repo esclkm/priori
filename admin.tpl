@@ -3,7 +3,7 @@
 	<!-- BEGIN: BODY -->	
 		<h1 class="body">{ADMIN_TITLE}</h1>
 
-		<div id="main" class="body clear">
+		<div class="body clear">
 		
 			{ADMIN_MAIN}
 		
