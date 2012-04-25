@@ -1,9 +1,7 @@
 <!-- BEGIN: FOOTER -->
 
 
-
-</div>
-<div id="footerbar">
+<div id="footerbar" class="body">
 	<div id="messagebar">
 		<a href="{PHP|cot_url('users','m=profile')}" class="strong">{PHP.usr.name} </a>
 		<!-- IF {PHP.out.notices} -->

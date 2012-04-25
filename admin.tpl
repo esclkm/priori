@@ -1,9 +1,9 @@
 <!-- BEGIN: MAIN -->
 	<div id="ajaxBlock">
 	<!-- BEGIN: BODY -->	
-		<h1 class="body">{ADMIN_TITLE}</h1>
+	<div id="header"><div class="body"><h1>{ADMIN_TITLE}</h1></div></div>
 
-		<div class="body clear">
+		<div id="main" class="body clear">
 		
 			{ADMIN_MAIN}
 		

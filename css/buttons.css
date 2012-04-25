@@ -161,9 +161,9 @@ button.large { *padding: 4px 17px 2px 17px; }
 input[type="text"],input[type="file"],textarea, select {
 	display: inline-block;
 	height: 18px;
+	font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif;
 	padding: 3px;
 	margin-bottom: 4px;
-	font-size: 13px;
 	line-height: 18px;
 	color: #555555;
 	border: 1px solid #cccccc;
@@ -199,12 +199,7 @@ select[multiple], select[size] {
 	height: auto;
 }
 
-input[disabled],
-select[disabled],
-textarea[disabled],
-input[readonly],
-select[readonly],
-textarea[readonly] {
+input[disabled],select[disabled],textarea[disabled],input[readonly],select[readonly],textarea[readonly] {
 	background-color: #eeeeee;
 	border-color: #ddd;
 	cursor: not-allowed;

@@ -1,17 +1,17 @@
 @media only screen and (min-width: 992px) {
-	div#navbar {
+	#navbar {
 		height: 66px;
 
 	}
-	div#navbar ul li {
+	#navbar ul li {
 		width: 100px;
 	}
-	div#navbar ul li a {
+	#navbar ul li a {
 
 		padding: 6px 0 5px;
 
 	}
-	div#navbar ul li a span {
+	#navbar ul li a span {
 		display: block;
 	}
 	h1, #sitetitle {
@@ -29,42 +29,38 @@
 	#sitetitle a {
 		color: #fff;
 	}
-	div#navbar ul li.bottom{
+	#navbar ul li.bottom{
 		display: block;
 	}
 }
 @media only screen and (min-width: 1152px) { 
-	html {
-		height: 100%;
-		overflow-y: hidden;
-	}
-	body {
-		height: 100%;
-	}
-	div#navbar {
+
+	#navbar {
+		position: fixed;
+		top: 0;
+		left: 0;
 		background: #0b0b0b;
-		float: left;
 		height: 100%;
 		width: 100px;
 	}	
 
-	div#navbar ul {
+	#navbar ul {
 		padding: 15px 0;
 	}
-	div#navbar ul li {
+	#navbar ul li {
 		clear: both;
 		display: block;
 		width: 100%;
 	}
-	div#navbar ul li a {
+	#navbar ul li a {
 		padding: 6px 0 5px;
 	}
-	div#navbar ul li a span {
+	#navbar ul li a span {
 		display: block;
 		font-size: 32px;
 	}
 
-	div#navbar ul li.bottom a {
+	#navbar ul li.bottom a {
 		background: #0b0b0b;
 		top: auto;
 		left: 0px;
@@ -73,9 +69,8 @@
 		position: absolute;
 		width: 100px;
 	}
-	div#main {
-		height: 100%;
-		overflow: auto;
+	.body {
+		padding-left: 100px;
 	}
 	#sitetitle {
 		position: absolute;
@@ -102,33 +97,27 @@
 
 @media only screen and (min-width: 1680px) { 
 
-	div#navbar {
-		background: #0b0b0b;
-		float: left;
-		height: 100%;
+	#navbar {
 		width: 200px;
 	}	
 
-	div#navbar ul {
-		padding: 15px 0;
-	}
-	div#navbar ul li {
-		clear: both;
-		display: block;
-		width: 100%;
-	}
-	div#navbar ul li a {
+	#navbar ul li a {
 		padding: 6px 0 10px;
 		text-align: left;
 		font-size: 14px;
 	}
-	div#navbar ul li a span {
+	#navbar ul li a span {
 		display: block;
 		float: left;
 		font-size: 32px;
 		padding: 0 10px;
 	}
-		div#navbar ul li.bottom a {
+		#navbar ul li.bottom a {
 		width: 200px;
+	}
+	.body {
+		padding-left: 200px;
+		max-width: 1480px;
+		margin: 0 auto;
 	}
 }

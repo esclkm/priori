@@ -76,7 +76,6 @@
 			</ul>
 			<div class="clear"></div>
 		</div>
-		<div id="main">
 			<div id="sitetitle">
 				<a href="{PHP.cfg.mainurl}" title="{PHP.L.hea_viewsite}"><!-- IF {PHP.cfg.maintitle} && {PHP.cfg.maintitle|mb_strlen} < 50 -->{PHP.cfg.maintitle} <!-- ELSE -->{PHP.L.hea_viewsite} <!-- ENDIF --></a> 
 			</div>
