@@ -19,7 +19,7 @@
 	}
 	#sitetitle {
 		position: absolute;
-		top: 0px;
+		top: 64px;
 		right: 20px;
 		padding: 12px 20px;
 		float: right;
@@ -28,9 +28,6 @@
 	}
 	#sitetitle a {
 		color: #fff;
-	}
-	#navbar ul li.bottom{
-		display: block;
 	}
 }
 @media only screen and (min-width: 1152px) { 
@@ -59,7 +56,9 @@
 		display: block;
 		font-size: 32px;
 	}
-
+	#navbar ul li.bottom{
+		display: block;
+	}
 	#navbar ul li.bottom a {
 		background: #0b0b0b;
 		top: auto;
@@ -90,8 +89,8 @@
 	table.cells .coltop {
 		padding: 12px 8px;
 	}
-	#footerbar {
-		position: absolute;
+	#messagebar {
+		left: 160px;
 	}
 }
 
@@ -112,12 +111,15 @@
 		font-size: 32px;
 		padding: 0 10px;
 	}
-		#navbar ul li.bottom a {
+	#navbar ul li.bottom a {
 		width: 200px;
 	}
 	.body {
 		padding-left: 200px;
-		max-width: 1080px;
+		max-width: 1480px;
 		margin: 0 auto;
+	}
+	#messagebar {
+		left: 260px;
 	}
 }

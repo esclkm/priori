@@ -1,5 +1,6 @@
 <!-- BEGIN: FOOTER -->
-
+	<div id="footer-push"></div>
+</div>
 
 <div id="footerbar" class="body">
 	<div id="messagebar">

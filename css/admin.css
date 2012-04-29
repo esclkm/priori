@@ -1,5 +1,11 @@
 /* 1. General
 --------------------------------------------------*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
 	background-color: #dddddd;
 	min-width: 300px;
@@ -8,6 +14,14 @@ body {
 	color: #666666;
 	font-weight:	400;
 	position: relative;
+}
+
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 0 -40px 0; /* отрицательный нижний отступ на высоту футера */
+    padding: 0;
 }
 
 #navbar {
@@ -51,7 +65,7 @@ body {
 	width: 100px;
 }
 .body {
-	margin: 0 0 20px;
+	margin: 0;
 	position: relative;
 }
 
@@ -66,12 +80,14 @@ body {
 	padding: 12px 20px;
 	color: #000;
 }
-#footerbar {
+
+#footer-push, #footerbar {
 	position: relative;
-	/*height: 80px;*/
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
+    height: 40px;
+    margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+    padding-bottom: 0;
 }
 #footer {
 	position: absolute;
@@ -92,7 +108,7 @@ body {
 	color: #898989;
 	position: absolute;
 	bottom: 0px;
-	left: 160px;
+	left: 60px;
 	font-size: 11px;
 	text-shadow: 0 1px 0 #FFFFFF;
 	border: 1px solid #bababa;
@@ -334,6 +350,11 @@ a.thumbicons {
 	width:160px;
 	text-shadow: 0 1px 0 white;
 	height: 30px;
+	-webkit-transition: background linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: background linear 0.2s, box-shadow linear 0.2s;
+	-ms-transition: background linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: background linear 0.2s, box-shadow linear 0.2s;
+	transition: background linear 0.2s, box-shadow linear 0.2s;
 	/*  text-align: left;
 	  padding: 10px;
 	  margin: 2px 2px 5px 2px;
