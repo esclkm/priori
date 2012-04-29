@@ -22,6 +22,7 @@ body {
     height: 100%;
     margin: 0 0 -40px 0; /* отрицательный нижний отступ на высоту футера */
     padding: 0;
+	z-index: 0;
 }
 
 #navbar {
@@ -30,6 +31,7 @@ body {
 	clear:both;
 	height: auto;
 	width: 100%;
+	z-index: 10;
 }	
 #navbar ul {
 	diplay:block;

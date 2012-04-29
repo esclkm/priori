@@ -6,7 +6,7 @@
 	<form name="saveconfig" id="saveconfig" action="{ADMIN_CONFIG_FORM_URL}" method="post" class="ajax">
 		<table class="cells">
 			<tr>
-				<td class="coltop width35">{PHP.L.Parameter}</td>
+				<td class="coltop width35">{PHP.L.Key}</td>
 				<td class="coltop width60">{PHP.L.Value}</td>
 				<td class="coltop width5">{PHP.L.Reset}</td>
 			</tr>
@@ -20,7 +20,11 @@
 			<!-- END: ADMIN_CONFIG_FIELDSET_BEGIN -->
 			<!-- BEGIN: ADMIN_CONFIG_ROW_OPTION -->
 			<tr>
-				<td>{ADMIN_CONFIG_ROW_CONFIG_TITLE}:</td>
+				<td><span title="
+						<!-- IF {PHP.config_owner} == 'module'-->&#123;PHP.cfg.{PHP.config_cat}.{PHP.config_name}&#125;<!-- ENDIF-->
+						<!-- IF {PHP.config_owner} == 'plug'-->&#123;PHP.cfg.plugin.{PHP.config_cat}.{PHP.config_name}&#125;<!-- ENDIF-->
+						<!-- IF {PHP.config_owner} == 'core'-->&#123;PHP.cfg.{PHP.config_name}&#125;<!-- ENDIF-->
+						">{ADMIN_CONFIG_ROW_CONFIG_TITLE}:</span></td>
 				<td>
 					{ADMIN_CONFIG_ROW_CONFIG}
 					<div class="adminconfigmore">{ADMIN_CONFIG_ROW_CONFIG_MORE}</div>
