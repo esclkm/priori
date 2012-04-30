@@ -19,6 +19,26 @@
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/admin.css" type="text/css" rel="stylesheet" />
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/adaptive.css" type="text/css" rel="stylesheet" />
 		<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/respond.min.js" type="text/javascript"></script>
+		<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/jquery.cookie.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+		//<![CDATA[
+		$(document).ready(function() {
+			var max_width = $.cookie('admin-max-width');
+			if (max_width.length > 0)
+			{
+				$(".body").css("max-width", max_width);
+			}
+			$(".maxwidth").live('click', function() {
+				var vals = $(this).text();
+				$(".body").css("max-width", vals);
+				$.cookie('admin-max-width', vals, { expires: 30 }); //установить куки с временем жизни 30 дней
+				return false;
+			});
+		});
+
+		//]]>
+		</script>
 {HEADER_COMPOPUP}
 		<title>{HEADER_TITLE} </title>
 	</head>
