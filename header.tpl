@@ -20,17 +20,17 @@
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/adaptive.css" type="text/css" rel="stylesheet" />
 		<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/respond.min.js" type="text/javascript"></script>
 		<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/jquery.cookie.js" type="text/javascript"></script>
-		<!-- IF {PHP._COOKIE.admin_max_width} -->
+		<!-- IF {PHP._COOKIE.admin_max_width|intval} > 300 -->
 		<style type="text/css">
-			.body {max-width: {PHP._COOKIE.admin_max_width};}
+			.body {max-width: {PHP._COOKIE.admin_max_width|intval}px;}
 		</style>
 		<!-- ENDIF -->
 		<script type="text/javascript">
 		//<![CDATA[
 		$(document).ready(function() {
 			$(".maxwidth").live('click', function() {
-				var vals = $(this).text();
-				$(".body").css("max-width", vals);
+				var vals = $(this).attr('rel');
+				$(".body").css("max-width", vals+'px');
 				$.cookie('admin_max_width', vals, { expires: 30 }); //установить куки с временем жизни 30 дней
 				return false;
 			});

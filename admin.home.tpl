@@ -63,10 +63,10 @@
 	<div class="block">
 		<h3>{PHP.L.Other}</h3>
 		<div class="buttonpanel">
-			<a href="#" class="button maxwidth">960px</a>
-			<a href="#" class="button maxwidth">1080px</a>
-			<a href="#" class="button maxwidth">1480px</a>
-			<a href="#" class="button maxwidth">3000px</a>
+			<a href="#" class="button maxwidth" rel="960">960px</a>
+			<a href="#" class="button maxwidth" rel="1080">1080px</a>
+			<a href="#" class="button maxwidth" rel="1480">1480px</a>
+			<a href="#" class="button maxwidth" rel="3000">3000px</a>
 		</div>
 
 	</div>
@@ -78,7 +78,6 @@
 			<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=theme')}">{PHP.L.home_ql_b1_3}</a></li>
 			<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=menus')}">{PHP.L.home_ql_b1_4}</a></li>
 			<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=locale')}">{PHP.L.Locale}</a></li>
-			<li><a href="{PHP|cot_url('admin','m=extrafields')}">{PHP.L.adm_extrafields}</a></li>
 		</ul>
 	</div>
 	<!-- BEGIN: SIDEPANEL -->
