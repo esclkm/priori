@@ -6,7 +6,7 @@
 	<form name="saveconfig" id="saveconfig" action="{ADMIN_CONFIG_FORM_URL}" method="post" class="ajax">
 		<table class="cells">
 			<tr>
-				<td class="coltop width35">{PHP.L.Key}</td>
+				<td class="coltop width35 windthmax200px">{PHP.L.Key}</td>
 				<td class="coltop width60">{PHP.L.Value}</td>
 				<td class="coltop width5">{PHP.L.Reset}</td>
 			</tr>

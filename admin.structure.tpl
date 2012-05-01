@@ -22,12 +22,16 @@
 <!-- END: LIST -->
 
 <!-- BEGIN: MAIN -->
-<div class="button-toolbar">
-	<a href="{ADMIN_PAGE_STRUCTURE_RESYNCALL}" class="ajax button special large" title="{PHP.L.adm_tpl_resyncalltitle}">{PHP.L.Resync}</a>
-	<!-- IF {ADMIN_STRUCTURE_I18N_URL} -->
-	<a href="{ADMIN_STRUCTURE_I18N_URL}" class="button big">{PHP.L.i18n_structure}</a>
-	<!-- ENDIF -->
-</div>
+
+	<div class="bigbutpanel">
+
+		<a href="{ADMIN_PAGE_STRUCTURE_RESYNCALL}" class="thumbicons" title="{PHP.L.adm_tpl_resyncalltitle}"><img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>{PHP.L.Resync}</a>
+		<!-- IF {ADMIN_STRUCTURE_I18N_URL} -->
+		<a href="{ADMIN_STRUCTURE_I18N_URL}" class="thumbicons"><img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>{PHP.L.i18n_structure}</a>
+		<!-- ENDIF -->
+		<div class="clear height0"></div>
+	</div>
+
 {FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
 
 

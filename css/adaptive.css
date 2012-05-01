@@ -70,6 +70,7 @@
 	}
 	.body {
 		padding-left: 100px;
+		margin: 0 auto;
 	}
 	#sitetitle {
 		position: absolute;

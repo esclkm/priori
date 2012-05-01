@@ -1,6 +1,8 @@
 .centerall {text-align: center;	vertical-align: middle;}
 .small {	font-size: .9em;line-height: 1.1em;}
 .clear {	clear: both;}
+.clearleft {	clear: left;}
+.clearright {	clear: right;}
 .strong {	font-weight: bold;}
 .lhn {	line-height: normal!important;}
 .leftindent {	text-indent: 1em;}
@@ -54,6 +56,14 @@
 .width90 {	width: 90%;}
 .width95 {	width: 95%;}
 .width100 {	width: 100%;}
+
+.widthmax100px {max-width: 100px;}
+.widthmax200px {max-width: 200px;}
+.widthmax300px {max-width: 300px;}
+.widthmax400px {max-width: 400px;}
+.widthmax500px {max-width: 500px;}
+
+.floatleft {float:left;}
 
 .jqmWindow {
 	display: none;

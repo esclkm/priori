@@ -72,7 +72,7 @@ body {
 	width: 100px;
 }
 .body {
-	margin: 0;
+	margin: 0 auto;
 	position: relative;
 }
 
@@ -144,6 +144,16 @@ ol {
 	margin-bottom: 5px;
 	padding-left: 20px;
 }
+.col3-1 .block ul li {
+	background: none;
+	padding: 0;
+}
+.col3-1 .block ul li a {
+	display: block;
+	padding: 10px 20px;
+}
+.col3-1 .block ul li:hover {background-color: #FDFDFD;}
+
 ul.follow li {
 	padding-left: 25px;
 	background: url(../img/follow.png) no-repeat 5px 3px;
@@ -192,14 +202,14 @@ h2 + .block {
 	margin: 0 15px;
 	border-radius: 0px 0px 3px 3px;
 }
-
+/*
 .block > ul, .block > p, .block > div {
 	padding: 20px;
 
 }
-.block > .overflow, .block > .overflow_x,  .block > .overflow_y{
+.block > .overflow, .block > .overflow_x,  .block > .overflow_y, .block > ul.follow, .block > .nopad{
 	padding: 0px!important;
-}
+}*/
 .overflow {
 	overflow: auto;
 }
@@ -386,7 +396,7 @@ a.thumbicons span {
 	font-size:0.9em;
 }
 
-a.thumbicons:hover {
+a.thumbicons:hover, a.thumbicons.special{
 	background-color: #EBEBEB;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(whiteSmoke), to(#EBEBEB));
 	background-image: -webkit-linear-gradient(top, whiteSmoke, #EBEBEB);
@@ -439,8 +449,8 @@ table.cells tr td:first-child{
 table.nowrap td {
 	white-space:nowrap;
 }
-.odd, table.cells tr:nth-child(2n+1) td {background-color: inherit;}
-.even, table.cells tr:nth-child(2n) td {	background-color: #FDFDFD;border-bottom: 0px solid #EBEBEB;}	
+.odd, table.cells tr:nth-child(2n+1) td	{background-color: inherit;}
+.even, table.cells tr:nth-child(2n) td {background-color: #FDFDFD;border-bottom: 0px solid #EBEBEB;}	
 
 .coltop img {
 	vertical-align: middle;

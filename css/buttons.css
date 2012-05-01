@@ -1,4 +1,9 @@
 .button, button, input[type="submit"], input[type="button"] {
+	-webkit-transition: background linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: background linear 0.2s, box-shadow linear 0.2s;
+	-ms-transition: background linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: background linear 0.2s, box-shadow linear 0.2s;
+	transition: background linear 0.2s, box-shadow linear 0.2s;
 	display: inline-block;
 	padding: 5px 4px;
 	font-size: 12px;
@@ -24,7 +29,8 @@
 	background: -o-linear-gradient(top,  #f4f4f4,  #ececec); /* для Opera 11.10+ */
 	background: -ms-linear-gradient(top,  #f4f4f4,  #ececec); /* для IE10+ */	
 	*display: inline;
-	*vertical-align: middle; }
+	*vertical-align: middle; 
+}
 
 button, input[type="submit"], input[type="button"] {
 	margin-left: 0;
