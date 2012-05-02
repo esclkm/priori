@@ -61,16 +61,6 @@
 
 <div class="col3-1">
 	<div class="block">
-		<h3>{PHP.L.Other}</h3>
-		<div class="buttonpanel">
-			<a href="#" class="button maxwidth" rel="960">960px</a>
-			<a href="#" class="button maxwidth" rel="1080">1080px</a>
-			<a href="#" class="button maxwidth" rel="1480">1480px</a>
-			<a href="#" class="button maxwidth" rel="3000">3000px</a>
-		</div>
-
-	</div>
-	<div class="block">
 		<h3>{PHP.L.home_ql_b1_title}</h3>
 		<ul class="follow">
 			<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=main')}">{PHP.L.home_ql_b1_1}</a></li>

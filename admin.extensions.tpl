@@ -33,7 +33,7 @@
 		{PHP.L.adm_opt_update}
 	</a>
 	<!-- ENDIF -->
-	<a title="{PHP.L.adm_opt_uninstall_explain}" href="{ADMIN_EXTENSIONS_UNINSTALL_URL}" class="ajax thumbicons">
+	<a title="{PHP.L.adm_opt_uninstall_explain}" href="{ADMIN_EXTENSIONS_UNINSTALL_CONFIRM_URL|cot_confirm_url('$this', 'admin')}" class="confirmLink thumbicons">
 		<!-- IF {ADMIN_EXTENSIONS_ICO} --> 
 		<img src="{ADMIN_EXTENSIONS_ICO}" />
 		<!-- ELSE -->
@@ -170,24 +170,23 @@
 				&ndash;
 				<!-- END: ROW_PART_NOTINSTALLED -->
 				<!-- BEGIN: ROW_PART_PAUSE -->
-				<a href="{ADMIN_EXTENSIONS_DETAILS_ROW_PAUSEPART_URL}" class="ajax button">{PHP.L.adm_opt_pause}</a>
+				<a href="{ADMIN_EXTENSIONS_DETAILS_ROW_PAUSEPART_URL}" class="ajax button"><span class="icon stop"></span>{PHP.L.adm_opt_pause}</a>
 				<!-- END: ROW_PART_PAUSE -->
 				<!-- BEGIN: ROW_PART_UNPAUSE -->
-				<a href="{ADMIN_EXTENSIONS_DETAILS_ROW_UNPAUSEPART_URL}" class="ajax button">{PHP.L.adm_opt_unpause}</a>
+				<a href="{ADMIN_EXTENSIONS_DETAILS_ROW_UNPAUSEPART_URL}" class="ajax button"><span class="icon play"></span>{PHP.L.adm_opt_unpause}</a>
 				<!-- END: ROW_PART_UNPAUSE -->
 			</td>
 		</tr>
 		<!-- END: ROW_PART -->
 	</table>
+	<div class="textright paddingright10">
 	<!-- IF {PHP.isinstalled} -->
-		<a title="{PHP.L.adm_opt_pauseall_explain}" href="{ADMIN_EXTENSIONS_PAUSE_URL}" class="ajax button">{PHP.L.adm_opt_pauseall}</a>
-
-	<!-- IF {PHP.exists} -->
-
-	<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{ADMIN_EXTENSIONS_UNPAUSE_URL}" class="ajax button">{PHP.L.adm_opt_unpauseall}</a>
-
+		<!-- IF {PHP.exists} -->
+		<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{ADMIN_EXTENSIONS_UNPAUSE_URL}" class="ajax button"><span class="icon play"></span>{PHP.L.adm_opt_unpauseall}</a>
+		<!-- ENDIF -->
+		<a title="{PHP.L.adm_opt_pauseall_explain}" href="{ADMIN_EXTENSIONS_PAUSE_URL}" class="ajax button"><span class="icon stop"></span>{PHP.L.adm_opt_pauseall}</a>
 	<!-- ENDIF -->
-	<!-- ENDIF -->
+	</div>
 </div>
 <div class="block">
 	<h3>{PHP.L.Tags}:</h3>
