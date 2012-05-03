@@ -10,66 +10,46 @@
 <div class="">
 
 
-	<!-- IF !{PHP.isinstalled} AND {PHP.dependencies_satisfied} -->
 
-	<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_INSTALL_URL}" class="ajax thumbicons">
-		<!-- IF {ADMIN_EXTENSIONS_ICO} --> 
-		<img src="{ADMIN_EXTENSIONS_ICO}" />
-		<!-- ELSE -->
-		<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" />
-		<!-- ENDIF -->
-		{PHP.L.adm_opt_install}
-	</a>
-	<!-- ENDIF -->
-	<!-- IF {PHP.isinstalled} -->
-	<!-- IF {PHP.exists} -->
-
-	<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_UPDATE_URL}" class="ajax thumbicons">
-		<!-- IF {ADMIN_EXTENSIONS_ICO} --> 
-		<img src="{ADMIN_EXTENSIONS_ICO}" />
-		<!-- ELSE -->
-		<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" />
-		<!-- ENDIF -->
-		{PHP.L.adm_opt_update}
-	</a>
-	<!-- ENDIF -->
-	<a title="{PHP.L.adm_opt_uninstall_explain}" href="{ADMIN_EXTENSIONS_UNINSTALL_CONFIRM_URL|cot_confirm_url('$this', 'admin')}" class="confirmLink thumbicons">
-		<!-- IF {ADMIN_EXTENSIONS_ICO} --> 
-		<img src="{ADMIN_EXTENSIONS_ICO}" />
-		<!-- ELSE -->
-		<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" />
-		<!-- ENDIF -->
-		{PHP.L.adm_opt_uninstall}
-	</a>
-	<!-- ENDIF -->
 </div>
 
 <div class="block">
 	<h3>{PHP.L.adm_infos}</h3>
-
-	<table class="cells info">
-		<tr>
-			<td class="width25">{PHP.L.Code}:</td>
-			<td class="width75">{ADMIN_EXTENSIONS_CODE}</td>
-		</tr>
-		<tr>
-			<td>{PHP.L.Description}:</td>
-			<td>{ADMIN_EXTENSIONS_DESCRIPTION}</td>
-		</tr>
-		<tr>
-			<td>{PHP.L.Version}:</td>
-			<td>
+	<div class="width5 floatleft centerall">
+		<!-- IF {ADMIN_EXTENSIONS_ICO} --> 
+		<img src="{ADMIN_EXTENSIONS_ICO}" class="padding10" />
+		<!-- ELSE -->
+		<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" class="padding10"  />
+		<!-- ENDIF -->
+	</div>
+	<div class="width90 floatleft">
+	<ul class="table">
+		<li>
+			<span>{PHP.L.Name}:</span>
+			{ADMIN_EXTENSIONS_NAME}
+		</li>	
+		<li>
+			<span>{PHP.L.Code}:</span>
+			{ADMIN_EXTENSIONS_CODE}
+		</li>
+		<li>
+			<span>{PHP.L.Description}:</span>
+			{ADMIN_EXTENSIONS_DESCRIPTION}
+		</li>
+		<li>
+			<span>{PHP.L.Version}:</span>
+			
 				<!-- IF {PHP.isinstalled} AND {ADMIN_EXTENSIONS_VERSION} > {ADMIN_EXTENSIONS_VERSION_INSTALLED} -->
 				<span class="highlight_red">{ADMIN_EXTENSIONS_VERSION_INSTALLED}</span> / <span class="highlight_green">{ADMIN_EXTENSIONS_VERSION}</span>
 				<!-- ELSE -->
 				{ADMIN_EXTENSIONS_VERSION}
 				<!-- ENDIF -->
-			</td>
-		</tr>
-		<tr>
-			<td>{PHP.L.Date}:</td>
-			<td>{ADMIN_EXTENSIONS_DATE}</td>
-		</tr>
+			
+		</li>
+		<li>
+			<span>{PHP.L.Date}:</span>
+			{ADMIN_EXTENSIONS_DATE}
+		</li>
 		<!--//<tr>
 			<td>{PHP.L.adm_defauth_guests}:</td>
 			<td>{ADMIN_EXTENSIONS_ADMRIGHTS_AUTH_GUESTS} ({ADMIN_EXTENSIONS_AUTH_GUESTS})</td>
@@ -86,22 +66,22 @@
 			<td>{PHP.L.adm_deflock_members}:</td>
 			<td>{ADMIN_EXTENSIONS_ADMRIGHTS_LOCK_MEMBERS} ({ADMIN_EXTENSIONS_LOCK_MEMBERS})</td>
 		</tr>//-->
-		<tr>
-			<td>{PHP.L.Author}:</td>
-			<td>{ADMIN_EXTENSIONS_AUTHOR}</td>
-		</tr>
-		<tr>
-			<td>{PHP.L.Copyright}:</td>
-			<td>{ADMIN_EXTENSIONS_COPYRIGHT}</td>
-		</tr>
-		<tr>
-			<td>{PHP.L.Notes}:</td>
-			<td>{ADMIN_EXTENSIONS_NOTES}</td>
-		</tr>
+		<li>
+			<span>{PHP.L.Author}:</span>
+			{ADMIN_EXTENSIONS_AUTHOR}
+		</li>
+		<li>
+			<span>{PHP.L.Copyright}:</span>
+			{ADMIN_EXTENSIONS_COPYRIGHT}
+		</li>
+		<li>
+			<span>{PHP.L.Notes}:</span>
+			{ADMIN_EXTENSIONS_NOTES}
+		</li>
 		<!-- BEGIN: DEPENDENCIES -->
-		<tr>
-			<td>{ADMIN_EXTENSIONS_DEPENDENCIES_TITLE}:</td>
-			<td>
+		<li>
+			<span>{ADMIN_EXTENSIONS_DEPENDENCIES_TITLE}:</span>
+			
 				<ul>
 					<!-- BEGIN: DEPENDENCIES_ROW -->
 					<li>
@@ -109,11 +89,32 @@
 					</li>
 					<!-- END: DEPENDENCIES_ROW -->
 				</ul>
-			</td>
-		</tr>
+		</li>
 		<!-- END: DEPENDENCIES -->
-	</table>
+	</ul>
+	</div>
+	<div class="action_bar clear">
+			<!-- IF !{PHP.isinstalled} AND {PHP.dependencies_satisfied} -->
 
+	<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_INSTALL_URL}" class="ajax button special positive">
+<span class="check icon"></span>
+		{PHP.L.adm_opt_install}
+	</a>
+	<!-- ENDIF -->
+	<!-- IF {PHP.isinstalled} -->
+	<!-- IF {PHP.exists} -->
+
+	<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_UPDATE_URL}" class="ajax button special positive">
+<span class="check icon"></span>
+		{PHP.L.adm_opt_update}
+	</a>
+	<!-- ENDIF -->
+	<a title="{PHP.L.adm_opt_uninstall_explain}" href="{ADMIN_EXTENSIONS_UNINSTALL_CONFIRM_URL|cot_confirm_url('$this', 'admin')}" class="confirmLink  negative button">
+<span class="cross icon"></span>
+		{PHP.L.adm_opt_uninstall}
+	</a>
+	<!-- ENDIF -->
+	</div>
 </div>
 <!-- IF {PHP.isinstalled} AND {PHP.exists} -->
 <div class="block">
@@ -179,7 +180,7 @@
 		</tr>
 		<!-- END: ROW_PART -->
 	</table>
-	<div class="textright paddingright10">
+	<div class="action_bar textright paddingright10">
 	<!-- IF {PHP.isinstalled} -->
 		<!-- IF {PHP.exists} -->
 		<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{ADMIN_EXTENSIONS_UNPAUSE_URL}" class="ajax button"><span class="icon play"></span>{PHP.L.adm_opt_unpauseall}</a>

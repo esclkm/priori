@@ -161,6 +161,34 @@ ul.follow li {
 ul.follow img {
 	vertical-align: -3px;
 }
+ul.table {
+    margin:10px 0;
+}
+ul.table li:first-child {
+    border-top:medium none;
+}
+ul.table li:last-child {
+    border-bottom:medium none;
+}
+ul.table li {
+    border-bottom:1px solid #EBEBEB;
+    border-top:1px solid #FFFFFF;
+    list-style:none outside none;
+	color:#666666;
+    display:block;
+    line-height:32px;
+    text-decoration:none;
+}
+ul.table li span {
+    display:inline-block;
+    font-size:15px;
+    font-weight:bold;
+    margin-right:10px;
+    text-align:right;
+    max-width:150px;
+	width: 20%;
+}
+
 a {
 	color: #000;
 	text-decoration: none;
@@ -192,6 +220,12 @@ p {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 	clear: both;
 	overflow-x: auto;
+}
+.action_bar {
+    background:url("../img/action_bar.png") repeat-x scroll 0 0 #E8E8E8;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    padding:7px 14px 7px 8px;
 }
 
 .button-toolbar {

@@ -5,7 +5,7 @@
 	-o-transition: background linear 0.2s, box-shadow linear 0.2s;
 	transition: background linear 0.2s, box-shadow linear 0.2s;
 	display: inline-block;
-	padding: 5px 4px;
+	padding: 5px 6px;
 	font-size: 12px;
 	font-weight: normal;
 	color: #333333;
@@ -16,7 +16,7 @@
 	text-decoration: none;
 	border: 1px solid #d4d4d4;
 	border-radius: 3px;
-	margin: 0 2px 2px 0;
+	margin: 0 4px 2px 0;
 	outline: none;
 	position: relative;
 	zoom: 1;
