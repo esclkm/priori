@@ -17,17 +17,19 @@
 	<div class="clear height0"></div>
 </div>
 <div class="button-toolbar">
-	<a href="{PHP.db_structure|cot_url('admin', '?m=extrafields&n=$this')}" class="button large">{PHP.L.adm_extrafields_desc}</a>
+	<a href="{PHP.db_structure|cot_url('admin', 'm=extrafields&n=$this')}" class="button large">{PHP.L.adm_extrafields_desc}</a>
 </div>
 <!-- END: LIST -->
 
 <!-- BEGIN: MAIN -->
 
-	<div class="bigbutpanel">
+	<div class="quick-actions">
 
-		<a href="{ADMIN_PAGE_STRUCTURE_RESYNCALL}" class="thumbicons" title="{PHP.L.adm_tpl_resyncalltitle}"><img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>{PHP.L.Resync}</a>
+		<a href="{ADMIN_PAGE_STRUCTURE_RESYNCALL}" class="quick-action" title="{PHP.L.adm_tpl_resyncalltitle}">
+			<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/refresh.png"/></span>{PHP.L.Resync}</a>
 		<!-- IF {ADMIN_STRUCTURE_I18N_URL} -->
-		<a href="{ADMIN_STRUCTURE_I18N_URL}" class="thumbicons"><img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>{PHP.L.i18n_structure}</a>
+		<a href="{ADMIN_STRUCTURE_I18N_URL}" class="quick-action">
+			<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/blog.png"/></span>{PHP.L.i18n_structure}</a>
 		<!-- ENDIF -->
 		<div class="clear height0"></div>
 	</div>
@@ -76,11 +78,11 @@
 				<td class="{ADMIN_STRUCTURE_ODDEVEN}">{ADMIN_STRUCTURE_EXTRAFLD}</td>
 			</tr>
 			<!-- END: EXTRAFLD -->
-			<tr>
-				<td class="valid" colspan="2"><input type="submit" class="submit" value="{PHP.L.Update}" /></td>
-			</tr>
 		</table>
-		<p class="paging"><a href="{ADMIN_STRUCTURE_CONFIG_URL}" class="button">{PHP.L.Configuration}</a></p>
+		<div class="action_bar valid">
+			<input type="submit" class="submit" value="{PHP.L.Update}" /><a href="{ADMIN_STRUCTURE_CONFIG_URL}" class="button large">{PHP.L.Configuration}</a>
+		</div>
+		
 	</form>
 </div>
 <!-- END: OPTIONS -->
@@ -117,13 +119,14 @@
 					</td>
 				</tr>
 				<!-- END: ROW -->
-				<tr>
-					<td class="valid" colspan="8"><input type="submit" class="submit" value="{PHP.L.Update}" /></td>
-				</tr>
 			</table>
+			<div class="action_bar valid">
+				
+				<p class="paging">{ADMIN_STRUCTURE_PAGINATION_PREV}{ADMIN_STRUCTURE_PAGNAV}{ADMIN_STRUCTURE_PAGINATION_NEXT} <span>{PHP.L.Total}: {ADMIN_STRUCTURE_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_STRUCTURE_COUNTER_ROW}</span></p>
+				<input type="submit" class="submit" value="{PHP.L.Update}" />
+			</div>
 		</form>
 	</div>
-	<p class="paging">{ADMIN_STRUCTURE_PAGINATION_PREV}{ADMIN_STRUCTURE_PAGNAV}{ADMIN_STRUCTURE_PAGINATION_NEXT} <span>{PHP.L.Total}: {ADMIN_STRUCTURE_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_STRUCTURE_COUNTER_ROW}</span></p>
 </div>
 <!-- END: DEFAULT -->
 
@@ -163,13 +166,10 @@
 				<td>{ADMIN_STRUCTURE_EXTRAFLD}</td>
 			</tr>
 			<!-- END: EXTRAFLD -->
-			<tr>
-				<td class="valid" colspan="2">
-					<input type="submit" class="submit" value="{PHP.L.Add}" />
-				</td>
-			</tr>
 		</table>
-
+		<div class="action_bar valid">
+			<input type="submit" class="submit" value="{PHP.L.Add}" />
+		</div>
 	</div>
 </form>
 <!-- END: NEWCAT -->

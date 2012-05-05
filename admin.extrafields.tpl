@@ -169,14 +169,12 @@
 				</td>
 			</tr>
 			<!-- END: EXTRAFIELDS_ROW -->
-			<tr>
-				<td class="valid" colspan="5">
-					<input type="submit" value="{PHP.L.Update}" onclick="location.href='{ADMIN_EXTRAFIELDS_ROW_FORM_URL}'"  class="confirm" />
-				</td>
-			</tr>
 		</table>
+		<div class="action_bar valid">
+				<p class="paging">{ADMIN_EXTRAFIELDS_PAGINATION_PREV}{ADMIN_EXTRAFIELDS_PAGNAV}{ADMIN_EXTRAFIELDS_PAGINATION_NEXT} <span>{PHP.L.Total}: {ADMIN_EXTRAFIELDS_TOTALITEMS}</span></p>
+				<input type="submit" value="{PHP.L.Update}" onclick="location.href='{ADMIN_EXTRAFIELDS_ROW_FORM_URL}'"  class="confirm" />
+		</div>
 	</form>
-	<p class="paging">{ADMIN_EXTRAFIELDS_PAGINATION_PREV}{ADMIN_EXTRAFIELDS_PAGNAV}{ADMIN_EXTRAFIELDS_PAGINATION_NEXT} <span>{PHP.L.Total}: {ADMIN_EXTRAFIELDS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_EXTRAFIELDS_COUNTER_ROW}</span></p>
 </div>
 
 <div class="block">
@@ -210,13 +208,11 @@
 						{ADMIN_EXTRAFIELDS_DEFAULT}
 				</td>
 			</tr>
-			<tr>
-				<td class="valid" colspan="3">
-					<p class="small"><input type="checkbox" name="field_noalter" /> {PHP.L.adm_extrafield_noalter}</p>
-					<input type="submit" class="confirm" value="{PHP.L.Add}" />
-				</td>
-			</tr>
 		</table>
+		<div class="action_bar valid">
+			<input type="submit" class="confirm" value="{PHP.L.Add}" />
+			<input type="checkbox" name="field_noalter" /> {PHP.L.adm_extrafield_noalter}
+		</div>
 	</form>
 </div>
 <!-- END: TABLE -->

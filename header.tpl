@@ -15,8 +15,8 @@
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/reset.css" type="text/css" rel="stylesheet" />
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/framework.css" type="text/css" rel="stylesheet" />
-		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/buttons.css" type="text/css" rel="stylesheet" />
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/admin.css" type="text/css" rel="stylesheet" />
+		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/buttons.css" type="text/css" rel="stylesheet" />
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/adaptive.css" type="text/css" rel="stylesheet" />
 		<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/respond.min.js" type="text/javascript"></script>
 		<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/jquery.cookie.js" type="text/javascript"></script>

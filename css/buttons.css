@@ -6,7 +6,6 @@
 	transition: background linear 0.2s, box-shadow linear 0.2s;
 	display: inline-block;
 	padding: 5px 6px;
-	font-size: 12px;
 	font-weight: normal;
 	color: #333333;
 	text-shadow: 1px 1px 0 #fff;
@@ -20,8 +19,8 @@
 	outline: none;
 	position: relative;
 	zoom: 1;
-	line-height: 1.11;
 	background: #ececec;
+	font:400 12px/1.11 Helvetica,arial,freesans,clean,sans-serif;
 	background: linear-gradient(#f4f4f4, #ececec) repeat scroll 0 0 transparent;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ececec'); /* для IE6-9 */
 	background: -webkit-linear-gradient(top, bottom, #f4f4f4, #ececec); /* для webkit-браузеров */
@@ -148,7 +147,7 @@ button::-moz-focus-inner {
 
 .button.left:active, button.left:active, .button.middle:active, button.middle:active, .button.right:active, button.right:active { top: 0px }
 
-.button.large, button.large, .valid input[type="submit"] {
+.button.large, button.large {
 	font-size: 14px;
 	padding-left: 14px;
 	padding-right: 17px; 
@@ -312,3 +311,96 @@ a.big.button span.icon, button.big span.icon { top: 0px }
 .button:hover span.icon.pen {background-position: -442px -13px;}
 .button span.icon.stats {background-position: -455px 0px;}
 .button:hover span.icon.stats {background-position: -455px -13px;} 
+
+
+a.thumbicons {
+	color: #666;
+	position: relative;
+	margin: 5px;
+	padding: 10px 5px 5px 50px;
+	text-align: left;
+	text-decoration: none;
+	zoom: 1;	
+	vertical-align: middle;
+	border: 1px solid transparent;
+	float: left;
+	width:160px;
+	text-shadow: 0 1px 0 white;
+	height: 30px;
+	-webkit-transition: background linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: background linear 0.2s, box-shadow linear 0.2s;
+	-ms-transition: background linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: background linear 0.2s, box-shadow linear 0.2s;
+	transition: background linear 0.2s, box-shadow linear 0.2s;
+	/*  text-align: left;
+	  padding: 10px;
+	  margin: 2px 2px 5px 2px;
+	  height: 30px;*/
+}
+a.thumbicons img {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	text-align: center;
+	display: block;
+} 
+a.thumbicons span {
+	position: relative;
+	display: block;
+	color: #999;
+	font-size:0.9em;
+}
+
+a.thumbicons:hover, a.thumbicons.special{
+	background-color: #EBEBEB;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(whiteSmoke), to(#EBEBEB));
+	background-image: -webkit-linear-gradient(top, whiteSmoke, #EBEBEB);
+	background-image: -moz-linear-gradient(top, whiteSmoke, #EBEBEB);
+	background-image: -o-linear-gradient(top, #F5F5F5, #EBEBEB);
+	background-image: -ms-linear-gradient(top, #F5F5F5, #EBEBEB);
+	background-image: linear-gradient(top, #F5F5F5, #EBEBEB);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f5f5', EndColorStr='#ebebeb');
+	border: 1px solid #C4C4C4;
+	border-radius: 3px;
+	text-decoration: none;
+	box-shadow: 0 1px 3px #ccc, inset 0 1px 0 #fff;
+}
+
+
+a.quick-action {
+    background-color:#EBEBEB;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(#EBEBEB));
+	background-image: -webkit-linear-gradient(top, #F5F5F5, #EBEBEB);
+	background-image: -moz-linear-gradient(top, #F5F5F5, #EBEBEB);
+	background-image: -o-linear-gradient(top, #F5F5F5, #EBEBEB);
+	background-image: -ms-linear-gradient(top, #F5F5F5, #EBEBEB);
+	background-image: linear-gradient(top, #F5F5F5, #EBEBEB);
+    border:1px solid #C4C4C4;
+    border-radius:3px 3px 3px 3px;
+    box-shadow:0 1px 3px #CCCCCC, 0 1px 0 #FFFFFF inset;
+    color:#666666;
+    display:inline-block;
+    font-size:11px;
+    line-height:20px;
+    margin-right:3px;
+    padding:5px 18px;
+    text-align:center;
+    text-decoration:none;
+}
+a.quick-action:hover {
+	background-color:#fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f5f5));
+	background-image: -webkit-linear-gradient(top, #fff, #f5f5f5);
+	background-image: -moz-linear-gradient(top, #fff, #f5f5f5);
+	background-image: -o-linear-gradient(top, #fff, #f5f5f5);
+	background-image: -ms-linear-gradient(top, #fff, #f5f5f5);
+	background-image: linear-gradient(top, #fff, #f5f5f5);
+	color:#4f4f4f;
+	text-decoration:none;	
+}
+
+a.quick-action span {
+    display:block;
+    height:32px;
+    padding:0px 0px 2px;
+}

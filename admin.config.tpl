@@ -40,12 +40,8 @@
 			</tr>
 			<!-- END: ADMIN_CONFIG_FIELDSET_END -->
 			<!-- END: ADMIN_CONFIG_ROW -->
-			<tr>
-				<td class="valid" colspan="3">
-					<input type="submit" class="submit" value="{PHP.L.Update}" />
-				</td>
-			</tr>
 		</table>
+		<div class="action_bar valid"><input type="submit" class="submit" value="{PHP.L.Update}" /></div>
 	</form>
 </div>
 <!-- END: EDIT -->

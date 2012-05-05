@@ -117,25 +117,25 @@
 	</div>
 </div>
 <!-- IF {PHP.isinstalled} AND {PHP.exists} -->
-<div class="block">
-
-	<h3>{PHP.L.Action}:</h3>
-	<div class="button-toolbar">
+<div class="quick-actions">
 		<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL} -->
-		<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="button special large"><span class="file icon"></span>{PHP.L.Open}</a>
+		<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="quick-action">
+			<span class="file icon"><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/document.png"/></span>{PHP.L.Open}</a>
 		<!-- ENDIF -->
 		<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS} -->
-		<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="button special large"><span class="admin icon"></span>{PHP.L.Administration}</a>
+		<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="quick-action">
+			<span class="admin icon"><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/flash.png"/></span>{PHP.L.Administration}</a>
 		<!-- ENDIF -->
 		<!-- IF {ADMIN_EXTENSIONS_TOTALCONFIG} > 0 -->
-		<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_CONFIG_URL}" class="button large"><span class="cog icon"></span>{PHP.L.Configuration} ({ADMIN_EXTENSIONS_TOTALCONFIG})</a>
+		<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_CONFIG_URL}" class="quick-action">
+			<span class="cog icon"><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/settings.png"/></span>{PHP.L.Configuration} ({ADMIN_EXTENSIONS_TOTALCONFIG})</a>
 		<!-- ENDIF -->	
-		<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS}" class="button large"><span class="lock icon"></span>{PHP.L.short_rights}</a>
+		<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS}" class="quick-action">
+			<span class="lock icon"><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/lock.png"/></span>{PHP.L.short_rights}</a>
 		<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT} -->
-		<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="button large"><span class="folder icon"></span>{PHP.L.Structure}</a>
+		<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="quick-action">
+			<span class="folder icon"><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/folder.png"/></span>{PHP.L.Structure}</a>
 		<!-- ENDIF -->
-
-	</div>
 </div>					
 <!-- ENDIF -->
 
@@ -238,13 +238,14 @@
 <!-- END: HOOKS -->
 
 <!-- BEGIN: DEFAULT -->
-<div class="bigbutpanel">
+<div class="quick-actions">
 
-	<a href="{ADMIN_EXTENSIONS_SORT_ALP_URL}" class="thumbicons <!-- IF {ADMIN_EXTENSIONS_SORT_ALP_SEL} -->special<!-- ENDIF -->"><img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>{PHP.L.adm_sort_alphabet}</a>
-	<a href="{ADMIN_EXTENSIONS_SORT_CAT_URL}" class="thumbicons <!-- IF {ADMIN_EXTENSIONS_SORT_CAT_SEL} -->special<!-- ENDIF -->"><img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>{PHP.L.adm_sort_category}</a>
-	<a href="{ADMIN_EXTENSIONS_HOOKS_URL}" class="thumbicons"><img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>{PHP.L.Hooks}</a>
-
-	<div class="clear height0"></div>
+	<a href="{ADMIN_EXTENSIONS_SORT_ALP_URL}" class="quick-action <!-- IF {ADMIN_EXTENSIONS_SORT_ALP_SEL} -->special<!-- ENDIF -->">
+		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/sort_az.png"/></span>{PHP.L.adm_sort_alphabet}</a>
+	<a href="{ADMIN_EXTENSIONS_SORT_CAT_URL}" class="quick-action <!-- IF {ADMIN_EXTENSIONS_SORT_CAT_SEL} -->special<!-- ENDIF -->">
+		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/folder_goto.png"/></span>{PHP.L.adm_sort_category}</a>
+	<a href="{ADMIN_EXTENSIONS_HOOKS_URL}" class="quick-action">
+		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/flag.png"/></span>{PHP.L.Hooks}</a>
 </div>
 
 <!-- BEGIN: SECTION-->
@@ -275,7 +276,7 @@
 		</tr>
 		<!-- END: ROW_ERROR_EXT -->
 		<tr>
-			<td>
+			<td class="centerall">
 				<!-- IF {ADMIN_EXTENSIONS_ICO} --> 
 				<img src="{ADMIN_EXTENSIONS_ICO}" />
 				<!-- ELSE -->
@@ -308,7 +309,7 @@
 				<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS_URL}" class="button"><span class="lock icon"></span>{PHP.L.short_rights}</a>
 				<!-- ENDIF -->
 				<!-- IF {PHP.ifthistools} -->
-				<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="button special"><span class="icon admin"></span>{PHP.L.short_admin}</a>
+				<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="button special"><span class="icon bolt"></span>{PHP.L.short_admin}</a>
 				<!-- ENDIF -->
 				<!-- IF {PHP.if_plg_standalone} -->
 				<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="button special"><span class="file icon"></span>{PHP.L.Open}</a>

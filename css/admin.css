@@ -176,16 +176,15 @@ ul.table li {
     list-style:none outside none;
 	color:#666666;
     display:block;
-    line-height:32px;
+    line-height:28px;
     text-decoration:none;
 }
 ul.table li span {
     display:inline-block;
-    font-size:15px;
     font-weight:bold;
     margin-right:10px;
     text-align:right;
-    max-width:150px;
+    max-width:200px;
 	width: 20%;
 }
 
@@ -222,10 +221,14 @@ p {
 	overflow-x: auto;
 }
 .action_bar {
+	clear: both;
     background:url("../img/action_bar.png") repeat-x scroll 0 0 #E8E8E8;
     border-bottom-left-radius:3px;
     border-bottom-right-radius:3px;
-    padding:7px 14px 7px 8px;
+    padding:7px 14px 5px 8px;
+}
+.quick-actions {
+    margin: 20px 15px 16px;
 }
 
 .button-toolbar {
@@ -392,58 +395,6 @@ div.help {
 	background-color: #feebe8;
 }
 
-a.thumbicons {
-	color: #666;
-	position: relative;
-	margin: 5px;
-	padding: 10px 5px 5px 50px;
-	text-align: left;
-	text-decoration: none;
-	zoom: 1;	
-	vertical-align: middle;
-	border: 1px solid transparent;
-	float: left;
-	width:160px;
-	text-shadow: 0 1px 0 white;
-	height: 30px;
-	-webkit-transition: background linear 0.2s, box-shadow linear 0.2s;
-	-moz-transition: background linear 0.2s, box-shadow linear 0.2s;
-	-ms-transition: background linear 0.2s, box-shadow linear 0.2s;
-	-o-transition: background linear 0.2s, box-shadow linear 0.2s;
-	transition: background linear 0.2s, box-shadow linear 0.2s;
-	/*  text-align: left;
-	  padding: 10px;
-	  margin: 2px 2px 5px 2px;
-	  height: 30px;*/
-}
-a.thumbicons img {
-	position: absolute;
-	top: 8px;
-	left: 10px;
-	text-align: center;
-	display: block;
-} 
-a.thumbicons span {
-	position: relative;
-	display: block;
-	color: #999;
-	font-size:0.9em;
-}
-
-a.thumbicons:hover, a.thumbicons.special{
-	background-color: #EBEBEB;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(whiteSmoke), to(#EBEBEB));
-	background-image: -webkit-linear-gradient(top, whiteSmoke, #EBEBEB);
-	background-image: -moz-linear-gradient(top, whiteSmoke, #EBEBEB);
-	background-image: -o-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: -ms-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: linear-gradient(top, #F5F5F5, #EBEBEB);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f5f5', EndColorStr='#ebebeb');
-	border: 1px solid #C4C4C4;
-	border-radius: 3px;
-	box-shadow: 0 1px 3px #ccc, inset 0 1px 0 #fff;
-}
-
 /* 6. Tables
 --------------------------------------------------*/
 table td {
@@ -535,7 +486,11 @@ table.nowrap td {
 /* 9. Pagination
 --------------------------------------------------*/
 .paging {
-	margin: 10px 0 20px 0;
+	float:right;
+	margin: 5px 0 0px 0;
+	color:#B4B4B4;
+    float:right;
+
 	text-align: center;
 	font-size: .9em;
 }
@@ -543,26 +498,40 @@ table.nowrap td {
 	vertical-align: -3px;
 }
 .paging span {
-	border: 1px dashed #7f7772;
-	padding: 2px 8px;
+	padding: 0 20px;
+}
+
+span.pagenav_prev, span.pagenav_next, span.pagenav_first, span.pagenav_last, span.pagenav_pages, span.pagenav_current {
+	display: inline-block;
+	padding: 0px 0px;
 	margin: 1px;
 }
-.pagenav_prev, .pagenav_next, .pagenav_first, .pagenav_last, .pagenav_pages, .pagenav_current {
-	padding: 2px 6px;
-	margin: 1px;
-	border: 1px dashed #7f7772;
+
+span.pagenav_gap{
+	display:none;
 }
 .pagenav_prev a, .pagenav_next a, .pagenav_first a, .pagenav_last a, .pagenav_pages a {
-	color: #555;
+	color:#343434;
+	padding: 2px 6px;
+	display: block;
+	text-shadow:0 1px 0 #FFFFFF;
+}
+.pagenav_prev a:hover, .pagenav_next a:hover, .pagenav_first a:hover, .pagenav_last a:hover, .pagenav_pages a:hover, .pagenav_current a:hover {
+	color:#111;
+	text-decoration: none;
+	background: #f5f5f5;
+	border-radius: 2px;
 }
 .pagenav_current {
 	font-weight: bold;
-	color: #fff;
-	background: none!important;
-	border: none!important;
 }
 .pagenav_current a {
-	color: #555;
+	padding: 2px 6px;
+	color:#111;
+	display: block;
+	text-shadow:0 1px 0 #FFFFFF;
+	background: #f5f5f5;
+	border-radius: 2px;
 }
 .pagenav_small {
 	text-align: right;
