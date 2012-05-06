@@ -374,6 +374,7 @@ a.quick-action {
     padding:5px 18px;
     text-align:center;
     text-decoration:none;
+	min-width: 70px;
 }
 a.quick-action:hover {
 	background-color:#fff;

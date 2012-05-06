@@ -33,14 +33,19 @@ body {
 	width: 100%;
 	z-index: 10;
 }	
-#navbar ul {
+#navbar>ul {
 	diplay:block;
 	padding: 0;
 }
-#navbar ul li {
+#navbar>ul>li {
 	float: left;
+	-webkit-transition: background linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: background linear 0.2s, box-shadow linear 0.2s;
+	-ms-transition: background linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: background linear 0.2s, box-shadow linear 0.2s;
+	transition: background linear 0.2s, box-shadow linear 0.2s;
 }
-#navbar ul li a {
+#navbar>ul>li>a {
 	color: #eaeef4;
 	display: block;
 	font-size: 11px;
@@ -48,23 +53,18 @@ body {
 	padding: 6px 10px 5px;
 	text-align: center;
 	text-decoration: none;
-	-webkit-transition: background linear 0.2s, box-shadow linear 0.2s;
-	-moz-transition: background linear 0.2s, box-shadow linear 0.2s;
-	-ms-transition: background linear 0.2s, box-shadow linear 0.2s;
-	-o-transition: background linear 0.2s, box-shadow linear 0.2s;
-	transition: background linear 0.2s, box-shadow linear 0.2s;
 }
-#navbar ul li a:hover, #navbar ul li a.sel {
+#navbar>ul>li:hover, #navbar>ul>li.sel, #navbar>ul>li.bottom>a:hover {
 	background: #333!important;
 }
-#navbar ul li a span {
+#navbar>ul>li>a>span {
 	display: none;
 	font-size: 32px;
 }
-#navbar ul li.bottom{
+#navbar>ul>li.bottom{
 	display: none;
 }
-#navbar ul li.bottom a {
+#navbar>ul>li.bottom>a {
 	background: #0b0b0b;
 	right: 0px;
 	top: 0px;
@@ -254,7 +254,7 @@ h2 + .block {
 	overflow: auto;
 }
 .overflow_x {
-/*	overflow-x: auto;*/
+	/*	overflow-x: auto;*/
 }
 .overflow_y {
 	overflow-y: auto;
