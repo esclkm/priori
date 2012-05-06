@@ -175,6 +175,7 @@ input[type="text"],textarea, select {
 	-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
 	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
 	transition: border linear 0.2s, box-shadow linear 0.2s;
+	max-width: 700px;
 }
 input[type="text"]:focus,textarea:focus,select:focus {
 	border-color: rgba(82, 168, 236, 0.8);

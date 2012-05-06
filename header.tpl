@@ -88,15 +88,16 @@
 					</a>
 				</li>
 				<li class="bottom" id="resolution_control">
-					<a href="{PHP|cot_url('admin')}">
-						<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/icon_site.png" alt="{PHP.cfg.maintitle}" /></span>{PHP.L.Options}
-					</a>
 					<div>
 						<a href="#" class="maxwidth" rel="960">960px</a>
 						<a href="#" class="maxwidth" rel="1080">1080px</a>
 						<a href="#" class="maxwidth" rel="1480">1480px</a>
 						<a href="#" class="maxwidth paddingright10" rel="3000">3000px</a>
 					</div>
+					<a href="{PHP|cot_url('admin')}">
+						<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/icon_site.png" alt="{PHP.cfg.maintitle}" /></span>{PHP.L.Options}
+					</a>
+
 				</li>
 			</ul>
 			<div class="clear"></div>

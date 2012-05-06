@@ -54,7 +54,7 @@ body {
 	text-align: center;
 	text-decoration: none;
 }
-#navbar>ul>li:hover, #navbar>ul>li.sel, #navbar>ul>li.bottom>a:hover {
+#navbar>ul>li:hover, #navbar>ul>li.sel, #navbar>ul>li.bottom>a:hover, #navbar>ul>li.bottom>div:hover + a {
 	background: #333!important;
 }
 #navbar>ul>li>a>span {
