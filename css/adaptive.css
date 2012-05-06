@@ -123,4 +123,41 @@
 	#messagebar {
 		left: 260px;
 	}
+	#sitetitle {
+		right: 40px;
+
+	}
+	#resolution_control {
+		display: block;
+		position: absolute;
+		right: 20px;
+		padding: 12px 5px;
+		float: right;
+		z-index: 101;
+	}
+	#resolution_control a {
+		color: #888;
+		font-weight: bold;
+		display: block;
+		padding: 3px 15px; 
+	}
+	#resolution_control a:hover {
+		color: #fff;
+		display: block;
+		background-color: #497EAC;
+		text-decoration: none;
+	}
+	#resolution_control ul{
+		display: none;
+		background-color: #fff;
+		right: 0;
+		top: 30px;
+	}
+	#resolution_control:hover{
+		background-color: #fff;
+	}
+	#resolution_control:hover ul{
+		display: block;
+		position: absolute;
+	}	
 }

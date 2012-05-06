@@ -20,7 +20,7 @@
 		</span>
 	</a>
 		<!-- END: ROW -->
-		<div class="clear">
+		<div class="action_bar">
 	<a href="{ADMIN_EXTRAFIELDS_ALLTABLES}" class="button">{PHP.L.adm_extrafields_all}</a>
 		</div>
 </div>

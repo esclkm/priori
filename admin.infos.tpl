@@ -1,5 +1,5 @@
 <!-- BEGIN: MAIN -->
-	<h2>Info</h2>
+	<div class="block">
 	<table class="cells">
 		<tr>
 			<td class="width60">{PHP.L.adm_phpver}</td>
@@ -38,4 +38,5 @@
 			<td class="textcenter">{ADMIN_INFOS_USRTIME} {ADMIN_INFOS_TIMETEXT}</td>
 		</tr>
 	</table>
+	</div>
 <!-- END: MAIN -->

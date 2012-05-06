@@ -15,10 +15,6 @@
 		<!-- ENDIF -->
 	</div>
 	<div id="footer">
-			<a href="#" class="maxwidth" rel="960">960px</a>
-			<a href="#" class="maxwidth" rel="1080">1080px</a>
-			<a href="#" class="maxwidth" rel="1480">1480px</a>
-			<a href="#" class="maxwidth paddingright10" rel="3000">3000px</a>
 			<a href="http://cotonti.com" target="_blank" title="Cotonti {PHP.cfg.version}"><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/cotonti.png" alt="Cotonti{PHP.cfg.version}" /></a>
 	</div>
 </div>

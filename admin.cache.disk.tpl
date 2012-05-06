@@ -1,11 +1,14 @@
 <!-- BEGIN: MAIN -->
-		<h2>Disk Cache</h2>
+		
 		{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
-		<div class="block  button-toolbar">
-				<a href="{ADMIN_DISKCACHE_URL_REFRESH}" class="ajax button large">{PHP.L.Refresh}</a>
-				<a href="{ADMIN_DISKCACHE_URL_PURGE}" class="ajax button large">{PHP.L.adm_purgeall}</a>
+		<div class="quick-actions">
+				<a href="{ADMIN_DISKCACHE_URL_REFRESH}" class="ajax quick-action">
+					<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/refresh.png"/></span>{PHP.L.Refresh}</a>
+				<a href="{ADMIN_DISKCACHE_URL_PURGE}" class="ajax quick-action">
+					<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/trash.png"/></span>{PHP.L.adm_purgeall}</a>
 		</div>
 		<div class="block">
+			<h3>Disk Cache</h3>
 			<table class="cells">
 				<tr>
 					<td class="coltop width25">{PHP.L.Item}</td>
@@ -18,7 +21,7 @@
 					<td class="textcenter">{ADMIN_DISKCACHE_ITEM_NAME}</td>
 					<td class="textcenter">{ADMIN_DISKCACHE_FILES}</td>
 					<td class="textcenter">{ADMIN_DISKCACHE_SIZE}</td>
-					<td class="centerall"><a title="{PHP.L.Delete}" href="{ADMIN_DISKCACHE_ITEM_DEL_URL}" class="ajax button">{PHP.L.Delete}</a></td>
+					<td><a title="{PHP.L.Delete}" href="{ADMIN_DISKCACHE_ITEM_DEL_URL}" class="ajax negative button"><span class="trash icon"></span>{PHP.L.Delete}</a></td>
 				</tr>
 <!-- END: ADMIN_DISKCACHE_ROW -->
 			<tr class="strong">
