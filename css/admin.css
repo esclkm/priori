@@ -167,13 +167,13 @@ ul.follow img {
 ul.table {
     margin:10px 0;
 }
-ul.table li:first-child {
+ul.table>li:first-child {
     border-top:medium none;
 }
-ul.table li:last-child {
+ul.table>li:last-child {
     border-bottom:medium none;
 }
-ul.table li {
+ul.table>li {
     border-bottom:1px solid #EBEBEB;
     border-top:1px solid #FFFFFF;
     list-style:none outside none;
@@ -182,13 +182,19 @@ ul.table li {
     line-height:28px;
     text-decoration:none;
 }
-ul.table li span {
-    display:inline-block;
+
+ul.table>li span {
+    display:block;
+	float: left;
     font-weight:bold;
     margin-right:10px;
     text-align:right;
     max-width:200px;
 	width: 20%;
+}
+
+ul.table>li ul, ul.table>li p, ul.table>li div {
+    display:inline-block;
 }
 
 a {
@@ -551,6 +557,16 @@ span.pagenav_gap{
 }
 
 .buttonpanel .button{
-	width: 13px;
+	width: 11px;
 	overflow: hidden;
+}
+
+.icon_panel{
+	width: 32px;
+	float: left;
+	padding: 15px 15px;
+}
+
+.extension_info {
+	margin: 0 10px 0 70px;
 }

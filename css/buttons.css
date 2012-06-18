@@ -1,4 +1,4 @@
-.button, button, input[type="submit"], input[type="button"] {
+.button, button, input[type="submit"], input[type="button"], .valid input[type="submit"].negative {
 	display: inline-block;
 	padding: 5px 6px;
 	font-weight: normal;
@@ -24,11 +24,6 @@
 	*display: inline;
 	*vertical-align: middle; 
 }
-
-button, input[type="submit"], input[type="button"] {
-	margin-left: 0;
-	margin-right: 0;
-	*padding: 5px 5px 3px 5px; }
 
 .button {
 	-moz-user-select: none;
@@ -68,7 +63,7 @@ button::-moz-focus-inner {
 
 .button:active, button:active { top: 1px }
 
-.button.negative:hover, button.negative:hover {
+.button.negative:hover, button.negative:hover, .valid input[type="submit"].negative:hover {
 	color: #FFFFFF;
 	border-color: #cd504a;
 	background: #b33630;
@@ -150,9 +145,6 @@ button::-moz-focus-inner {
 
 button.large { *padding: 4px 17px 2px 17px; }
 
-
-
-.buttonpanel{}
 input[type="text"],input[type="file"], select {
 	height: 18px;
 }

@@ -15,14 +15,14 @@
 
 <div class="block">
 	<h3>{PHP.L.adm_infos}</h3>
-	<div class="width5 floatleft centerall">
+	<div class="icon_panel">
 		<!-- IF {ADMIN_EXTENSIONS_ICO} --> 
-		<img src="{ADMIN_EXTENSIONS_ICO}" class="padding10" />
+		<img src="{ADMIN_EXTENSIONS_ICO}" />
 		<!-- ELSE -->
-		<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" class="padding10"  />
+		<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"  />
 		<!-- ENDIF -->
 	</div>
-	<div class="width90 floatleft">
+	<div class="extension_info">
 	<ul class="table">
 		<li>
 			<span>{PHP.L.Name}:</span>
@@ -255,10 +255,10 @@
 		<tr>
 			<td class="coltop width5">&nbsp;</td>
 			<td class="coltop width25">{PHP.L.Name} {PHP.L.adm_clicktoedit}</td>
-			<td class="coltop width15">{PHP.L.Code}</td>
-			<td class="coltop width9">{PHP.L.Version}</td>
-			<td class="coltop width4">{PHP.L.Parts}</td>
-			<td class="coltop width12">{PHP.L.Status}</td>
+			<td class="coltop width10">{PHP.L.Code}</td>
+			<td class="coltop width10">{PHP.L.Version}</td>
+			<td class="coltop width5">{PHP.L.Parts}</td>
+			<td class="coltop width15">{PHP.L.Status}</td>
 			<td class="coltop width30">{PHP.L.Action}</td>
 		</tr>
 		<!-- BEGIN: ROW -->
@@ -298,6 +298,7 @@
 			<td class="centerall">{ADMIN_EXTENSIONS_PARTSCOUNT}</td>
 			<td class="centerall">{ADMIN_EXTENSIONS_STATUS}</td>
 			<td class="action">
+				<div class="buttonpanel">
 				<!-- IF {ADMIN_EXTENSIONS_TOTALCONFIG} -->
 
 				<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_EDIT_URL}" class="button"><span class="cog icon"></span>{PHP.L.short_config}</a>
@@ -314,6 +315,7 @@
 				<!-- IF {PHP.if_plg_standalone} -->
 				<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="button special"><span class="file icon"></span>{PHP.L.Open}</a>
 				<!-- ENDIF -->
+				</div>
 			</td>
 		</tr>
 		<!-- END: ROW -->
