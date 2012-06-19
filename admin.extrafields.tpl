@@ -1,11 +1,11 @@
 <!-- BEGIN: MAIN -->
-		{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
 
 <!-- BEGIN: TABLELIST -->	
 <div class="block">
 	<h3>{PHP.L.adm_extrafields}</h3>
-		<!-- BEGIN: ROW -->	
-		<a href="{ADMIN_EXTRAFIELDS_ROW_TABLEURL}" class="ajax thumbicons">
+	<!-- BEGIN: ROW -->	
+	<a href="{ADMIN_EXTRAFIELDS_ROW_TABLEURL}" class="ajax thumbicons">
 		<!-- IF {ADMIN_EXTRAFIELDS_ROW_ICO} --> 
 		<img src="{ADMIN_EXTRAFIELDS_ROW_ICO}"/>
 		<!-- ELSE -->
@@ -19,14 +19,14 @@
 			<!-- IF {ADMIN_EXTRAFIELDS_ROW_ITEMNAME} --> - {ADMIN_EXTRAFIELDS_ROW_ITEMNAME}<!-- ENDIF -->
 		</span>
 	</a>
-		<!-- END: ROW -->
-		<div class="action_bar">
-	<a href="{ADMIN_EXTRAFIELDS_ALLTABLES}" class="button">{PHP.L.adm_extrafields_all}</a>
-		</div>
+	<!-- END: ROW -->
+	<div class="action_bar">
+		<a href="{ADMIN_EXTRAFIELDS_ALLTABLES}" class="button">{PHP.L.adm_extrafields_all}</a>
+	</div>
 </div>
 <!-- END: TABLELIST -->
 <script type="text/javascript">
-//<![CDATA[
+	//<![CDATA[
 	var exFLDHELPERS = "{ADMIN_EXTRAFIELDS_TAGS}";
 	var exnovars = "{PHP.L.adm_extrafields_help_notused}";
 	var exvariants = "{PHP.L.adm_extrafields_help_variants}";
@@ -119,51 +119,59 @@
 				$(exParent).find('.exflddesc').removeAttr("title");
 			}
 		});
-		 $(".exfldtype").change();
+		$(".exfldtype").change();
 	});
 	
-;
-//]]>
+	;
+	//]]>
 </script>
 <!-- BEGIN: TABLE -->	
 <div class="block">
 	<h3>{PHP.L.editdeleteentries}:</h3>
 	<form action="{ADMIN_EXTRAFIELDS_URL_FORM_EDIT}" method="post">
-		<table class="cells">
-			<tr>
-				<td class="coltop"></td>
-				<td class="coltop">{PHP.L.extf_Name}</td>
-				<td class="coltop">{PHP.L.extf_Type}</td>
-				<td class="coltop">{PHP.L.adm_extrafield_params}</td>
-				<td class="coltop"></td>
-			</tr>
+		<table class="cells form_table">
 			<!-- BEGIN: EXTRAFIELDS_ROW -->	
 			<tr id="ex{ADMIN_EXTRAFIELDS_ROW_ID}">
-				<td class="{ADMIN_EXTRAFIELDS_ROW_ODDEVEN}">
+				<td class="{ADMIN_EXTRAFIELDS_ROW_ODDEVEN} width1">
 					{ADMIN_EXTRAFIELDS_ROW_ENABLED}
 				</td>
 				<td class="{ADMIN_EXTRAFIELDS_ROW_ODDEVEN}">
-						{ADMIN_EXTRAFIELDS_ROW_NAME}
-					<p class="small">{PHP.L.extf_Description}</p>
-						{ADMIN_EXTRAFIELDS_ROW_DESCRIPTION}
-					<p class="small">{PHP.L.extf_Base_HTML}</p>
-						{ADMIN_EXTRAFIELDS_ROW_HTML}
-				</td>
-				<td class="{ADMIN_EXTRAFIELDS_ROW_ODDEVEN}">
-						{ADMIN_EXTRAFIELDS_ROW_SELECT}
-					<p class="small">{PHP.L.adm_extrafield_parse}</p>
-						{ADMIN_EXTRAFIELDS_ROW_PARSE}
-					<p class="small">{ADMIN_EXTRAFIELDS_ROW_REQUIRED}{PHP.L.adm_extrafield_required}</p>
+					<div class="row">
 
-				</td>
-				<td class="{ADMIN_EXTRAFIELDS_ROW_ODDEVEN}">
-					{ADMIN_EXTRAFIELDS_ROW_PARAMS}
-					<p class="small">{PHP.L.adm_extrafield_selectable_values}</p>
-						{ADMIN_EXTRAFIELDS_ROW_VARIANTS}						
-					<p class="small">{PHP.L.adm_extrafield_default}</p>
-						{ADMIN_EXTRAFIELDS_ROW_DEFAULT}
-				</td>
-				<td class="centerall {ADMIN_EXTRAFIELDS_ROW_ODDEVEN}">
+						<div>
+							<span class="small">{PHP.L.extf_Name}</span>
+							{ADMIN_EXTRAFIELDS_ROW_NAME}
+						</div>
+
+						<div>
+							<span class="small">{PHP.L.extf_Description}</span>
+							{ADMIN_EXTRAFIELDS_ROW_DESCRIPTION}
+						</div>
+						<div>
+							<span class="small">{PHP.L.extf_Type}</span>
+							{ADMIN_EXTRAFIELDS_ROW_SELECT}
+							<input type="hidden" name="field_parse[{ADMIN_EXTRAFIELDS_ROW_ID}]" value="Text" />
+							<input type="checkbox" name="field_parse[{ADMIN_EXTRAFIELDS_ROW_ID}]" value="HTML" <!-- IF {PHP.row.field_parse} == "HTML" -->checked="checked"<!-- ENDIF -->/>{PHP.L.adm_extrafield_parse}
+								   {ADMIN_EXTRAFIELDS_ROW_REQUIRED}{PHP.L.adm_extrafield_required}
+						</div>
+						<div>
+							<span class="small">{PHP.L.extf_Base_HTML}</span>
+							{ADMIN_EXTRAFIELDS_ROW_HTML}
+						</div>
+						<div>
+							<span class="small">{PHP.L.adm_extrafield_params}</span>
+							{ADMIN_EXTRAFIELDS_ROW_PARAMS}
+						</div>
+						<div>
+							<span class="small">{PHP.L.adm_extrafield_selectable_values}</span>
+							{ADMIN_EXTRAFIELDS_ROW_VARIANTS}
+						</div>
+						<div>
+							<span class="small">{PHP.L.adm_extrafield_default}</span>
+							{ADMIN_EXTRAFIELDS_ROW_DEFAULT}
+						</div>
+					</div>
+				<td class="width5 {ADMIN_EXTRAFIELDS_ROW_ODDEVEN}">
 
 					<a title="{PHP.L.Delete}" href="{ADMIN_EXTRAFIELDS_ROW_DEL_URL}" class="ajax negative button"><span class="trash icon"></span>{PHP.L.Delete}</a>
 				</td>
@@ -171,8 +179,8 @@
 			<!-- END: EXTRAFIELDS_ROW -->
 		</table>
 		<div class="action_bar valid">
-				<p class="paging">{ADMIN_EXTRAFIELDS_PAGINATION_PREV}{ADMIN_EXTRAFIELDS_PAGNAV}{ADMIN_EXTRAFIELDS_PAGINATION_NEXT} <span>{PHP.L.Total}: {ADMIN_EXTRAFIELDS_TOTALITEMS}</span></p>
-				<input type="submit" value="{PHP.L.Update}" onclick="location.href='{ADMIN_EXTRAFIELDS_ROW_FORM_URL}'"  class="confirm" />
+			<p class="paging">{ADMIN_EXTRAFIELDS_PAGINATION_PREV}{ADMIN_EXTRAFIELDS_PAGNAV}{ADMIN_EXTRAFIELDS_PAGINATION_NEXT} <span>{PHP.L.Total}: {ADMIN_EXTRAFIELDS_TOTALITEMS}</span></p>
+			<input type="submit" value="{PHP.L.Update}" onclick="location.href='{ADMIN_EXTRAFIELDS_ROW_FORM_URL}'"  class="confirm" />
 		</div>
 	</form>
 </div>
@@ -180,33 +188,47 @@
 <div class="block">
 	<h3>{PHP.L.adm_extrafield_new}:</h3>
 	<form action="{ADMIN_EXTRAFIELDS_URL_FORM_ADD}" method="post">
-		<table class="cells info">
-			<tr>
-				<td class="coltop width30">{PHP.L.extf_Name}</td>
-				<td class="coltop width20">{PHP.L.extf_Type}</td>
-				<td class="coltop width40">{PHP.L.adm_extrafield_params}</td>
-			</tr>
-			<tr id="exnew">
+		<table class="cells info form_table">
+			<tr id="exnew">	
+				<td class="width1"><input type="checkbox" disabled="disabled" checked="checked"></td>
 				<td>
-					{ADMIN_EXTRAFIELDS_NAME}
-					<p class="small">{PHP.L.extf_Description}</p>
+					<div class="row">
+
+						<div>
+							<span class="small">{PHP.L.extf_Name}</span>
+							{ADMIN_EXTRAFIELDS_NAME}
+						</div>
+
+						<div>
+							<span class="small">{PHP.L.extf_Description}</span>
 							{ADMIN_EXTRAFIELDS_DESCRIPTION}
-					<p class="small">{PHP.L.extf_Base_HTML}</p>
-						{ADMIN_EXTRAFIELDS_HTML}	
-				</td>
-				<td>
+						</div>
+						<div>
+							<span class="small">{PHP.L.extf_Type}</span>
 							{ADMIN_EXTRAFIELDS_SELECT}
-					<p class="small">{PHP.L.adm_extrafield_parse}</p>
-						{ADMIN_EXTRAFIELDS_PARSE}
-					<p class="small">{ADMIN_EXTRAFIELDS_REQUIRED}{PHP.L.adm_extrafield_required}</p>
-				</td>
-				<td>
+							<input type="hidden" name="field_parse" value="Text" />
+							<input type="checkbox" name="field_parse" value="HTML" />{PHP.L.adm_extrafield_parse}
+							{ADMIN_EXTRAFIELDS_REQUIRED}{PHP.L.adm_extrafield_required}
+						</div>
+						<div>
+							<span class="small">{PHP.L.extf_Base_HTML}</span>
+							{ADMIN_EXTRAFIELDS_HTML}
+						</div>
+						<div>
+							<span class="small">{PHP.L.adm_extrafield_params}</span>
 							{ADMIN_EXTRAFIELDS_PARAMS}
-					<p class="small">{PHP.L.adm_extrafield_selectable_values}</p>
-							{ADMIN_EXTRAFIELDS_VARIANTS}					
-					<p class="small">{PHP.L.adm_extrafield_default}</p>
-						{ADMIN_EXTRAFIELDS_DEFAULT}
+						</div>
+						<div>
+							<span class="small">{PHP.L.adm_extrafield_selectable_values}</span>
+							{ADMIN_EXTRAFIELDS_VARIANTS}
+						</div>
+						<div>
+							<span class="small">{PHP.L.adm_extrafield_default}</span>
+							{ADMIN_EXTRAFIELDS_DEFAULT}
+						</div>
+					</div>
 				</td>
+				<td class="width5"></td>
 			</tr>
 		</table>
 		<div class="action_bar valid">

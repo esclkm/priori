@@ -570,3 +570,11 @@ span.pagenav_gap{
 .extension_info {
 	margin: 0 10px 0 70px;
 }
+
+.form_table {}
+.form_table div.row { clear: both;}
+.form_table div.row div { float: left; min-width: 200px; width: 18%; max-width: 250px; padding: 0 10px; min-height: 80px;}
+.form_table div.row div.wide { min-width: 300px; width: 30%;}
+.form_table div.row div span {display: block;}
+.form_table div.row div input[type=text], .form_table div.row div textarea, .form_table div.row div select {width: 100%!important;}
+.form_table .oneline {min-height: 50px;}
