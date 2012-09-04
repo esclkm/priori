@@ -181,6 +181,7 @@ ul.table>li {
     display:block;
     line-height:28px;
     text-decoration:none;
+	min-height: 28px;
 }
 
 ul.table>li span {
