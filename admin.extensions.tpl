@@ -39,8 +39,8 @@
 		<li>
 			<span>{PHP.L.Version}:</span>
 
-				<!-- IF {PHP.isinstalled} AND {ADMIN_EXTENSIONS_VERSION} > {ADMIN_EXTENSIONS_VERSION_INSTALLED} -->
-				<span class="highlight_red">{ADMIN_EXTENSIONS_VERSION_INSTALLED}</span> / <span class="highlight_green">{ADMIN_EXTENSIONS_VERSION}</span>
+				<!-- IF {ADMIN_EXTENSIONS_VERSION_INSTALLED} AND {PHP.isinstalled} AND {ADMIN_EXTENSIONS_VERSION} > {ADMIN_EXTENSIONS_VERSION_INSTALLED} -->
+				<strong class="highlight_red">{ADMIN_EXTENSIONS_VERSION_INSTALLED}</strong> / <strong class="highlight_green">{ADMIN_EXTENSIONS_VERSION}</strong>
 				<!-- ELSE -->
 				{ADMIN_EXTENSIONS_VERSION}
 				<!-- ENDIF -->
@@ -94,8 +94,7 @@
 	</ul>
 	</div>
 	<div class="action_bar clear">
-			<!-- IF !{PHP.isinstalled} AND {PHP.dependencies_satisfied} -->
-
+			<!-- IF !{PHP.isinstalled} AND ({PHP.dependencies_satisfied} OR {PHP.cfg.version|str_replace('.','0',$this)} < 907) -->
 	<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_INSTALL_URL}" class="ajax button special positive">
 <span class="check icon"></span>
 		{PHP.L.adm_opt_install}
@@ -289,7 +288,7 @@
 			</td>
 			<td>{ADMIN_EXTENSIONS_CODE_X}</td>
 			<td>
-				<!-- IF {PHP.part_status} != 3 AND {ADMIN_EXTENSIONS_VERSION} > {ADMIN_EXTENSIONS_VERSION_INSTALLED} -->
+				<!-- IF {ADMIN_EXTENSIONS_VERSION_INSTALLED} AND {PHP.part_status} != 3 AND {ADMIN_EXTENSIONS_VERSION} > {ADMIN_EXTENSIONS_VERSION_INSTALLED} -->
 				<span class="highlight_red">{ADMIN_EXTENSIONS_VERSION_INSTALLED}</span> / <span class="highlight_green">{ADMIN_EXTENSIONS_VERSION}</span>
 				<!-- ELSE -->
 				{ADMIN_EXTENSIONS_VERSION}
@@ -299,8 +298,27 @@
 			<td class="centerall">{ADMIN_EXTENSIONS_STATUS}</td>
 			<td class="action">
 				<div class="buttonpanel">
+				<!-- IF {ADMIN_EXTENSIONS_STATUS} == {PHP.R.admin_code_paused} OR {ADMIN_EXTENSIONS_STATUS} == {PHP.R.admin_code_partrunning} -->
+					<!-- IF {PHP.code} -->
+						<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{PHP|cot_url('admin', "m=extensions&a=details&b=unpause")}&{PHP.arg}={PHP.code}" class="button"><span class="icon play"></span>{PHP.L.adm_opt_unpause}</a>
+					<!-- ELSE -->
+						<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{PHP|cot_url('admin', "m=extensions&a=details&b=unpause")}&{PHP.arg}={PHP.x}" class="button"><span class="icon play"></span>{PHP.L.adm_opt_unpause}</a>
+					<!-- ENDIF -->
+				<!-- ENDIF -->
+				<!-- IF {ADMIN_EXTENSIONS_VERSION_INSTALLED} AND {PHP.part_status} != 3 AND {ADMIN_EXTENSIONS_VERSION} > {ADMIN_EXTENSIONS_VERSION_INSTALLED} -->
+					<!-- IF {PHP.code} -->
+						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=update")}&{PHP.arg}={PHP.code}" class="button special positive">
+					<!-- ELSE -->
+						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=update")}&{PHP.arg}={PHP.x}" class="button special positive">
+					<!-- ENDIF -->
+					<span class="check icon"></span>{PHP.L.adm_opt_update}</a>
+				<!-- ENDIF -->
 				<!-- IF {ADMIN_EXTENSIONS_STATUS} == {PHP.R.admin_code_notinstalled} -->
-					<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=install")}&{PHP.arg}={PHP.code}" class="button special positive">
+					<!-- IF {PHP.code} -->
+						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=install")}&{PHP.arg}={PHP.code}" class="button special positive">
+					<!-- ELSE -->
+						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=install")}&{PHP.arg}={PHP.x}" class="button special positive">
+					<!-- ENDIF -->
 					<span class="check icon"></span>{PHP.L.adm_opt_install}</a>
 				<!-- ENDIF -->
 				<!-- IF {ADMIN_EXTENSIONS_TOTALCONFIG} -->
