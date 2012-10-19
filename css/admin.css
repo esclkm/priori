@@ -579,3 +579,15 @@ span.pagenav_gap{
 .form_table div.row div span {display: block;}
 .form_table div.row div input[type=text], .form_table div.row div textarea, .form_table div.row div select {width: 100%!important;}
 .form_table .oneline {min-height: 50px;}
+
+table.cells tr:nth-child(2n) td.group_begin{
+	background-color: #e8e8e8;
+	border-bottom: 1px solid #fdfdfd;
+	border-top: 1px solid #d8d8d4;
+}
+
+table.cells tr:nth-child(2n+1) td.group_begin{
+	background-color: #e8e8e8;
+	border-bottom: 1px solid #ffffff;
+	border-top: 1px solid #dddddd;
+}
