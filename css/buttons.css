@@ -146,7 +146,7 @@ button::-moz-focus-inner {
 button.large { *padding: 4px 17px 2px 17px; }
 
 input[type="text"],input[type="file"], select {
-	height: 18px;
+	height: 26px;
 }
 input[type="text"],input[type="file"],textarea, select {
 	display: inline-block;
