@@ -39,7 +39,7 @@
 		<li>
 			<span>{PHP.L.Version}:</span>
 
-				<!-- IF {ADMIN_EXTENSIONS_VERSION_INSTALLED} AND {PHP.isinstalled} AND {ADMIN_EXTENSIONS_VERSION} > {ADMIN_EXTENSIONS_VERSION_INSTALLED} -->
+				<!-- IF {ADMIN_EXTENSIONS_VERSION_INSTALLED} AND {PHP.isinstalled} AND {ADMIN_EXTENSIONS_VERSION_COMPARE} > 0 -->
 				<strong class="highlight_red">{ADMIN_EXTENSIONS_VERSION_INSTALLED}</strong> / <strong class="highlight_green">{ADMIN_EXTENSIONS_VERSION}</strong>
 				<!-- ELSE -->
 				{ADMIN_EXTENSIONS_VERSION}
@@ -288,7 +288,7 @@
 			</td>
 			<td>{ADMIN_EXTENSIONS_CODE_X}</td>
 			<td>
-				<!-- IF {ADMIN_EXTENSIONS_VERSION_INSTALLED} AND {PHP.part_status} != 3 AND {ADMIN_EXTENSIONS_VERSION} > {ADMIN_EXTENSIONS_VERSION_INSTALLED} -->
+				<!-- IF {ADMIN_EXTENSIONS_VERSION_INSTALLED} AND {PHP.part_status} != 3 AND {ADMIN_EXTENSIONS_VERSION_COMPARE} > 0 -->
 				<span class="highlight_red">{ADMIN_EXTENSIONS_VERSION_INSTALLED}</span> / <span class="highlight_green">{ADMIN_EXTENSIONS_VERSION}</span>
 				<!-- ELSE -->
 				{ADMIN_EXTENSIONS_VERSION}

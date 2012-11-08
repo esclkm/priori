@@ -1,388 +1,328 @@
 .button, button, input[type="submit"], input[type="button"], .valid input[type="submit"].negative {
-	display: inline-block;
-	padding: 5px 6px;
-	font-weight: normal;
-	color: #333333;
-	white-space: nowrap;
-	overflow: visible;
-	cursor: pointer;
-	text-decoration: none;
-	border: 1px solid #d4d4d4;
-	border-radius: 3px;
-	margin: 0 4px 2px 0;
-	outline: none;
-	position: relative;
-	zoom: 1;
-	background: #ececec;
-	font:400 12px/1.11 Helvetica,arial,freesans,clean,sans-serif;
-	background: linear-gradient(#f4f4f4, #ececec) repeat scroll 0 0 transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ececec'); /* для IE6-9 */
-	background: -webkit-linear-gradient(top, bottom, #f4f4f4, #ececec); /* для webkit-браузеров */
-	background: -moz-linear-gradient(top,  #f4f4f4,  #ececec); /* для firefox 3.6+ */
-	background: -o-linear-gradient(top,  #f4f4f4,  #ececec); /* для Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #f4f4f4,  #ececec); /* для IE10+ */	
-	*display: inline;
-	*vertical-align: middle; 
+	display:inline-block;
+	padding:5px 6px;
+	font-weight:normal;
+	color:#333333;
+	white-space:nowrap;
+	overflow:visible;
+	cursor:pointer;
+	text-decoration:none;
+	border:1px solid #d4d4d4;
+	border-radius:3px;
+	margin:0 4px 2px 0;
+	outline:none;
+	position:relative;
+	zoom:1;
+	font:400 12px/1.11 Helvetica, arial, freesans, clean, sans-serif;
+	background:#f4f4f4;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#f4f4f4,endColorstr=#ececec);
+	background:-moz-linear-gradient(top,#f4f4f4,#ececec);
+	background:-ms-linear-gradient(top,#f4f4f4,#ececec);
+	background:-webkit-gradient(linear,left top,left bottom,from(#f4f4f4),to(#ececec));
+	*display:inline;
+	*vertical-align:middle;
 }
-
-.button {
-	-moz-user-select: none;
-}
-
+.button { -moz-user-select:none; }
 button::-moz-focus-inner {
-	border: 0;
-	padding: 0px; }
-
-.button.special, button.special, .valid input[type="submit"] { font-weight: bold; }
-
+	border:0;
+	padding:0px;
+}
+.button.special, button.special, .valid input[type="submit"] { font-weight:bold; }
 .button:hover, button:focus, input[type="submit"]:hover, input[type="button"]:hover, button:hover {
-	color: #FFFFFF;
-	border-color: #388AD4;
-	text-decoration: none;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-	background: #3072b3;
-	background: linear-gradient(#599bdc, #3072b3) repeat scroll 0 0 transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bdc', endColorstr='#3072b3'); /* для IE6-9 */
-	background: -webkit-linear-gradient(top, bottom, #599bdc, #3072b3); /* для webkit-браузеров */
-	background: -moz-linear-gradient(top,  #599bdc,  #3072b3); /* для firefox 3.6+ */
-	background: -o-linear-gradient(top,  #599bdc,  #3072b3); /* для Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #599bdc,  #3072b3); /* для IE10+ */
+	color:#333333;
+	border-color:#388AD4;
+	text-decoration:none;
+	box-shadow:0 1px 1px rgba(0,0,0,0.1);
+	background:#599bdc;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#599bdc,endColorstr=#3072b3);
+	background:-moz-linear-gradient(top,#599bdc,#3072b3);
+	background:-ms-linear-gradient(top,#599bdc,#3072b3);
+	background:-webkit-gradient(linear,left top,left bottom,from(#599bdc),to(#3072b3));
 }
-
 .button:active, button:active, input[type="submit"]:active, input[type="button"]:active, .button.active, button.active, .valid input[type="submit"] {
-	border-color: #347BBA;
-	color: #FFFFFF;
-	background: #3072b3;
-	background: linear-gradient(#599bdc, #3072b3) repeat scroll 0 0 transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bdc', endColorstr='#3072b3'); /* для IE6-9 */
-	background: -webkit-linear-gradient(top, bottom, #599bdc, #3072b3); /* для webkit-браузеров */
-	background: -moz-linear-gradient(top,  #599bdc,  #3072b3); /* для firefox 3.6+ */
-	background: -o-linear-gradient(top,  #599bdc,  #3072b3); /* для Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #599bdc,  #3072b3); /* для IE10+ */
+	border-color:#347BBA;
+	color:#fff;
+	background:#599bdc;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#599bdc,endColorstr=#3072b3);
+	background:-moz-linear-gradient(top,#599bdc,#3072b3);
+	background:-ms-linear-gradient(top,#599bdc,#3072b3);
+	background:-webkit-gradient(linear,left top,left bottom,from(#599bdc),to(#3072b3));
 }
-
-.button:active, button:active { top: 1px }
-
+.button:active, button:active { top:1px; }
 .button.negative:hover, button.negative:hover, .valid input[type="submit"].negative:hover {
-	color: #FFFFFF;
-	border-color: #cd504a;
-	background: #b33630;
-	background: linear-gradient(#dc5f59, #b33630) repeat scroll 0 0 transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc5f59', endColorstr='#b33630'); /* для IE6-9 */
-	background: -webkit-linear-gradient(top, bottom, #dc5f59, #b33630); /* для webkit-браузеров */
-	background: -moz-linear-gradient(top,  #dc5f59,  #b33630); /* для firefox 3.6+ */
-	background: -o-linear-gradient(top,  #dc5f59,  #b33630); /* для Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #dc5f59,  #b33630); /* для IE10+ */
-
+	color:#fff;
+	border-color:#cd504a;
+	background:#dc5f59;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#dc5f59,endColorstr=#b33630);
+	background:-moz-linear-gradient(top,#dc5f59,#b33630);
+	background:-ms-linear-gradient(top,#dc5f59,#b33630);
+	background:-webkit-gradient(linear,left top,left bottom,from(#dc5f59),to(#b33630));
 }
-
 .button.negative:active, button.negative:active, .button.negative.active, button.negative.active {
-	border-color: #74BB5A #74BB5A #509338;	
-	background: #dc5f59;
-	background: linear-gradient(#b33630, #dc5f59) repeat scroll 0 0 transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b33630', endColorstr='#dc5f59'); /* для IE6-9 */
-	background: -webkit-linear-gradient(top, bottom, #b33630, #dc5f59); /* для webkit-браузеров */
-	background: -moz-linear-gradient(top,  #b33630,  #dc5f59); /* для firefox 3.6+ */
-	background: -o-linear-gradient(top,  #b33630,  #dc5f59); /* для Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #b33630,  #dc5f59); /* для IE10+ */
+	color:#fff;
+	border-color:#74BB5A #74BB5A #509338;
+	background:#dc5f59;
+	background:#b33630;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b33630,endColorstr=#dc5f59);
+	background:-moz-linear-gradient(top,#b33630,#dc5f59);
+	background:-ms-linear-gradient(top,#b33630,#dc5f59);
+	background:-webkit-gradient(linear,left top,left bottom,from(#b33630),to(#dc5f59));
 }
-
 .button.positive:hover, button.positive:hover, .valid input[type="submit"]:hover, .button.special:hover, button.special:hover {
-	color: #fff;
-	border-color: #74BB5A #74BB5A #509338;
-	background: #4c8b36;
-	background: linear-gradient(#69d344, #4c8b36) repeat scroll 0 0 transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#69d344', endColorstr='#4c8b36'); /* для IE6-9 */
-	background: -webkit-linear-gradient(top, bottom, #69d344, #4c8b36); /* для webkit-браузеров */
-	background: -moz-linear-gradient(top,  #69d344,  #4c8b36); /* для firefox 3.6+ */
-	background: -o-linear-gradient(top,  #69d344,  #4c8b36); /* для Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #69d344,  #4c8b36); /* для IE10+ */	
+	color:#fff;
+	border-color:#74BB5A #74BB5A #509338;
+	background:#69d344;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#69d344,endColorstr=#4c8b36);
+	background:-moz-linear-gradient(top,#69d344,#4c8b36);
+	background:-ms-linear-gradient(top,#69d344,#4c8b36);
+	background:-webkit-gradient(linear,left top,left bottom,from(#69d344),to(#4c8b36));
 }
-
-.button.positive:active, button.positive:active, .button.positive.active, button.positive.active, .valid input[type="submit"]   {
-	border-color: #74BB5A #74BB5A #509338;
-	background: #60B044;
-	background: linear-gradient(#8ADD6D, #60B044) repeat scroll 0 0 transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8ADD6D', endColorstr='#60B044'); /* для IE6-9 */
-	background: -webkit-linear-gradient(top, bottom, #8ADD6D, #60B044); /* для webkit-браузеров */
-	background: -moz-linear-gradient(top,  #8ADD6D,  #60B044); /* для firefox 3.6+ */
-	background: -o-linear-gradient(top,  #8ADD6D,  #60B044); /* для Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #8ADD6D,  #60B044); /* для IE10+ */	
+.button.positive:active, button.positive:active, .button.positive.active, button.positive.active, .valid input[type="submit"] {
+	color:#fff;
+	border-color:#74BB5A #74BB5A #509338;
+	background:#8add6d;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#8add6d,endColorstr=#60b044);
+	background:-moz-linear-gradient(top,#8add6d,#60b044);
+	background:-ms-linear-gradient(top,#8add6d,#60b044);
+	background:-webkit-gradient(linear,left top,left bottom,from(#8add6d),to(#60b044));
 }
-
 .button.pill, button.pill {
-	border-radius: 19px;
-	padding: 5px 10px 4px 10px;
-	*padding: 4px 10px; }
-
+	border-radius:19px;
+	padding:5px 10px 4px 10px;
+	*padding:4px 10px;
+}
 .button.left, button.left {
-	border-bottom-right-radius: 0px;
-	border-top-right-radius: 0px;
-	margin-right: 0px;
-	border-right: none; }
-
+	border-bottom-right-radius:0px;
+	border-top-right-radius:0px;
+	margin-right:0px;
+	border-right:none;
+}
 .button.middle, button.middle {
-	margin-right: 0px;
-	margin-left: 0px;
-	border-radius: 0px;
-	border-right: none; }
-
+	margin-right:0px;
+	margin-left:0px;
+	border-radius:0px;
+	border-right:none;
+}
 .button.right, button.right {
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-	margin-left: 0px; }
-
-.button.left:active, button.left:active, .button.middle:active, button.middle:active, .button.right:active, button.right:active { top: 0px }
-
+	border-top-left-radius:0px;
+	border-bottom-left-radius:0px;
+	margin-left:0px;
+}
+.button.left:active, button.left:active, .button.middle:active, button.middle:active, .button.right:active, button.right:active { top:0px; }
 .button.large, button.large {
-	font-size: 14px;
-	padding-left: 14px;
-	padding-right: 17px; 
-	margin: 2px 7px;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.075);
+	font-size:14px;
+	padding-left:14px;
+	padding-right:17px;
+	margin:2px 7px;
+	box-shadow:0 1px 4px rgba(0,0,0,0.1);
+	text-shadow:0 -1px 0 rgba(0,0,0,0.075);
 }
-
-button.large { *padding: 4px 17px 2px 17px; }
-
-input[type="text"],input[type="file"], select {
-	height: 26px;
+button.large { *padding:4px 17px 2px 17px; }
+input[type="text"], input[type="file"], select { height:26px; }
+input[type="text"], input[type="file"], textarea, select {
+	display:inline-block;
+	font:13px/1.4 Helvetica, arial, freesans, clean, sans-serif;
+	padding:3px;
+	margin-bottom:4px;
+	line-height:18px;
+	color:#555555;
+	border:1px solid #cccccc;
+	border-radius:3px;
 }
-input[type="text"],input[type="file"],textarea, select {
-	display: inline-block;
-	font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif;
-	padding: 3px;
-	margin-bottom: 4px;
-	line-height: 18px;
-	color: #555555;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
+input[type="text"], textarea, select {
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition:border linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition:border linear 0.2s, box-shadow linear 0.2s;
+	-ms-transition:border linear 0.2s, box-shadow linear 0.2s;
+	-o-transition:border linear 0.2s, box-shadow linear 0.2s;
+	transition:border linear 0.2s, box-shadow linear 0.2s;
+	max-width:700px;
 }
-input[type="text"],textarea, select {
-	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-	-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
-	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
-	transition: border linear 0.2s, box-shadow linear 0.2s;
-	max-width: 700px;
+input[type="text"]:focus, textarea:focus, select:focus {
+	border-color:rgba(82,168,236,0.8);
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075), 0 0 4px rgba(82,168,236,0.6);
+	-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075), 0 0 4px rgba(82,168,236,0.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,0.075), 0 0 4px rgba(82,168,236,0.6);
 }
-input[type="text"]:focus,textarea:focus,select:focus {
-	border-color: rgba(82, 168, 236, 0.8);
-	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
-	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
-}
-
 select, input[type="file"] {
-	height: 26px;
-	line-height: 26px;
+	height:26px;
+	line-height:26px;
 }
-
-select {
-	min-width: 150px;
-
+select { min-width:150px; }
+select[multiple], select[size] { height:auto; }
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+	background-color:#eeeeee;
+	border-color:#ddd;
+	cursor:not-allowed;
 }
-select[multiple], select[size] {
-	height: auto;
+#saveconfig input[type=text], #saveconfig textarea { width:98%; }
+.button span.icon {
+	display:inline-block;
+	position:relative;
+	top:1px;
+	background-image:url('../img/buttons.png');
+	background-color:transparent;
+	background-repeat:no-repeat;
+	height:13px;
+	margin:auto 4px auto 0px;
+	width:13px;
 }
-
-input[disabled],select[disabled],textarea[disabled],input[readonly],select[readonly],textarea[readonly] {
-	background-color: #eeeeee;
-	border-color: #ddd;
-	cursor: not-allowed;
-}
-
-#saveconfig input[type=text], #saveconfig textarea {
-	width: 98%;
-}
-
-.button span.icon { 
-	display: inline-block;
-	position: relative;
-	top: 1px;
-	background-image: url('../img/buttons.png'); 
-	background-color: transparent; 
-	background-repeat: no-repeat; 
-	height: 13px; 
-	margin: auto 4px auto 0px;
-	width: 13px; 
-} 
-
-a.big.button span.icon, button.big span.icon { top: 0px }
-
-.button span.icon.fullscreen {background-position: 0px 0px;}
-.button:hover span.icon.fullscreen {background-position: 0px -13px;}
-.button span.icon.folder {background-position: -13px 0px;}
-.button:hover span.icon.folder {background-position: -13px -13px;}
-.button span.icon.cloud {background-position: -26px 0px;}
-.button:hover span.icon.cloud {background-position: -26px -13px;}
-
-.button span.icon.pin {background-position: -39px 0px;}
-.button:hover span.icon.pin {background-position: -39px -13px;}
-.button span.icon.ribbon {background-position: -52px 0px;}
-.button:hover span.icon.ribbon {background-position: -52px -13px;}
-.button span.icon.file {background-position: -65px 0px;}
-.button:hover span.icon.file {background-position: -65px -13px;}
-
-.button span.icon.sync {background-position: -78px 0px;}
-.button:hover span.icon.sync {background-position: -78px -13px;}
-.button span.icon.stop {background-position: -91px 0px;}
-.button:hover span.icon.stop {background-position: -91px -13px;}
-.button span.icon.check {background-position: -104px 0px;}
-.button:hover span.icon.check {background-position: -104px -13px;}
-
-.button span.icon.lock {background-position: -117px 0px;}
-.button:hover span.icon.lock {background-position: -117px -13px;}
-.button span.icon.cross {background-position: -130px 0px;}
-.button:hover span.icon.cross {background-position: -130px -13px;}
-.button span.icon.add {background-position: -143px 0px;}
-.button:hover span.icon.add {background-position: -143px -13px;}
-
-.button span.icon.home {background-position: -156px 0px;}
-.button:hover span.icon.home {background-position: -156px -13px;}
-.button span.icon.inbox {background-position: -169px 0px;}
-.button:hover span.icon.inbox {background-position: -169px -13px;}
-.button span.icon.refresh {background-position: -182px 0px;}
-.button:hover span.icon.refresh {background-position: -182px -13px;}
-
-.button span.icon.admin {background-position: -195px 0px;}
-.button:hover span.icon.admin {background-position: -195px -13px;}
-.button span.icon.trash {background-position: -208px 0px;}
-.button:hover span.icon.trash {background-position: -208px -13px;}
-.button span.icon.user {background-position: -221px 0px;}
-.button:hover span.icon.user {background-position: -221px -13px;}
-
-.button span.icon.flag {background-position: -234px 0px;}
-.button:hover span.icon.flag {background-position: -234px -13px;}
-.button span.icon.eye {background-position: -247px 0px;}
-.button:hover span.icon.eye {background-position: -247px -13px;}
-.button span.icon.view {background-position: -260px 0px;}
-.button:hover span.icon.view {background-position: -260px -13px;}
-
-.button span.icon.list {background-position: -273px 0px;}
-.button:hover span.icon.list {background-position: -273px -13px;}
-.button span.icon.clock {background-position: -286px 0px;}
-.button:hover span.icon.clock {background-position: -286px -13px;}
-.button span.icon.play {background-position: -299px 0px;}
-.button:hover span.icon.play {background-position: -299px -13px;}
-
-.button span.icon.options {background-position: -312px 0px;}
-.button:hover span.icon.options {background-position: -312px -13px;}
-.button span.icon.mag {background-position: -325px 0px;}
-.button:hover span.icon.mag {background-position: -325px -13px;}
-.button span.icon.bell {background-position: -338px 0px;}
-.button:hover span.icon.bell {background-position: -338px -13px;}
-
-.button span.icon.clip {background-position: -351px 0px;}
-.button:hover span.icon.clip {background-position: -351px -13px;}
-.button span.icon.comments {background-position: -364px 0px;}
-.button:hover span.icon.coments {background-position: -364px -13px;}
-.button span.icon.compose {background-position: -377px 0px;}
-.button:hover span.icon.compose {background-position: -377px -13px;}
-
-.button span.icon.signal {background-position: -390px 0px;}
-.button:hover span.icon.signal {background-position: -390px -13px;}
-.button span.icon.pinbig {background-position: -403px 0px;}
-.button:hover span.icon.pinbig {background-position: -403px -13px;}
-.button span.icon.cog {background-position: -416px 0px;}
-.button:hover span.icon.cog {background-position: -416px -13px;}
-
-.button span.icon.bolt {background-position: -429px 0px;}
-.button:hover span.icon.bolt {background-position: -429px -13px;}
-.button span.icon.pen {background-position: -442px 0px;}
-.button:hover span.icon.pen {background-position: -442px -13px;}
-.button span.icon.stats {background-position: -455px 0px;}
-.button:hover span.icon.stats {background-position: -455px -13px;} 
-
-
+a.big.button span.icon, button.big span.icon { top:0px; }
+.button span.icon.fullscreen { background-position:0px 0px; }
+.button:hover span.icon.fullscreen { background-position:0px -13px; }
+.button span.icon.folder { background-position:-13px 0px; }
+.button:hover span.icon.folder { background-position:-13px -13px; }
+.button span.icon.cloud { background-position:-26px 0px; }
+.button:hover span.icon.cloud { background-position:-26px -13px; }
+.button span.icon.pin { background-position:-39px 0px; }
+.button:hover span.icon.pin { background-position:-39px -13px; }
+.button span.icon.ribbon { background-position:-52px 0px; }
+.button:hover span.icon.ribbon { background-position:-52px -13px; }
+.button span.icon.file { background-position:-65px 0px; }
+.button:hover span.icon.file { background-position:-65px -13px; }
+.button span.icon.sync { background-position:-78px 0px; }
+.button:hover span.icon.sync { background-position:-78px -13px; }
+.button span.icon.stop { background-position:-91px 0px; }
+.button:hover span.icon.stop { background-position:-91px -13px; }
+.button span.icon.check { background-position:-104px 0px; }
+.button:hover span.icon.check { background-position:-104px -13px; }
+.button span.icon.lock { background-position:-117px 0px; }
+.button:hover span.icon.lock { background-position:-117px -13px; }
+.button span.icon.cross { background-position:-130px 0px; }
+.button:hover span.icon.cross { background-position:-130px -13px; }
+.button span.icon.add { background-position:-143px 0px; }
+.button:hover span.icon.add { background-position:-143px -13px; }
+.button span.icon.home { background-position:-156px 0px; }
+.button:hover span.icon.home { background-position:-156px -13px; }
+.button span.icon.inbox { background-position:-169px 0px; }
+.button:hover span.icon.inbox { background-position:-169px -13px; }
+.button span.icon.refresh { background-position:-182px 0px; }
+.button:hover span.icon.refresh { background-position:-182px -13px; }
+.button span.icon.admin { background-position:-195px 0px; }
+.button:hover span.icon.admin { background-position:-195px -13px; }
+.button span.icon.trash { background-position:-208px 0px; }
+.button:hover span.icon.trash { background-position:-208px -13px; }
+.button span.icon.user { background-position:-221px 0px; }
+.button:hover span.icon.user { background-position:-221px -13px; }
+.button span.icon.flag { background-position:-234px 0px; }
+.button:hover span.icon.flag { background-position:-234px -13px; }
+.button span.icon.eye { background-position:-247px 0px; }
+.button:hover span.icon.eye { background-position:-247px -13px; }
+.button span.icon.view { background-position:-260px 0px; }
+.button:hover span.icon.view { background-position:-260px -13px; }
+.button span.icon.list { background-position:-273px 0px; }
+.button:hover span.icon.list { background-position:-273px -13px; }
+.button span.icon.clock { background-position:-286px 0px; }
+.button:hover span.icon.clock { background-position:-286px -13px; }
+.button span.icon.play { background-position:-299px 0px; }
+.button:hover span.icon.play { background-position:-299px -13px; }
+.button span.icon.options { background-position:-312px 0px; }
+.button:hover span.icon.options { background-position:-312px -13px; }
+.button span.icon.mag { background-position:-325px 0px; }
+.button:hover span.icon.mag { background-position:-325px -13px; }
+.button span.icon.bell { background-position:-338px 0px; }
+.button:hover span.icon.bell { background-position:-338px -13px; }
+.button span.icon.clip { background-position:-351px 0px; }
+.button:hover span.icon.clip { background-position:-351px -13px; }
+.button span.icon.comments { background-position:-364px 0px; }
+.button:hover span.icon.coments { background-position:-364px -13px; }
+.button span.icon.compose { background-position:-377px 0px; }
+.button:hover span.icon.compose { background-position:-377px -13px; }
+.button span.icon.signal { background-position:-390px 0px; }
+.button:hover span.icon.signal { background-position:-390px -13px; }
+.button span.icon.pinbig { background-position:-403px 0px; }
+.button:hover span.icon.pinbig { background-position:-403px -13px; }
+.button span.icon.cog { background-position:-416px 0px; }
+.button:hover span.icon.cog { background-position:-416px -13px; }
+.button span.icon.bolt { background-position:-429px 0px; }
+.button:hover span.icon.bolt { background-position:-429px -13px; }
+.button span.icon.pen { background-position:-442px 0px; }
+.button:hover span.icon.pen { background-position:-442px -13px; }
+.button span.icon.stats { background-position:-455px 0px; }
+.button:hover span.icon.stats { background-position:-455px -13px; }
 a.thumbicons {
-	color: #666;
-	position: relative;
-	margin: 5px;
-	padding: 10px 5px 5px 50px;
-	text-align: left;
-	text-decoration: none;
-	zoom: 1;	
-	vertical-align: middle;
-	border: 1px solid transparent;
-	float: left;
+	color:#666;
+	position:relative;
+	margin:5px;
+	padding:10px 5px 5px 50px;
+	text-align:left;
+	text-decoration:none;
+	zoom:1;
+	vertical-align:middle;
+	border:1px solid transparent;
+	float:left;
 	width:160px;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-	height: 30px;
-	-webkit-transition: background linear 0.2s, box-shadow linear 0.2s;
-	-moz-transition: background linear 0.2s, box-shadow linear 0.2s;
-	-ms-transition: background linear 0.2s, box-shadow linear 0.2s;
-	-o-transition: background linear 0.2s, box-shadow linear 0.2s;
-	transition: background linear 0.2s, box-shadow linear 0.2s;
+	text-shadow:0 1px 0 rgba(0,0,0,0.1);
+	height:30px;
+	-webkit-transition:background linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition:background linear 0.2s, box-shadow linear 0.2s;
+	-ms-transition:background linear 0.2s, box-shadow linear 0.2s;
+	-o-transition:background linear 0.2s, box-shadow linear 0.2s;
+	transition:background linear 0.2s, box-shadow linear 0.2s;
 }
 a.thumbicons img {
-	position: absolute;
-	top: 8px;
-	left: 10px;
-	text-align: center;
-	display: block;
-} 
+	position:absolute;
+	top:8px;
+	left:10px;
+	text-align:center;
+	display:block;
+}
 a.thumbicons span {
-	position: relative;
-	display: block;
-	color: #999;
+	position:relative;
+	display:block;
+	color:#999;
 	font-size:0.9em;
 }
-
-a.thumbicons:hover, a.thumbicons.special{
-	background-color: #EBEBEB;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(whiteSmoke), to(#EBEBEB));
-	background-image: -webkit-linear-gradient(top, whiteSmoke, #EBEBEB);
-	background-image: -moz-linear-gradient(top, whiteSmoke, #EBEBEB);
-	background-image: -o-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: -ms-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: linear-gradient(top, #F5F5F5, #EBEBEB);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f5f5', EndColorStr='#ebebeb');
-	border: 1px solid #C4C4C4;
-	border-radius: 3px;
-	text-decoration: none;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(0, 0, 0, 0.1);
+a.thumbicons:hover, a.thumbicons.special {
+	background-color:#EBEBEB;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(whiteSmoke),to(#EBEBEB));
+	background-image:-webkit-linear-gradient(top,whiteSmoke,#EBEBEB);
+	background-image:-moz-linear-gradient(top,whiteSmoke,#EBEBEB);
+	background-image:-o-linear-gradient(top,#F5F5F5,#EBEBEB);
+	background-image:-ms-linear-gradient(top,#F5F5F5,#EBEBEB);
+	background-image:linear-gradient(top,#F5F5F5,#EBEBEB);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f5f5',EndColorStr='#ebebeb');
+	border:1px solid #C4C4C4;
+	border-radius:3px;
+	text-decoration:none;
+	box-shadow:0 1px 3px rgba(0,0,0,0.2), inset 0 1px 0 rgba(0,0,0,0.1);
 }
-
-
 a.quick-action {
-    background-color:#EBEBEB;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(#EBEBEB));
-	background-image: -webkit-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: -moz-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: -o-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: -ms-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: linear-gradient(top, #F5F5F5, #EBEBEB);
-    border:1px solid #C4C4C4;
-    border-radius:3px 3px 3px 3px;
-    box-shadow:0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 0 #fff rgba(0, 0, 0, 0.1);
-    color:#666666;
-    display:inline-block;
-    font-size:11px;
-    line-height:20px;
-    margin-right:3px;
-    padding:5px 18px;
-    text-align:center;
-    text-decoration:none;
-	min-width: 70px;
+	background-color:#EBEBEB;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#F5F5F5),to(#EBEBEB));
+	background-image:-webkit-linear-gradient(top,#F5F5F5,#EBEBEB);
+	background-image:-moz-linear-gradient(top,#F5F5F5,#EBEBEB);
+	background-image:-o-linear-gradient(top,#F5F5F5,#EBEBEB);
+	background-image:-ms-linear-gradient(top,#F5F5F5,#EBEBEB);
+	background-image:linear-gradient(top,#F5F5F5,#EBEBEB);
+	border:1px solid #C4C4C4;
+	border-radius:3px 3px 3px 3px;
+	box-shadow:0 1px 3px rgba(0,0,0,0.2), 0 1px 0 #fff rgba(0,0,0,0.1);
+	color:#666666;
+	display:inline-block;
+	font-size:11px;
+	line-height:20px;
+	margin-right:3px;
+	padding:5px 18px;
+	text-align:center;
+	text-decoration:none;
+	min-width:70px;
 }
 a.quick-action:hover {
 	background-color:#fff;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f5f5));
-	background-image: -webkit-linear-gradient(top, #fff, #f5f5f5);
-	background-image: -moz-linear-gradient(top, #fff, #f5f5f5);
-	background-image: -o-linear-gradient(top, #fff, #f5f5f5);
-	background-image: -ms-linear-gradient(top, #fff, #f5f5f5);
-	background-image: linear-gradient(top, #fff, #f5f5f5);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#f5f5f5));
+	background-image:-webkit-linear-gradient(top,#fff,#f5f5f5);
+	background-image:-moz-linear-gradient(top,#fff,#f5f5f5);
+	background-image:-o-linear-gradient(top,#fff,#f5f5f5);
+	background-image:-ms-linear-gradient(top,#fff,#f5f5f5);
+	background-image:linear-gradient(top,#fff,#f5f5f5);
 	color:#4f4f4f;
-	text-decoration:none;	
+	text-decoration:none;
 }
-
 a.quick-action span {
-    display:block;
-    height:32px;
-    padding:0px 0px 2px;
+	display:block;
+	height:32px;
+	padding:0px 0px 2px;
 }
