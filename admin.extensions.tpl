@@ -95,21 +95,18 @@
 	</div>
 	<div class="action_bar clear">
 			<!-- IF !{PHP.isinstalled} AND ({PHP.dependencies_satisfied} OR {PHP.cfg.version|str_replace('.','0',$this)} < 907) -->
-	<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_INSTALL_URL}" class="ajax button special positive">
-<span class="check icon"></span>
+	<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_INSTALL_URL}" class="ajax button special positive check icon">
 		{PHP.L.adm_opt_install}
 	</a>
 	<!-- ENDIF -->
 	<!-- IF {PHP.isinstalled} -->
 	<!-- IF {PHP.exists} -->
 
-	<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_UPDATE_URL}" class="ajax button special positive">
-<span class="check icon"></span>
+	<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_UPDATE_URL}" class="ajax button special positive check icon">
 		{PHP.L.adm_opt_update}
 	</a>
 	<!-- ENDIF -->
-	<a title="{PHP.L.adm_opt_uninstall_explain}" href="{ADMIN_EXTENSIONS_UNINSTALL_CONFIRM_URL|cot_confirm_url('$this', 'admin')}" class="confirmLink  negative button">
-<span class="cross icon"></span>
+	<a title="{PHP.L.adm_opt_uninstall_explain}" href="{ADMIN_EXTENSIONS_UNINSTALL_CONFIRM_URL|cot_confirm_url('$this', 'admin')}" class="confirmLink  negative button cross icon">
 		{PHP.L.adm_opt_uninstall}
 	</a>
 	<!-- ENDIF -->
@@ -118,7 +115,7 @@
 <!-- IF {PHP.isinstalled} AND {PHP.exists} -->
 <div class="quick-actions">
 		<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL} -->
-		<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="quick-action">
+		<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="quick-action file icon">
 			<span class="file icon"><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/document.png"/></span>{PHP.L.Open}</a>
 		<!-- ENDIF -->
 		<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS} -->
@@ -170,10 +167,10 @@
 				&ndash;
 				<!-- END: ROW_PART_NOTINSTALLED -->
 				<!-- BEGIN: ROW_PART_PAUSE -->
-				<a href="{ADMIN_EXTENSIONS_DETAILS_ROW_PAUSEPART_URL}" class="ajax button"><span class="icon stop"></span>{PHP.L.adm_opt_pause}</a>
+				<a href="{ADMIN_EXTENSIONS_DETAILS_ROW_PAUSEPART_URL}" class="ajax button icon stop">{PHP.L.adm_opt_pause}</a>
 				<!-- END: ROW_PART_PAUSE -->
 				<!-- BEGIN: ROW_PART_UNPAUSE -->
-				<a href="{ADMIN_EXTENSIONS_DETAILS_ROW_UNPAUSEPART_URL}" class="ajax button"><span class="icon play"></span>{PHP.L.adm_opt_unpause}</a>
+				<a href="{ADMIN_EXTENSIONS_DETAILS_ROW_UNPAUSEPART_URL}" class="ajax button icon play">{PHP.L.adm_opt_unpause}</a>
 				<!-- END: ROW_PART_UNPAUSE -->
 			</td>
 		</tr>
@@ -182,9 +179,9 @@
 	<div class="action_bar textright paddingright10">
 	<!-- IF {PHP.isinstalled} -->
 		<!-- IF {PHP.exists} -->
-		<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{ADMIN_EXTENSIONS_UNPAUSE_URL}" class="ajax button"><span class="icon play"></span>{PHP.L.adm_opt_unpauseall}</a>
+		<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{ADMIN_EXTENSIONS_UNPAUSE_URL}" class="ajax button icon play">{PHP.L.adm_opt_unpauseall}</a>
 		<!-- ENDIF -->
-		<a title="{PHP.L.adm_opt_pauseall_explain}" href="{ADMIN_EXTENSIONS_PAUSE_URL}" class="ajax button"><span class="icon stop"></span>{PHP.L.adm_opt_pauseall}</a>
+		<a title="{PHP.L.adm_opt_pauseall_explain}" href="{ADMIN_EXTENSIONS_PAUSE_URL}" class="ajax button icon stop">{PHP.L.adm_opt_pauseall}</a>
 	<!-- ENDIF -->
 	</div>
 </div>
@@ -300,41 +297,41 @@
 				<div class="buttonpanel">
 				<!-- IF {ADMIN_EXTENSIONS_STATUS} == {PHP.R.admin_code_paused} OR {ADMIN_EXTENSIONS_STATUS} == {PHP.R.admin_code_partrunning} -->
 					<!-- IF {PHP.code} -->
-						<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{PHP|cot_url('admin', "m=extensions&a=details&b=unpause")}&{PHP.arg}={PHP.code}" class="button"><span class="icon play"></span>{PHP.L.adm_opt_unpause}</a>
+						<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{PHP|cot_url('admin', "m=extensions&a=details&b=unpause")}&{PHP.arg}={PHP.code}" class="button icon play">{PHP.L.adm_opt_unpause}</a>
 					<!-- ELSE -->
-						<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{PHP|cot_url('admin', "m=extensions&a=details&b=unpause")}&{PHP.arg}={PHP.x}" class="button"><span class="icon play"></span>{PHP.L.adm_opt_unpause}</a>
+						<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{PHP|cot_url('admin', "m=extensions&a=details&b=unpause")}&{PHP.arg}={PHP.x}" class="button icon play">{PHP.L.adm_opt_unpause}</a>
 					<!-- ENDIF -->
 				<!-- ENDIF -->
 				<!-- IF {ADMIN_EXTENSIONS_VERSION_INSTALLED} AND {PHP.part_status} != 3 AND {ADMIN_EXTENSIONS_VERSION} > {ADMIN_EXTENSIONS_VERSION_INSTALLED} -->
 					<!-- IF {PHP.code} -->
-						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=update")}&{PHP.arg}={PHP.code}" class="button special positive">
+						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=update")}&{PHP.arg}={PHP.code}" class="button special positive check icon">
 					<!-- ELSE -->
-						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=update")}&{PHP.arg}={PHP.x}" class="button special positive">
+						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=update")}&{PHP.arg}={PHP.x}" class="button special positive check icon">
 					<!-- ENDIF -->
-					<span class="check icon"></span>{PHP.L.adm_opt_update}</a>
+					{PHP.L.adm_opt_update}</a>
 				<!-- ENDIF -->
 				<!-- IF {ADMIN_EXTENSIONS_STATUS} == {PHP.R.admin_code_notinstalled} -->
 					<!-- IF {PHP.code} -->
-						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=install")}&{PHP.arg}={PHP.code}" class="button special positive">
+						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=install")}&{PHP.arg}={PHP.code}" class="button special positive check icon">
 					<!-- ELSE -->
-						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=install")}&{PHP.arg}={PHP.x}" class="button special positive">
+						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=install")}&{PHP.arg}={PHP.x}" class="button special positive check icon">
 					<!-- ENDIF -->
-					<span class="check icon"></span>{PHP.L.adm_opt_install}</a>
+					{PHP.L.adm_opt_install}</a>
 				<!-- ENDIF -->
 				<!-- IF {ADMIN_EXTENSIONS_TOTALCONFIG} -->
-				<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_EDIT_URL}" class="button"><span class="cog icon"></span>{PHP.L.short_config}</a>
+				<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_EDIT_URL}" class="button cog icon">{PHP.L.short_config}</a>
 				<!-- ENDIF -->
 				<!-- IF {PHP.ifstruct} -->
-				<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="button"><span class="folder icon"></span>{PHP.L.short_struct}</a>
+				<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="button folder icon">{PHP.L.short_struct}</a>
 				<!-- ENDIF -->
 				<!-- IF {PHP.totalinstalled} -->
-				<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS_URL}" class="button"><span class="lock icon"></span>{PHP.L.short_rights}</a>
+				<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS_URL}" class="button lock icon">{PHP.L.short_rights}</a>
 				<!-- ENDIF -->
 				<!-- IF {PHP.ifthistools} -->
-				<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="button special"><span class="icon bolt"></span>{PHP.L.short_admin}</a>
+				<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="button special icon bolt">{PHP.L.short_admin}</a>
 				<!-- ENDIF -->
 				<!-- IF {PHP.if_plg_standalone} -->
-				<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="button special"><span class="file icon"></span>{PHP.L.Open}</a>
+				<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="button special file icon">{PHP.L.Open}</a>
 				<!-- ENDIF -->
 				</div>
 			</td>

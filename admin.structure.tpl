@@ -110,13 +110,13 @@
 					<td class="centerall {ADMIN_STRUCTURE_ODDEVEN}">{ADMIN_STRUCTURE_COUNT}</td>
 					<td class="action {ADMIN_STRUCTURE_ODDEVEN}">
 						<div class="buttonpanel">
-							<!-- IF {ADMIN_STRUCTURE_OPTIONS_URL} --><a href="{ADMIN_STRUCTURE_OPTIONS_URL}" title="{PHP.L.Edit}" class="ajax button"><span class="options icon"></span>{PHP.L.Edit}</a><!-- ENDIF -->
-							<!-- IF {ADMIN_STRUCTURE_CONFIG_URL} --><a href="{ADMIN_STRUCTURE_CONFIG_URL}" title="{PHP.L.short_config}" class="button"><span class="cog icon"></span>{PHP.L.short_config}</a><!-- ENDIF -->
-							<!-- IF {ADMIN_STRUCTURE_RIGHTS_URL} --><a href="{ADMIN_STRUCTURE_RIGHTS_URL}" title="{PHP.L.short_rights}" class="button"><span class="lock icon"></span>{PHP.L.short_rights}</a><!-- ENDIF -->
-							<!-- IF {ADMIN_STRUCTURE_JUMPTO_URL} --><a href="{ADMIN_STRUCTURE_JUMPTO_URL}" title="{PHP.L.short_open}" class="button special positive"><span class="file icon"></span>{PHP.L.short_open}</a><!-- ENDIF -->
-							<!-- IF {PHP.n} == 'page' --><a href="{PHP.structure_code|cot_url('page', 'm=add&c=$this')}" title="{PHP.L.Add}" class="button"><span class="icon add"></span>{PHP.L.Add}</a><!-- ENDIF -->
+							<!-- IF {ADMIN_STRUCTURE_OPTIONS_URL} --><a href="{ADMIN_STRUCTURE_OPTIONS_URL}" title="{PHP.L.Edit}" class="ajax button options icon">{PHP.L.Edit}</a><!-- ENDIF -->
+							<!-- IF {ADMIN_STRUCTURE_CONFIG_URL} --><a href="{ADMIN_STRUCTURE_CONFIG_URL}" title="{PHP.L.short_config}" class="button cog icon">{PHP.L.short_config}</a><!-- ENDIF -->
+							<!-- IF {ADMIN_STRUCTURE_RIGHTS_URL} --><a href="{ADMIN_STRUCTURE_RIGHTS_URL}" title="{PHP.L.short_rights}" class="button lock icon">{PHP.L.short_rights}</a><!-- ENDIF -->
+							<!-- IF {ADMIN_STRUCTURE_JUMPTO_URL} --><a href="{ADMIN_STRUCTURE_JUMPTO_URL}" title="{PHP.L.short_open}" class="button special positive file icon">{PHP.L.short_open}</a><!-- ENDIF -->
+							<!-- IF {PHP.n} == 'page' --><a href="{PHP.structure_code|cot_url('page', 'm=add&c=$this')}" title="{PHP.L.Add}" class="button icon add">{PHP.L.Add}</a><!-- ENDIF -->
 							
-							<!-- IF {PHP.dozvil} --><a href="{ADMIN_STRUCTURE_UPDATE_DEL_URL}" title="{PHP.L.short_delete}" class="confirmLink negative button"><span class="trash icon"></span>{PHP.L.short_delete}</a><!-- ENDIF -->
+							<!-- IF {PHP.dozvil} --><a href="{ADMIN_STRUCTURE_UPDATE_DEL_URL}" title="{PHP.L.short_delete}" class="confirmLink negative button trash icon">{PHP.L.short_delete}</a><!-- ENDIF -->
 						</div>
 					</td>
 				</tr>

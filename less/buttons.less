@@ -4,7 +4,7 @@
 
 @clr_btn_hover_grd_from: #599bdc;
 @clr_btn_hover_grd_to: #3072b3;
-@clr_btn_hover_text: #333333;
+@clr_btn_hover_text: #fff;
 
 @clr_btn_active_grd_from: #599bdc;
 @clr_btn_active_grd_to: #3072b3;
@@ -28,7 +28,7 @@
 
 .button, button, input[type="submit"], input[type="button"], .valid input[type="submit"].negative {
 	display: inline-block;
-	padding: 5px 6px;
+	padding: 5px 7px;
 	font-weight: normal;
 	color: @clr_btn_text;
 	white-space: nowrap;
@@ -36,7 +36,7 @@
 	cursor: pointer;
 	text-decoration: none;
 	border: 1px solid #d4d4d4;
-	border-radius: 3px;
+	border-radius: 2px;
 	margin: 0 4px 2px 0;
 	outline: none;
 	position: relative;
@@ -69,9 +69,8 @@ button::-moz-focus-inner {
 	border-color: #347BBA;
 	color: @clr_btn_active_text;
 	.background-gradient(@clr_btn_active_grd_from, @clr_btn_active_grd_to);
+    top: 1px;
 }
-
-.button:active, button:active { top: 1px }
 
 .button.negative:hover, button.negative:hover, .valid input[type="submit"].negative:hover {
 	color: @clr_btn_neg_hover_text;
@@ -98,11 +97,6 @@ button::-moz-focus-inner {
 	.background-gradient(@clr_btn_pos_active_grd_from, @clr_btn_pos_active_grd_to);		
 }
 
-.button.pill, button.pill {
-	border-radius: 19px;
-	padding: 5px 10px 4px 10px;
-	*padding: 4px 10px; }
-
 .button.left, button.left {
 	border-bottom-right-radius: 0px;
 	border-top-right-radius: 0px;
@@ -120,7 +114,7 @@ button::-moz-focus-inner {
 	border-bottom-left-radius: 0px;
 	margin-left: 0px; }
 
-.button.left:active, button.left:active, .button.middle:active, button.middle:active, .button.right:active, button.right:active { top: 0px }
+.button.left:active, button.left:active, .button.middle:active, button.middle:active, .button.right:active, button.right:active { top: 0px; }
 
 .button.large, button.large {
 	font-size: 14px;
@@ -131,20 +125,18 @@ button::-moz-focus-inner {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.075);
 }
 
-button.large { *padding: 4px 17px 2px 17px; }
-
 input[type="text"],input[type="file"], select {
-	height: 26px;
+/*	height: 26px;*/
 }
 input[type="text"],input[type="file"],textarea, select {
 	display: inline-block;
 	font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif;
-	padding: 3px;
-	margin-bottom: 4px;
+	padding: 4px 6px;
+	margin-bottom: 3px;
 	line-height: 18px;
 	color: #555555;
 	border: 1px solid #cccccc;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 input[type="text"],textarea, select {
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -187,104 +179,108 @@ input[disabled],select[disabled],textarea[disabled],input[readonly],select[reado
 	width: 98%;
 }
 
-.button span.icon { 
-	display: inline-block;
-	position: relative;
-	top: 1px;
+.button.icon:before {
 	background-image: url('../img/buttons.png'); 
 	background-color: transparent; 
 	background-repeat: no-repeat; 
 	height: 13px; 
 	margin: auto 4px auto 0px;
 	width: 13px; 
-} 
+	content:" ";
+	display:block;
+	position:absolute;
+	left:6px;
+	top:5px;
+}
+.button.icon {
+	padding-left: 23px;
+}
 
 a.big.button span.icon, button.big span.icon { top: 0px }
 
-.button span.icon.fullscreen {background-position: 0px 0px;}
-.button:hover span.icon.fullscreen {background-position: 0px -13px;}
-.button span.icon.folder {background-position: -13px 0px;}
-.button:hover span.icon.folder {background-position: -13px -13px;}
-.button span.icon.cloud {background-position: -26px 0px;}
-.button:hover span.icon.cloud {background-position: -26px -13px;}
+.button.icon.fullscreen:before {background-position: 0px 0px;}
+.button.icon.fullscreen:hover:before {background-position: 0px -13px;}
+.button.icon.folder:before {background-position: -13px 0px;}
+.button.icon.folder:hover:before {background-position: -13px -13px;}
+.button.icon.cloud:before {background-position: -26px 0px;}
+.button.icon.cloud:hover:before {background-position: -26px -13px;}
 
-.button span.icon.pin {background-position: -39px 0px;}
-.button:hover span.icon.pin {background-position: -39px -13px;}
-.button span.icon.ribbon {background-position: -52px 0px;}
-.button:hover span.icon.ribbon {background-position: -52px -13px;}
-.button span.icon.file {background-position: -65px 0px;}
-.button:hover span.icon.file {background-position: -65px -13px;}
+.button.icon.pin:before {background-position: -39px 0px;}
+.button.icon.pin:hover:before {background-position: -39px -13px;}
+.button.icon.ribbon:before {background-position: -52px 0px;}
+.button.icon.ribbon:hover:before {background-position: -52px -13px;}
+.button.icon.file:before {background-position: -65px 0px;}
+.button.icon.file:hover:before {background-position: -65px -13px;}
 
-.button span.icon.sync {background-position: -78px 0px;}
-.button:hover span.icon.sync {background-position: -78px -13px;}
-.button span.icon.stop {background-position: -91px 0px;}
-.button:hover span.icon.stop {background-position: -91px -13px;}
-.button span.icon.check {background-position: -104px 0px;}
-.button:hover span.icon.check {background-position: -104px -13px;}
+.button.icon.sync:before {background-position: -78px 0px;}
+.button.icon.sync:hover:before {background-position: -78px -13px;}
+.button.icon.stop:before {background-position: -91px 0px;}
+.button.icon.stop:hover:before {background-position: -91px -13px;}
+.button.icon.check:before {background-position: -104px 0px;}
+.button.icon.check:hover:before {background-position: -104px -13px;}
 
-.button span.icon.lock {background-position: -117px 0px;}
-.button:hover span.icon.lock {background-position: -117px -13px;}
-.button span.icon.cross {background-position: -130px 0px;}
-.button:hover span.icon.cross {background-position: -130px -13px;}
-.button span.icon.add {background-position: -143px 0px;}
-.button:hover span.icon.add {background-position: -143px -13px;}
+.button.icon.lock:before {background-position: -117px 0px;}
+.button.icon.lock:hover:before {background-position: -117px -13px;}
+.button.icon.cross:before {background-position: -130px 0px;}
+.button.icon.cross:hover:before {background-position: -130px -13px;}
+.button.icon.add:before {background-position: -143px 0px;}
+.button.icon.add:hover:before {background-position: -143px -13px;}
 
-.button span.icon.home {background-position: -156px 0px;}
-.button:hover span.icon.home {background-position: -156px -13px;}
-.button span.icon.inbox {background-position: -169px 0px;}
-.button:hover span.icon.inbox {background-position: -169px -13px;}
-.button span.icon.refresh {background-position: -182px 0px;}
-.button:hover span.icon.refresh {background-position: -182px -13px;}
+.button.icon.home:before {background-position: -156px 0px;}
+.button.icon.home:hover:before {background-position: -156px -13px;}
+.button.icon.inbox:before {background-position: -169px 0px;}
+.button.icon.inbox:hover:before {background-position: -169px -13px;}
+.button.icon.refresh:before {background-position: -182px 0px;}
+.button.icon.refresh:hover:before {background-position: -182px -13px;}
 
-.button span.icon.admin {background-position: -195px 0px;}
-.button:hover span.icon.admin {background-position: -195px -13px;}
-.button span.icon.trash {background-position: -208px 0px;}
-.button:hover span.icon.trash {background-position: -208px -13px;}
-.button span.icon.user {background-position: -221px 0px;}
-.button:hover span.icon.user {background-position: -221px -13px;}
+.button.icon.admin:before {background-position: -195px 0px;}
+.button.icon.admin:hover:before {background-position: -195px -13px;}
+.button.icon.trash:before {background-position: -208px 0px;}
+.button.icon.trash:hover:before {background-position: -208px -13px;}
+.button.icon.user:before {background-position: -221px 0px;}
+.button.icon.user:hover:before {background-position: -221px -13px;}
 
-.button span.icon.flag {background-position: -234px 0px;}
-.button:hover span.icon.flag {background-position: -234px -13px;}
-.button span.icon.eye {background-position: -247px 0px;}
-.button:hover span.icon.eye {background-position: -247px -13px;}
-.button span.icon.view {background-position: -260px 0px;}
-.button:hover span.icon.view {background-position: -260px -13px;}
+.button.icon.flag:before {background-position: -234px 0px;}
+.button.icon.flag:hover:before {background-position: -234px -13px;}
+.button.icon.eye:before {background-position: -247px 0px;}
+.button.icon.eye:hover:before {background-position: -247px -13px;}
+.button.icon.view:before {background-position: -260px 0px;}
+.button.icon.view:hover:before {background-position: -260px -13px;}
 
-.button span.icon.list {background-position: -273px 0px;}
-.button:hover span.icon.list {background-position: -273px -13px;}
-.button span.icon.clock {background-position: -286px 0px;}
-.button:hover span.icon.clock {background-position: -286px -13px;}
-.button span.icon.play {background-position: -299px 0px;}
-.button:hover span.icon.play {background-position: -299px -13px;}
+.button.icon.list:before {background-position: -273px 0px;}
+.button.icon.list:hover:before {background-position: -273px -13px;}
+.button.icon.clock:before {background-position: -286px 0px;}
+.button.icon.clock:hover:before {background-position: -286px -13px;}
+.button.icon.play:before {background-position: -299px 0px;}
+.button.icon.play:hover:before {background-position: -299px -13px;}
 
-.button span.icon.options {background-position: -312px 0px;}
-.button:hover span.icon.options {background-position: -312px -13px;}
-.button span.icon.mag {background-position: -325px 0px;}
-.button:hover span.icon.mag {background-position: -325px -13px;}
-.button span.icon.bell {background-position: -338px 0px;}
-.button:hover span.icon.bell {background-position: -338px -13px;}
+.button.icon.options:before {background-position: -312px 0px;}
+.button.icon.options:hover:before {background-position: -312px -13px;}
+.button.icon.mag:before {background-position: -325px 0px;}
+.button.icon.mag:hover:before {background-position: -325px -13px;}
+.button.icon.bell:before {background-position: -338px 0px;}
+.button.icon.bell:hover:before {background-position: -338px -13px;}
 
-.button span.icon.clip {background-position: -351px 0px;}
-.button:hover span.icon.clip {background-position: -351px -13px;}
-.button span.icon.comments {background-position: -364px 0px;}
-.button:hover span.icon.coments {background-position: -364px -13px;}
-.button span.icon.compose {background-position: -377px 0px;}
-.button:hover span.icon.compose {background-position: -377px -13px;}
+.button.icon.clip:before {background-position: -351px 0px;}
+.button.icon.clip:hover:before {background-position: -351px -13px;}
+.button.icon.comments:before {background-position: -364px 0px;}
+.button.icon.coments:hover:before {background-position: -364px -13px;}
+.button.icon.compose:before {background-position: -377px 0px;}
+.button.icon.compose:hover:before {background-position: -377px -13px;}
 
-.button span.icon.signal {background-position: -390px 0px;}
-.button:hover span.icon.signal {background-position: -390px -13px;}
-.button span.icon.pinbig {background-position: -403px 0px;}
-.button:hover span.icon.pinbig {background-position: -403px -13px;}
-.button span.icon.cog {background-position: -416px 0px;}
-.button:hover span.icon.cog {background-position: -416px -13px;}
+.button.icon.signal:before {background-position: -390px 0px;}
+.button.icon.signal:hover:before {background-position: -390px -13px;}
+.button.icon.pinbig:before {background-position: -403px 0px;}
+.button.icon.pinbig:hover:before {background-position: -403px -13px;}
+.button.icon.cog:before {background-position: -416px 0px;}
+.button.icon.cog:hover:before {background-position: -416px -13px;}
 
-.button span.icon.bolt {background-position: -429px 0px;}
-.button:hover span.icon.bolt {background-position: -429px -13px;}
-.button span.icon.pen {background-position: -442px 0px;}
-.button:hover span.icon.pen {background-position: -442px -13px;}
-.button span.icon.stats {background-position: -455px 0px;}
-.button:hover span.icon.stats {background-position: -455px -13px;} 
-
+.button.icon.bolt:before {background-position: -429px 0px;}
+.button.icon.bolt:hover:before {background-position: -429px -13px;}
+.button.icon.pen:before {background-position: -442px 0px;}
+.button.icon.pen:hover:before {background-position: -442px -13px;}
+.button.icon.stats:before {background-position: -455px 0px;}
+.button.icon.stats:hover:before {background-position: -455px -13px;} 
 
 a.thumbicons {
 	color: #666;
@@ -321,14 +317,7 @@ a.thumbicons span {
 }
 
 a.thumbicons:hover, a.thumbicons.special{
-	background-color: #EBEBEB;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(whiteSmoke), to(#EBEBEB));
-	background-image: -webkit-linear-gradient(top, whiteSmoke, #EBEBEB);
-	background-image: -moz-linear-gradient(top, whiteSmoke, #EBEBEB);
-	background-image: -o-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: -ms-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: linear-gradient(top, #F5F5F5, #EBEBEB);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f5f5', EndColorStr='#ebebeb');
+    .background-gradient(#f5f5f5, #ebebeb);
 	border: 1px solid #C4C4C4;
 	border-radius: 3px;
 	text-decoration: none;
@@ -337,13 +326,7 @@ a.thumbicons:hover, a.thumbicons.special{
 
 
 a.quick-action {
-    background-color:#EBEBEB;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(#EBEBEB));
-	background-image: -webkit-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: -moz-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: -o-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: -ms-linear-gradient(top, #F5F5F5, #EBEBEB);
-	background-image: linear-gradient(top, #F5F5F5, #EBEBEB);
+    .background-gradient(#f5f5f5, #ebebeb);
     border:1px solid #C4C4C4;
     border-radius:3px 3px 3px 3px;
     box-shadow:0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 0 #fff rgba(0, 0, 0, 0.1);
@@ -358,13 +341,7 @@ a.quick-action {
 	min-width: 70px;
 }
 a.quick-action:hover {
-	background-color:#fff;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f5f5));
-	background-image: -webkit-linear-gradient(top, #fff, #f5f5f5);
-	background-image: -moz-linear-gradient(top, #fff, #f5f5f5);
-	background-image: -o-linear-gradient(top, #fff, #f5f5f5);
-	background-image: -ms-linear-gradient(top, #fff, #f5f5f5);
-	background-image: linear-gradient(top, #fff, #f5f5f5);
+    .background-gradient(#fff, #f5f5f5);
 	color:#4f4f4f;
 	text-decoration:none;	
 }

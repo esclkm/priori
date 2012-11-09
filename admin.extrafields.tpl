@@ -173,7 +173,7 @@
 					</div>
 				<td class="width5 {ADMIN_EXTRAFIELDS_ROW_ODDEVEN}">
 
-					<a title="{PHP.L.Delete}" href="{ADMIN_EXTRAFIELDS_ROW_DEL_URL}" class="ajax negative button"><span class="trash icon"></span>{PHP.L.Delete}</a>
+					<a title="{PHP.L.Delete}" href="{ADMIN_EXTRAFIELDS_ROW_DEL_URL}" class="ajax negative button trash icon">{PHP.L.Delete}</a>
 				</td>
 			</tr>
 			<!-- END: EXTRAFIELDS_ROW -->

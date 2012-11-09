@@ -21,7 +21,7 @@
 					<td class="textcenter">{ADMIN_DISKCACHE_ITEM_NAME}</td>
 					<td class="textcenter">{ADMIN_DISKCACHE_FILES}</td>
 					<td class="textcenter">{ADMIN_DISKCACHE_SIZE}</td>
-					<td><a title="{PHP.L.Delete}" href="{ADMIN_DISKCACHE_ITEM_DEL_URL}" class="ajax negative button"><span class="trash icon"></span>{PHP.L.Delete}</a></td>
+					<td><a title="{PHP.L.Delete}" href="{ADMIN_DISKCACHE_ITEM_DEL_URL}" class="ajax negative button trash icon">{PHP.L.Delete}</a></td>
 				</tr>
 <!-- END: ADMIN_DISKCACHE_ROW -->
 			<tr class="strong">

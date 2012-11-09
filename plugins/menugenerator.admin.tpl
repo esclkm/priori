@@ -62,7 +62,7 @@
             <td>{MENU_ITEM_DESC}</td>
 			<td>{MENU_ITEM_EXTRA}</td>
             <td>{MENU_ITEM_USERS}</td>
-            <td><a title="{PHP.L.Delete}" onclick="removemenugenerator(this)" class="negative button"><span class="trash icon"></span>{PHP.L.short_delete}</a></td>
+            <td><a title="{PHP.L.Delete}" onclick="removemenugenerator(this)" class="negative button trash icon">{PHP.L.short_delete}</a></td>
         </tr>
         <!-- END: ITEMS -->
         <tr id="menugeneratorbefore" class="nodrag nodrop centerall" style="display:none;"><td colspan='7'>

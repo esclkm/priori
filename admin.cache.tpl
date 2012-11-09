@@ -36,7 +36,7 @@
 					<td class="textcenter">{ADMIN_CACHE_EXPIRE}</td>
 					<td class="textcenter">{ADMIN_CACHE_SIZE}</td>
 					<td>{ADMIN_CACHE_VALUE}</td>
-					<td class="centerall"><a title="{PHP.L.Delete}" href="{ADMIN_CACHE_ITEM_DEL_URL}" class="ajax negative button"><span class="trash icon"></span>{PHP.L.Delete}</a></td>
+					<td class="centerall"><a title="{PHP.L.Delete}" href="{ADMIN_CACHE_ITEM_DEL_URL}" class="ajax negative button trash icon">{PHP.L.Delete}</a></td>
 				</tr>
 <!-- END: ADMIN_CACHE_ROW -->
 				<tr class="strong">
