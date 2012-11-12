@@ -1,5 +1,7 @@
 <?
+if (!class_exists('lessc')) {
 	require_once dirname(__FILE__)  . "/lessc.inc.php";
+}
 //	include_once('lessc.inc.php');
 class less extends lessc {
 	
