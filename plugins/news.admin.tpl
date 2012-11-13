@@ -1,6 +1,6 @@
 <!-- BEGIN: MAIN -->
-<script src="{PHP.cfg.plugins_dir}/news/js/news.admin.js" type="text/javascript"></script>	
-<div id="catgenerator" style="display:none"> <div style="display:none">{MAINCATEGORY}</div>
+<script src="{PHP.cfg.plugins_dir}/news/js/news.admin.js" type="text/javascript"></script>
+<div id="catgenerator"  class="block"> <div style="display:none">{MAINCATEGORY}</div>
 	<table class="cells">
 		<tr>
 			<td class="coltop width30">{PHP.L.Category}</td>
@@ -23,12 +23,18 @@
 			<td><button name="deloption" class="deloption" type="button"  style="display:none">{PHP.L.Delete}</button></td>
 		</tr>
 		<!-- END: ADDITIONAL -->
-		<tr id="addtr">
-			<td class="valid" colspan="6"><button name="addoption" id="addoption" type="button">{PHP.L.Add}</button></td>
+		<tr id="addtr" style="display:none">
+			<td colspan="6"></td>
 		</tr>
 	</table>
-	<p class="small">* {PHP.L.Newsautocutdesc}</p>
-	<p class="small">** {PHP.L.Template_help}</p><br />
+	<div class="action_bar valid"><button name="addoption" id="addoption" class="special" type="button">{PHP.L.Add}</button></div>
+
+</div>
+
+<div class="help">
+	<h4>{PHP.L.Help}:</h4>
+	<p>* {PHP.L.Newsautocutdesc}</p>
+	<p>* {PHP.L.Template_help}</p>
 </div>
 
 <!-- END: MAIN -->

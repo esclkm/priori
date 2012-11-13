@@ -249,6 +249,14 @@ h2 + .block {
 	margin: 0 15px;
 	border-radius: 0px 0px 3px 3px;
 }
+.block .block { 
+	background: none;
+    border-radius: 0;
+	margin: 10px 10px 5px;
+    box-shadow: none;
+	clear: both;
+	overflow-x: auto;
+}
 /*
 .block > ul, .block > p, .block > div {
 	padding: 20px;

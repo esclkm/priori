@@ -2,8 +2,8 @@
 {FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
 
 <!-- BEGIN: EDIT -->
+{ADMIN_CONFIG_EDIT_CUSTOM}
 <div class="block">
-	{ADMIN_CONFIG_EDIT_CUSTOM}
 	<form name="saveconfig" id="saveconfig" action="{ADMIN_CONFIG_FORM_URL}" method="post" class="ajax">
 		<table class="cells">
 			<tr>
