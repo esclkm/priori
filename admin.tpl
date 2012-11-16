@@ -1,9 +1,9 @@
 <!-- BEGIN: MAIN -->
 <div id="ajaxBlock">
-	<!-- BEGIN: BODY -->	
+	<!-- BEGIN: BODY -->
 	<div id="header"><div class="body"><h1>{ADMIN_TITLE}</h1></div></div>
 
-	<div id="main" class="body clear">
+	<div id="main" class="body clear<!-- IF {PHP.m} --> mode_{PHP.m}<!-- ENDIF -->">
 
 		{ADMIN_MAIN}
 

@@ -1,7 +1,8 @@
 <!-- BEGIN: MAIN -->
-
 	<h2>{PHP.L.Hits}</h2>
-	<p>{ADMIN_HITS_MAXHITS}</p>
+	<div class="block">
+	<p class="inner">{ADMIN_HITS_MAXHITS}</p>
+	</div>
 	<div class="block">
 <!-- BEGIN: YEAR_OR_MONTH -->
 	<h3>{PHP.v}:</h3>

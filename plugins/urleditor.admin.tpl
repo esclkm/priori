@@ -24,6 +24,7 @@
 	</script>
 	<style type="text/css">tr.tDnD_whileDrag td{background-color:yellow;}</style>
 	<form name="add_url" id="add_url" action="{ADMIN_URLS_FORM_URL}" method="post" class="ajax">
+		<div class="block">
 		<table id="rules" class="cells">
 			<tr id="rules_top" class="nodrop nodrag">
 				<td class="coltop width15">{PHP.L.adm_urls_area}</td>
@@ -76,5 +77,6 @@
 				</td>
 			</tr>
 		</table>
+		</div>
 		</form>
 <!-- END: MAIN -->

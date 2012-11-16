@@ -4,6 +4,7 @@
 			<div class="block button-toolbar">
 				<a title="{PHP.L.Configuration}" href="{ADMIN_COMMENTS_CONFIG_URL}" class="button">{PHP.L.Configuration}</a>
 			</div>
+			<div class="block">
 			<h3>{PHP.L.viewdeleteentries}:</h3>
 			<table class="cells">
 				<tr>
@@ -31,4 +32,5 @@
 <!-- END: ADMIN_COMMENTS_ROW -->
 			</table>
 			<p class="paging">{ADMIN_COMMENTS_PAGINATION_PREV}{ADMIN_COMMENTS_PAGNAV}{ADMIN_COMMENTS_PAGINATION_NEXT}<span>{PHP.L.Total}: {ADMIN_COMMENTS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_COMMENTS_COUNTER_ROW}</span></p>
+			</div>
 <!-- END: MAIN -->

@@ -4,6 +4,7 @@
 			<div class="block button-toolbar">
 				<a title="{PHP.L.Configuration}" href="{ADMIN_RATINGS_URL_CONFIG}" class="button">{PHP.L.Configuration}</a>
 			</div>
+			<div class="block">
 			<table class="cells">
 				<tr>
 					<td class="coltop width20" style="width:10%;">{PHP.L.adm_area}</td>
@@ -28,5 +29,5 @@
 <!-- END: RATINGS_ROW -->
 			</table>
 			<p class="paging">{ADMIN_RATINGS_PAGINATION_PREV}{ADMIN_RATINGS_PAGNAV}{ADMIN_RATINGS_PAGINATION_NEXT}<span>{PHP.L.adm_ratings_totalitems}: {ADMIN_RATINGS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_RATINGS_ON_PAGE}</span><span>{PHP.L.adm_ratings_totalvotes}: {ADMIN_RATINGS_TOTALVOTES}</span></p>
-			</tr>
+			</div>
 <!-- END: MAIN -->

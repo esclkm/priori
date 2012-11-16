@@ -9,8 +9,7 @@
 <div class="block">
 	<h3>{PHP.L.Log} ({ADMIN_LOG_TOTALDBLOG})</h3>
 
-
-	<form action="" class="margintop10 marginbottom10">{PHP.L.Group}:
+	<form action="" class="inner margintop10 marginbottom10">{PHP.L.Group}:
 		<select name="groups" size="1" onchange="redirect(this)">
 			<!-- BEGIN: GROUP_SELECT_OPTION -->
 			<option value="{ADMIN_LOG_OPTION_VALUE_URL}"{ADMIN_LOG_OPTION_SELECTED}>{ADMIN_LOG_OPTION_GRP_NAME}</option>

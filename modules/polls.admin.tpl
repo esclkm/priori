@@ -4,6 +4,7 @@
 	<div class=" button-toolbar block">
 		<a title="{PHP.L.Configuration}" href="{ADMIN_POLLS_CONF_URL}" class="button">{PHP.L.Configuration}</a>
 	</div>
+	<div class="block">
 	<h3>{PHP.L.poll}:</h3>
 	<select name="jumpbox" size="1" onchange="redirect(this)" class="marginbottom10 margintop10">
 			<!-- BEGIN: POLLS_ROW_FILTER -->
@@ -44,13 +45,15 @@
 		<!-- END: POLLS_ROW_EMPTY -->
 	</table>
 	<p class="paging">{ADMIN_POLLS_PAGINATION_PREV}{ADMIN_POLLS_PAGNAV}{ADMIN_POLLS_PAGINATION_NEXT}<span>{PHP.L.Total}: {ADMIN_POLLS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_POLLS_ON_PAGE}</span></p>
+	</div>
+	<div class="block">
 	<h3>{ADMIN_POLLS_FORMNAME}:</h3>
 	<form id="addpoll" action="{ADMIN_POLLS_FORM_URL}" method="post">
 		<!-- IF {PHP.cfg.jquery} -->
 		<script type="text/javascript" src="{PHP.cfg.modules_dir}/polls/js/polls.js"></script>
 		<script type="text/javascript">
 			var ansMax = {PHP.cfg.polls.max_options_polls};
-		</script>		
+		</script>
 		<!-- ENDIF -->
 		<table class="cells">
 			<tr>
@@ -87,4 +90,5 @@
 			</tr>
 		</table>
 	</form>
+	</div>
 <!-- END: MAIN -->
