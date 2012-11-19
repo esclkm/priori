@@ -19,16 +19,19 @@
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/buttons.css" type="text/css" rel="stylesheet" />
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/adaptive.css" type="text/css" rel="stylesheet" />
 		<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/respond.min.js" type="text/javascript"></script>
+		<!-- IF {PHP.cfg.jquery} -->
 		<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/jquery.cookie.js" type="text/javascript"></script>
-		<!-- IF {PHP._COOKIE.admin_max_width|intval} > 300 -->
+		<!-- ENDIF -->
+		<!-- IF {PHP._COOKIE.admin_max_width|intval} > 300 AND {PHP.cfg.jquery}-->
 		<style type="text/css">
 			.body {max-width: {PHP._COOKIE.admin_max_width|intval}px;}
 		</style>
 		<!-- ENDIF -->
+		<!-- IF {PHP.cfg.jquery} -->
 		<script type="text/javascript">
 			//<![CDATA[
 			$(document).ready(function() {
-				$(".maxwidth").live('click', function() {
+				$(".maxwidth").bind('click', function() {
 					var vals = $(this).attr('rel');
 					$(".body").css("max-width", vals+'px');
 					$.cookie('admin_max_width', vals, { expires: 30 }); //установить куки с временем жизни 30 дней
@@ -38,6 +41,7 @@
 
 			//]]>
 		</script>
+		<!-- ENDIF -->
 		{HEADER_COMPOPUP}
 		<title>{HEADER_TITLE} </title>
 	</head>
@@ -87,6 +91,7 @@
 						<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/icon_other.png" alt="{PHP.L.Other}" /></span>{PHP.L.Other}
 					</a>
 				</li>
+		<!-- IF {PHP.cfg.jquery} -->
 				<li class="bottom" id="resolution_control">
 					<div>
 						<a href="#" class="maxwidth" rel="960">960px</a>
@@ -97,8 +102,8 @@
 					<a href="{PHP|cot_url('admin')}">
 						<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/icon_site.png" alt="{PHP.cfg.maintitle}" /></span>{PHP.L.Options}
 					</a>
-
 				</li>
+		<!-- ENDIF -->
 			</ul>
 			<div class="clear"></div>
 		</div>
