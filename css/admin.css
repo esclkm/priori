@@ -393,7 +393,7 @@ div.error, div.warning, div.done, div.help, div.success {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-div.error p, div.warning p, div.done p, div.help p, div.success {
+div.error p, div.warning p, div.done p, div.help p, div.success p {
     margin-bottom:0px;
 }
 div.error {
