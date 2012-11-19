@@ -382,7 +382,7 @@ h4 {
 /* 4. Misc
 --------------------------------------------------*/
 
-div.error, div.warning, div.done, div.help {
+div.error, div.warning, div.done, div.help, div.success {
 	line-height: 1.8em;
 	margin: 20px 15px 16px;
 	padding: 10px 30px 10px 60px;
@@ -393,7 +393,7 @@ div.error, div.warning, div.done, div.help {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-div.error p, div.warning p, div.done p, div.help p {
+div.error p, div.warning p, div.done p, div.help p, div.success {
     margin-bottom:0px;
 }
 div.error {
@@ -408,6 +408,7 @@ div.warning {
 	background-image: url(../img/warning.png);
 	border: 1px solid #e2c822;
 }
+div.success,
 div.done {
 	color: #4f8a10;
 	background-color: #eceff6;
