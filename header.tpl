@@ -22,7 +22,7 @@
 		<!-- IF {PHP.cfg.jquery} -->
 		<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/jquery.cookie.js" type="text/javascript"></script>
 		<!-- ENDIF -->
-		<!-- IF {PHP._COOKIE.admin_max_width|intval} > 300 AND {PHP.cfg.jquery}-->
+		<!-- IF {PHP._COOKIE.admin_max_width|intval} > 300 -->
 		<style type="text/css">
 			.body {max-width: {PHP._COOKIE.admin_max_width|intval}px;}
 		</style>
@@ -31,7 +31,7 @@
 		<script type="text/javascript">
 			//<![CDATA[
 			$(document).ready(function() {
-				$(".maxwidth").bind('click', function() {
+				$(".maxwidth").live('click', function() {
 					var vals = $(this).attr('rel');
 					$(".body").css("max-width", vals+'px');
 					$.cookie('admin_max_width', vals, { expires: 30 }); //установить куки с временем жизни 30 дней
