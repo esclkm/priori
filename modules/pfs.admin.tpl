@@ -13,7 +13,7 @@
 		</div>
 	<div class="block">
 		<h3>{PHP.L.adm_gd}:</h3>
-		<ul class="follow">
+		<ul class="inner follow">
 <!-- BEGIN: PFS_ROW -->
 			<li>{ADMIN_PFS_DATAS_NAME}: <span class="strong">{ADMIN_PFS_DATAS_ENABLE_OR_DISABLE}</span></li>
 <!-- END: PFS_ROW -->

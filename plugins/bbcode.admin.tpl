@@ -1,6 +1,8 @@
 <!-- BEGIN: MAIN -->
 		<h2>BBCodes</h2>
+
 		{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
+			<div class="block">
 			<h3>{PHP.L.editdeleteentries}:</h3>
 			<table class="cells">
 				<tr>
@@ -37,6 +39,8 @@
 <!-- END: ADMIN_BBCODE_ROW -->
 			</table>
 			<p class="paging">{ADMIN_BBCODE_PAGINATION_PREV} {ADMIN_BBCODE_PAGNAV} {ADMIN_BBCODE_PAGINATION_NEXT}<span>{PHP.L.Total}: {ADMIN_BBCODE_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_BBCODE_COUNTER_ROW}</span></p>
+			</div>
+			<div class="block">
 			<h3>{PHP.L.adm_bbcodes_new}:</h3>
 			<table class="cells">
 				<tr>
@@ -63,11 +67,14 @@
 				</tr>
 				</form>
 			</table>
+			</div>
+			<div class="block">
 			<h3>{PHP.L.adm_bbcodes_other}:</h3>
-			<ul>
+			<ul class="blocklist">
 				<li><a href="{ADMIN_BBCODE_URL_CLEAR_CACHE}" onclick="return confirm('{PHP.L.adm_bbcodes_clearcache_confirm}')">{PHP.L.adm_bbcodes_clearcache}</a></li>
 				<!-- BEGIN: ADMIN_BBCODE_CONVERT -->
 				<li><a href="{ADMIN_BBCODE_CONVERT_URL}" onclick="return confirm('{PHP.L.adm_bbcodes_convert_confirm}')">{ADMIN_BBCODE_CONVERT_TITLE}</a></li>
 				<!-- END: ADMIN_BBCODE_CONVERT -->
 			</ul>
+			</div>
 <!-- END: MAIN -->

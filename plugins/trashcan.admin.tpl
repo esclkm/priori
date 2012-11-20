@@ -5,6 +5,7 @@
 				<a title="{PHP.L.Configuration}" href="{ADMIN_TRASHCAN_CONF_URL}" class="button">{PHP.L.Configuration}</a>
 				<a title="{PHP.L.Wipeall}" href="{ADMIN_TRASHCAN_WIPEALL_URL}" class="button">{PHP.L.Wipeall}</a>
 			</div>
+			<div class="block">
 			<table class="cells">
 				<tr>
 					<td class="coltop width5">{PHP.L.Type}</td>
@@ -27,4 +28,5 @@
 <!-- END: TRASHCAN_ROW -->
 		</table>
 		<p class="paging">{ADMIN_TRASHCAN_PAGINATION_PREV}{ADMIN_TRASHCAN_PAGNAV}{ADMIN_TRASHCAN_PAGINATION_NEXT} <span>{PHP.L.Total}: {ADMIN_TRASHCAN_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_TRASHCAN_COUNTER_ROW}</span></p>
+		</div>
 <!-- END: MAIN -->

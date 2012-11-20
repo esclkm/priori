@@ -8,6 +8,7 @@
 			</div>
 <!-- ENDIF -->
 <!-- IF {PHP.is_ref_empty} -->
+			<div class="block">
 			<table class="cells">
 				<tr>
 					<td class="coltop width70">{PHP.L.Referer}</td>
@@ -28,7 +29,9 @@
 <!-- IF {PHP.is_ref_empty} -->
 			</table>
 			<p class="paging">{ADMIN_REFERERS_PAGINATION_PREV}{ADMIN_REFERERS_PAGNAV}{ADMIN_REFERERS_PAGINATION_NEXT} <span>{PHP.L.Total} : {ADMIN_REFERERS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_REFERERS_ON_PAGE}</span></p>
+			</div>
 <!-- ELSE -->
+			<div class="block">
 			<table class="cells">
 				<tr>
 					<td class="coltop width70">{PHP.L.Referer}</td>
@@ -38,6 +41,7 @@
 					<td class="centerall" colspan="2">{PHP.L.None}</td>
 				</tr>
 			</table>
+			</div>
 <!-- ENDIF -->
 
 <!-- END: MAIN -->

@@ -1,6 +1,7 @@
 <!-- BEGIN: MAIN -->
 		<h2>{PHP.L.banlist_title}</h2>
 		{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
+			<div class="block">
 			<h3>{PHP.L.editdeleteentries}:</h3>
 			<table class="cells">
 				<tr>
@@ -26,6 +27,8 @@
 <!-- END: ADMIN_BANLIST_ROW -->
 			</table>
 			<p class="paging">{ADMIN_BANLIST_PAGINATION_PREV}{ADMIN_BANLIST_PAGNAV}{ADMIN_BANLIST_PAGINATION_NEXT}<span>{PHP.L.Total}: {ADMIN_BANLIST_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_BANLIST_COUNTER_ROW}</span></p>
+			</div>
+			<div class="block">
 			<h3>{PHP.L.Add}:</h3>
 			<form name="addbanlist" id="addbanlist" action="{ADMIN_BANLIST_URLFORMADD}" method="post" class="ajax">
 				<table class="cells info">
@@ -52,4 +55,5 @@
 					</tr>
 				</table>
 			</form>
+			</div>
 <!-- END: MAIN -->

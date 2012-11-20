@@ -17,7 +17,7 @@
 			</tr>
 <!-- END: ADMIN_HOME_ROW -->
 		</table>
-		<p><a href="{ADMIN_HOME_MORE_HITS_URL}">{PHP.L.ReadMore}</a></p>
+		<p class="inner"><a class="button icon list" href="{ADMIN_HOME_MORE_HITS_URL}">{PHP.L.ReadMore}</a></p>
 	</div>
 <!-- END: STAT -->
 
