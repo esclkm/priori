@@ -7,7 +7,7 @@
 		<p>{ADMIN_HOME_UPDATE_REVISION} {ADMIN_HOME_UPDATE_MESSAGE}</p>
 	</div>
 	<!-- END: UPDATE -->
-	{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
+	{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 	<div class="block">
 		<h3>{PHP.L.Core}</h3>
 		<a href="{PHP|cot_url('admin','m=cache')}" class="thumbicons"><img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>{PHP.L.adm_internalcache}</a>

@@ -4,7 +4,7 @@
 		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/trash.png"/></span>
 		{PHP.L.adm_purgeall}</a>
 </div>
-{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 
 <div class="block">
 	<h3>{PHP.L.Log} ({ADMIN_LOG_TOTALDBLOG})</h3>

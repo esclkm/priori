@@ -1,6 +1,6 @@
 <!-- BEGIN: MAIN -->
 
-		{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
+		{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 		<div class="quick-actions">
 			<a href="{ADMIN_CACHE_URL_REFRESH}" class="ajax quick-action">
 				<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/refresh.png"/></span>{PHP.L.Refresh}</a>

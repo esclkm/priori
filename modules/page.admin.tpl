@@ -11,7 +11,7 @@
 	});
 </script>
 
-{FILE "{PHP.cfg.themes_dir}/{PHP.theme}/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 <div class="quick-actions">
 	<a title="{PHP.L.Configuration}" href="{ADMIN_PAGE_URL_CONFIG}" class="quick-action">
 		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/settings.png"/></span>{PHP.L.Configuration}</a>

@@ -1,6 +1,6 @@
 <!-- BEGIN: MAIN -->
 	<h2>{PHP.L.Polls}</h2>
-	{FILE "{PHP.cfg.themes_dir}/{PHP.theme}/warnings.tpl"}
+	{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 	<div class=" button-toolbar block">
 		<a title="{PHP.L.Configuration}" href="{ADMIN_POLLS_CONF_URL}" class="button">{PHP.L.Configuration}</a>
 	</div>

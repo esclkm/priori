@@ -32,7 +32,7 @@
 
     });
 </script>
-{FILE "{PHP.cfg.themes_dir}/{PHP.theme}/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 <div class="quick-actions">
 	<a title="{PHP.L.adm_extrafields_desc}" href="{PHP.db_menugenerator|cot_url('admin', 'm=extrafields&n=$this')}" class="quick-action">
 		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/flash.png"/></span>{PHP.L.adm_extrafields_table} {PHP.db_menugenerator}</a>

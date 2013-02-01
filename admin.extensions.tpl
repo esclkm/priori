@@ -1,5 +1,5 @@
 <!-- BEGIN: MAIN -->
-{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 
 <!-- BEGIN: DETAILS -->
 

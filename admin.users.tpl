@@ -5,7 +5,7 @@
 	<a href="{ADMIN_USERS_EXTRAFIELDS_URL}" class="quick-action">
 		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/flash.png"/></span>{PHP.L.adm_extrafields_table} {PHP.db_users}</a>
 </div>
-{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 
 
 
