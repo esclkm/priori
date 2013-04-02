@@ -240,7 +240,7 @@
 		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/flag.png"/></span>{PHP.L.Hooks}</a>
 </div>
 
-<!-- BEGIN: SECTION-->
+<!-- BEGIN: SECTION -->
 <h2>{ADMIN_EXTENSIONS_SECTION_TITLE} ({ADMIN_EXTENSIONS_CNT_EXTP})</h2>
 <div class="block">
 	<table class="cells">
@@ -261,7 +261,7 @@
 			</td>
 		</tr>
 		<!-- END: ROW_CAT -->
-		<!-- BEGIN: ROW_ERROR_EXT-->
+		<!-- BEGIN: ROW_ERROR_EXT -->
 		<tr>
 			<td>{ADMIN_EXTENSIONS_X_ERR}</td>
 			<td colspan="5">{ADMIN_EXTENSIONS_ERROR_MSG}</td>
