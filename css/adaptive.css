@@ -122,7 +122,7 @@
 	}
 	#resolution_control div a {
 		color: #fff;
-		font-weight: bold;
+		/*font-weight: bold;*/
 		display: block;
 		padding: 6px 15px; 
 		position: relative;

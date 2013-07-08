@@ -32,6 +32,7 @@ body {
 	height: auto;
 	width: 100%;
 	z-index: 10;
+	font-family: "UbuntuRegular", Helvetica,arial,freesans,clean,sans-serif;
 }
 #navbar>ul {
 	diplay:block;
@@ -125,6 +126,7 @@ body {
 	bottom: 0px;
 	left: 60px;
 	font-size: 11px;
+	font-family: "UbuntuRegular", Helvetica,arial,freesans,clean,sans-serif;
 	text-shadow: 0 1px 0 #FFFFFF;
 	border: 1px solid #bababa;
 	border-bottom: 0px solid #bababa;
@@ -135,6 +137,8 @@ body {
 	background-color: #E5E5E5;
     background-image: linear-gradient(center top , #EBEBEB, #E5E5E5);
 }
+.messagebarusername {font-family: "UbuntuBold", Helvetica,arial,freesans,clean,sans-serif;}
+
 #footer a, #messagebar a {
 	color: #898989;
 }
@@ -307,6 +311,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 	padding: 0;
 	position: relative;
+	font-family: "UbuntuBold", Helvetica,arial,freesans,clean,sans-serif;
 }
 h1 {
 
@@ -314,7 +319,7 @@ h1 {
 h1, #sitetitle {
 	color: #fff;
 	font-size: 14px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	line-height: 16px;
 	padding: 10px 14px;
 	text-decoration: none;
@@ -334,7 +339,7 @@ h1 a:hover, #sitetitle a:hover {
 h2 {
 	color: #555;
     font-size: 11px;
-    font-weight: bold;
+  /*  font-weight: bold;*/
     line-height: 40px;
     padding-left: 14px;
     text-shadow: 0 1px 0 #FFFFFF;
@@ -356,7 +361,7 @@ h2 {
 h3 {
 	color: #555;
     font-size: 11px;
-    font-weight: bold;
+ /*   font-weight: bold;*/
     line-height: 40px;
     padding-left: 14px;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);

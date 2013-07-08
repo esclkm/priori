@@ -13,6 +13,7 @@
 		{HEADER_BASEHREF}
 		{HEADER_HEAD}
 		<link rel="shortcut icon" href="favicon.ico" />
+		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/fonts/ubuntu.css" type="text/css" rel="stylesheet" />
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/reset.css" type="text/css" rel="stylesheet" />
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/framework.css" type="text/css" rel="stylesheet" />
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/admin.css" type="text/css" rel="stylesheet" />
