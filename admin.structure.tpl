@@ -79,8 +79,44 @@
 			</tr>
 			<!-- END: EXTRAFLD -->
 		</table>
+			
+		<!-- BEGIN: CONFIG -->
+		{ADMIN_CONFIG_EDIT_CUSTOM}
+		<table class="cells">
+			<tr>
+				<td class="coltop width250px">{PHP.L.Key}</td>
+				<td class="coltop">{PHP.L.Value}</td>
+				<td class="coltop width5">{PHP.L.Reset}</td>
+			</tr>
+			<!-- BEGIN: ADMIN_CONFIG_ROW -->
+			<!-- BEGIN: ADMIN_CONFIG_FIELDSET_BEGIN -->
+			<tr>
+				<td class="group_begin" colspan="3">
+					<h4>{ADMIN_CONFIG_FIELDSET_TITLE}</h4>
+				</td>
+			</tr>
+			<!-- END: ADMIN_CONFIG_FIELDSET_BEGIN -->
+			<!-- BEGIN: ADMIN_CONFIG_ROW_OPTION -->
+			<tr>
+				<td><span title="
+						<!-- IF {PHP.config_owner} == 'module'-->&#123;PHP.cfg.{PHP.config_cat}.{PHP.config_name}&#125;<!-- ENDIF-->
+						<!-- IF {PHP.config_owner} == 'plug'-->&#123;PHP.cfg.plugin.{PHP.config_cat}.{PHP.config_name}&#125;<!-- ENDIF-->
+						<!-- IF {PHP.config_owner} == 'core'-->&#123;PHP.cfg.{PHP.config_name}&#125;<!-- ENDIF-->
+						">{ADMIN_CONFIG_ROW_CONFIG_TITLE}:</span></td>
+				<td>
+					{ADMIN_CONFIG_ROW_CONFIG}
+					<div class="adminconfigmore">{ADMIN_CONFIG_ROW_CONFIG_MORE}</div>
+				</td>
+				<td class="centerall">
+					<a href="{ADMIN_CONFIG_ROW_CONFIG_MORE_URL}" class="ajax button refresh icon">{PHP.L.Reset}</a>
+				</td>
+			</tr>
+			<!-- END: ADMIN_CONFIG_ROW_OPTION -->
+			<!-- END: ADMIN_CONFIG_ROW -->
+		</table>
+		<!-- END: CONFIG -->
 		<div class="action_bar valid">
-			<input type="submit" class="submit" value="{PHP.L.Update}" /><a href="{ADMIN_STRUCTURE_CONFIG_URL}" class="button large">{PHP.L.Configuration}</a>
+			<input type="submit" class="submit" value="{PHP.L.Update}" />
 		</div>
 		
 	</form>
@@ -111,7 +147,6 @@
 					<td class="action {ADMIN_STRUCTURE_ODDEVEN}">
 						<div class="buttonpanel">
 							<!-- IF {ADMIN_STRUCTURE_OPTIONS_URL} --><a href="{ADMIN_STRUCTURE_OPTIONS_URL}" title="{PHP.L.Edit}" class="ajax button options icon">{PHP.L.Edit}</a><!-- ENDIF -->
-							<!-- IF {ADMIN_STRUCTURE_CONFIG_URL} --><a href="{ADMIN_STRUCTURE_CONFIG_URL}" title="{PHP.L.short_config}" class="button cog icon">{PHP.L.short_config}</a><!-- ENDIF -->
 							<!-- IF {ADMIN_STRUCTURE_RIGHTS_URL} --><a href="{ADMIN_STRUCTURE_RIGHTS_URL}" title="{PHP.L.short_rights}" class="button lock icon">{PHP.L.short_rights}</a><!-- ENDIF -->
 							<!-- IF {ADMIN_STRUCTURE_JUMPTO_URL} --><a href="{ADMIN_STRUCTURE_JUMPTO_URL}" title="{PHP.L.short_open}" class="button special positive file icon">{PHP.L.short_open}</a><!-- ENDIF -->
 							<!-- IF {PHP.n} == 'page' --><a href="{PHP.structure_code|cot_url('page', 'm=add&c=$this')}" title="{PHP.L.Add}" class="button icon add">{PHP.L.Add}</a><!-- ENDIF -->

@@ -35,11 +35,6 @@
 				</td>
 			</tr>
 			<!-- END: ADMIN_CONFIG_ROW_OPTION -->
-			<!-- BEGIN: ADMIN_CONFIG_FIELDSET_END -->
-			<tr>
-				<td class="group_end" colspan="3"></td>
-			</tr>
-			<!-- END: ADMIN_CONFIG_FIELDSET_END -->
 			<!-- END: ADMIN_CONFIG_ROW -->
 		</table>
 		<div class="action_bar valid"><input type="submit" class="submit" value="{PHP.L.Update}" /></div>
