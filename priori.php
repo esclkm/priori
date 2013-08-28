@@ -18,7 +18,7 @@ Schemes=default:Default
 */
 
 defined('COT_CODE') or die('Wrong URL');
-
+global $cfg;
 require_once dirname(__FILE__) . "/lessphp/lessc_ext.inc.php";
 $formatter = new lessc_formatter_classic;
 $formatter->indentChar = "\t";
