@@ -324,10 +324,10 @@
 				<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS_URL}" class="button lock icon">{PHP.L.short_rights}</a>
 				<!-- ENDIF -->
 				<!-- IF {PHP.ifthistools} -->
-				<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="button special icon bolt">{PHP.L.short_admin}</a>
+				<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="button special icon shareable">{PHP.L.short_admin}</a>
 				<!-- ENDIF -->
 				<!-- IF {PHP.if_plg_standalone} -->
-				<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="button special file icon">{PHP.L.Open}</a>
+				<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="button special export icon">{PHP.L.Open}</a>
 				<!-- ENDIF -->
 				</div>
 			</td>

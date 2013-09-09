@@ -33,7 +33,7 @@
 				<!-- IF !{ADMIN_USERS_ROW_GRP_SKIPRIGHTS} -->
 				<a title="{PHP.L.Rights}" href="{ADMIN_USERS_ROW_GRP_RIGHTS_URL}" class="button lock icon">{PHP.L.short_rights}</a>
 				<!-- ENDIF -->
-				<a title="{PHP.L.Open}" href="{ADMIN_USERS_ROW_GRP_JUMPTO_URL}" class="button special file icon">{PHP.L.short_open}</a>
+				<a title="{PHP.L.Open}" href="{ADMIN_USERS_ROW_GRP_JUMPTO_URL}" class="button special export icon">{PHP.L.short_open}</a>
 			</td>
 		</tr>
 		<!-- END: USERS_ROW -->
