@@ -1,9 +1,9 @@
 <!-- BEGIN: MAIN -->
 <div class="quick-actions">
-	<a title="{PHP.L.Configuration}" href="{ADMIN_USERS_URL}" class="quick-action">
-		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/settings.png"/></span>{PHP.L.Configuration}</a>
-	<a href="{ADMIN_USERS_EXTRAFIELDS_URL}" class="quick-action">
-		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/flash.png"/></span>{PHP.L.adm_extrafields_table} {PHP.db_users}</a>
+	<a title="{PHP.L.Configuration}" href="{ADMIN_USERS_URL}" class="quick-action icon cog">
+		{PHP.L.Configuration}</a>
+	<a href="{ADMIN_USERS_EXTRAFIELDS_URL}" class="quick-action icon database">
+		{PHP.L.adm_extrafields_table} {PHP.db_users}</a>
 </div>
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 

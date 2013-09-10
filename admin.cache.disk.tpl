@@ -2,10 +2,10 @@
 		
 		{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 		<div class="quick-actions">
-				<a href="{ADMIN_DISKCACHE_URL_REFRESH}" class="ajax quick-action">
-					<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/refresh.png"/></span>{PHP.L.Refresh}</a>
-				<a href="{ADMIN_DISKCACHE_URL_PURGE}" class="ajax quick-action">
-					<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/trash.png"/></span>{PHP.L.adm_purgeall}</a>
+				<a href="{ADMIN_DISKCACHE_URL_REFRESH}" class="ajax quick-action icon cycle">
+					{PHP.L.Refresh}</a>
+				<a href="{ADMIN_DISKCACHE_URL_PURGE}" class="ajax quick-action icon trash">
+					{PHP.L.adm_purgeall}</a>
 		</div>
 		<div class="block">
 			<h3>Disk Cache</h3>

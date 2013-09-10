@@ -111,22 +111,18 @@
 <!-- IF {PHP.isinstalled} AND {PHP.exists} -->
 <div class="quick-actions">
 		<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL} -->
-		<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="quick-action file icon">
-			<span class="file icon"><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/document.png"/></span>{PHP.L.Open}</a>
+		<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="quick-action export icon">{PHP.L.Open}</a>
 		<!-- ENDIF -->
 		<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS} -->
-		<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="quick-action">
-			<span class="admin icon"><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/flash.png"/></span>{PHP.L.Administration}</a>
+		<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="quick-action icon shareable">
+			{PHP.L.Administration}</a>
 		<!-- ENDIF -->
 		<!-- IF {ADMIN_EXTENSIONS_TOTALCONFIG} > 0 -->
-		<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_CONFIG_URL}" class="quick-action">
-			<span class="cog icon"><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/settings.png"/></span>{PHP.L.Configuration} ({ADMIN_EXTENSIONS_TOTALCONFIG})</a>
+		<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_CONFIG_URL}" class="quick-action cog icon">{PHP.L.Configuration} ({ADMIN_EXTENSIONS_TOTALCONFIG})</a>
 		<!-- ENDIF -->
-		<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS}" class="quick-action">
-			<span class="lock icon"><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/lock.png"/></span>{PHP.L.short_rights}</a>
+		<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS}" class="quick-action icon lock">{PHP.L.short_rights}</a>
 		<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT} -->
-		<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="quick-action">
-			<span class="folder icon"><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/folder.png"/></span>{PHP.L.Structure}</a>
+		<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="quick-action icon folder">{PHP.L.Structure}</a>
 		<!-- ENDIF -->
 </div>
 <!-- ENDIF -->
@@ -232,12 +228,11 @@
 <!-- BEGIN: DEFAULT -->
 <div class="quick-actions">
 
-	<a href="{ADMIN_EXTENSIONS_SORT_ALP_URL}" class="quick-action <!-- IF {ADMIN_EXTENSIONS_SORT_ALP_SEL} -->special<!-- ENDIF -->">
-		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/sort_az.png"/></span>{PHP.L.adm_sort_alphabet}</a>
-	<a href="{ADMIN_EXTENSIONS_SORT_CAT_URL}" class="quick-action <!-- IF {ADMIN_EXTENSIONS_SORT_CAT_SEL} -->special<!-- ENDIF -->">
-		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/folder_goto.png"/></span>{PHP.L.adm_sort_category}</a>
-	<a href="{ADMIN_EXTENSIONS_HOOKS_URL}" class="quick-action">
-		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/flag.png"/></span>{PHP.L.Hooks}</a>
+	<a href="{ADMIN_EXTENSIONS_SORT_ALP_URL}" class="quick-action icon language <!-- IF {ADMIN_EXTENSIONS_SORT_ALP_SEL} -->special<!-- ENDIF -->">
+		{PHP.L.adm_sort_alphabet}</a>
+	<a href="{ADMIN_EXTENSIONS_SORT_CAT_URL}" class="quick-action icon archive <!-- IF {ADMIN_EXTENSIONS_SORT_CAT_SEL} -->special<!-- ENDIF -->">
+		{PHP.L.adm_sort_category}</a>
+	<a href="{ADMIN_EXTENSIONS_HOOKS_URL}" class="quick-action icon hair-cross">{PHP.L.Hooks}</a>
 </div>
 
 <!-- BEGIN: SECTION -->

@@ -51,47 +51,33 @@
 		<div id="navbar">
 			<ul>
 				<li class="<!-- IF !{PHP.m} -->sel<!-- ENDIF -->">
-					<a href="{PHP|cot_url('admin')}" title="{PHP.L.Administration}">
-						<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/icon_home.png" alt="{PHP.L.Home}" /></span>{PHP.L.Home}
-					</a>
+					<a href="{PHP|cot_url('admin')}" title="{PHP.L.Administration}" class="icon home">{PHP.L.Home}</a>
 				</li>
 				<!-- IF {PHP.usr.admin_config} -->
 				<li class="<!-- IF {PHP.m} == 'config' -->sel<!-- ENDIF -->">
-					<a href="{PHP|cot_url('admin', 'm=config')}" title="{PHP.L.Configuration}">
-						<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/icon_config.png" alt="{PHP.L.Configuration}" /></span>{PHP.L.Configuration}
-					</a>
+					<a href="{PHP|cot_url('admin', 'm=config')}" title="{PHP.L.Configuration}" class="icon cog">{PHP.L.Configuration}</a>
 				</li>
 				<!-- ENDIF -->
 				<!-- IF {PHP.usr.admin_structure} -->
 				<li class="<!-- IF {PHP.m} == 'structure' -->sel<!-- ENDIF -->">
-					<a href="{PHP|cot_url('admin', 'm=structure')}" title="{PHP.L.Structure}">
-						<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/icon_structure.png" alt="{PHP.L.Structure}" /></span>{PHP.L.Structure}
-					</a>
+					<a href="{PHP|cot_url('admin', 'm=structure')}" title="{PHP.L.Structure}"  class="icon folder">{PHP.L.Structure}</a>
 				</li>
 				<!-- ENDIF -->
 				<!-- IF {PHP.usr.admin_config} -->
 				<li class="<!-- IF {PHP.m} == 'extensions' -->sel<!-- ENDIF -->">
-					<a href="{PHP|cot_url('admin', 'm=extensions')}" title="{PHP.L.Extensions}">
-						<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/icon_extensions.png" alt="{PHP.L.Extensions}" /></span>{PHP.L.Extensions}
-					</a>
+					<a href="{PHP|cot_url('admin', 'm=extensions')}" title="{PHP.L.Extensions}"  class="icon picture">{PHP.L.Extensions}</a>
 				</li>
 				<!-- ENDIF -->
 				<!-- IF {PHP.usr.admin_users} -->
 				<li class="<!-- IF {PHP.m} == 'users' -->sel<!-- ENDIF -->">
-					<a href="{PHP|cot_url('admin', 'm=users')}" title="{PHP.L.Users}">
-						<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/icon_users.png" alt="{PHP.L.Users}" /></span>{PHP.L.Users}
-					</a>
+					<a href="{PHP|cot_url('admin', 'm=users')}" title="{PHP.L.Users}"  class="icon users">{PHP.L.Users}</a>
 				</li>
 				<!-- ENDIF -->
 				<li class="<!-- IF {PHP.m} == 'extrafields' -->sel<!-- ENDIF -->">
-					<a href="{PHP|cot_url('admin', 'm=extrafields')}" title="{PHP.L.adm_extrafields}">
-						<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/icon_extrafields.png" alt="{PHP.L.adm_extrafields}" /></span>{PHP.L.adm_extrafields}
-					</a>
+					<a href="{PHP|cot_url('admin', 'm=extrafields')}" title="{PHP.L.adm_extrafields}"  class="icon database">{PHP.L.adm_extrafields}</a>
 				</li>
 				<li class="<!-- IF {PHP.m} == 'other' -->sel<!-- ENDIF -->">
-					<a href="{PHP|cot_url('admin', 'm=other')}" title="{PHP.L.Other}">
-						<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/icon_other.png" alt="{PHP.L.Other}" /></span>{PHP.L.Other}
-					</a>
+					<a href="{PHP|cot_url('admin', 'm=other')}" title="{PHP.L.Other}" class="icon traffic-cone">{PHP.L.Other}</a>
 				</li>
 		<!-- IF {PHP.cfg.jquery} -->
 				<li class="bottom" id="resolution_control">
@@ -101,9 +87,7 @@
 						<a href="#" class="maxwidth" rel="1480">1480px</a>
 						<a href="#" class="maxwidth paddingright10" rel="3000">3000px</a>
 					</div>
-					<a href="{PHP|cot_url('admin')}">
-						<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/icon_site.png" alt="{PHP.cfg.maintitle}" /></span>{PHP.L.Options}
-					</a>
+					<a href="{PHP|cot_url('admin')}" class="icon monitor">{PHP.L.Options}</a>
 				</li>
 		<!-- ENDIF -->
 			</ul>

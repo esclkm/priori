@@ -25,11 +25,11 @@
 
 	<div class="quick-actions">
 
-		<a href="{ADMIN_PAGE_STRUCTURE_RESYNCALL}" class="quick-action" title="{PHP.L.adm_tpl_resyncalltitle}">
-			<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/refresh.png"/></span>{PHP.L.Resync}</a>
+		<a href="{ADMIN_PAGE_STRUCTURE_RESYNCALL}" class="quick-action icon cycle" title="{PHP.L.adm_tpl_resyncalltitle}">
+			{PHP.L.Resync}</a>
 		<!-- IF {ADMIN_STRUCTURE_I18N_URL} -->
-		<a href="{ADMIN_STRUCTURE_I18N_URL}" class="quick-action">
-			<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/blog.png"/></span>{PHP.L.i18n_structure}</a>
+		<a href="{ADMIN_STRUCTURE_I18N_URL}" class="quick-action icon globe">
+			{PHP.L.i18n_structure}</a>
 		<!-- ENDIF -->
 		<div class="clear height0"></div>
 	</div>
@@ -146,10 +146,10 @@
 					<td class="centerall {ADMIN_STRUCTURE_ODDEVEN}">{ADMIN_STRUCTURE_COUNT}</td>
 					<td class="action {ADMIN_STRUCTURE_ODDEVEN}">
 						<div class="buttonpanel">
-							<!-- IF {ADMIN_STRUCTURE_OPTIONS_URL} --><a href="{ADMIN_STRUCTURE_OPTIONS_URL}" title="{PHP.L.Edit}" class="ajax button options icon">{PHP.L.Edit}</a><!-- ENDIF -->
+							<!-- IF {ADMIN_STRUCTURE_OPTIONS_URL} --><a href="{ADMIN_STRUCTURE_OPTIONS_URL}" title="{PHP.L.Edit}" class="ajax button list icon">{PHP.L.Edit}</a><!-- ENDIF -->
 							<!-- IF {ADMIN_STRUCTURE_RIGHTS_URL} --><a href="{ADMIN_STRUCTURE_RIGHTS_URL}" title="{PHP.L.short_rights}" class="button lock icon">{PHP.L.short_rights}</a><!-- ENDIF -->
-							<!-- IF {ADMIN_STRUCTURE_JUMPTO_URL} --><a href="{ADMIN_STRUCTURE_JUMPTO_URL}" title="{PHP.L.short_open}" class="button special positive file icon">{PHP.L.short_open}</a><!-- ENDIF -->
-							<!-- IF {PHP.n} == 'page' --><a href="{PHP.structure_code|cot_url('page', 'm=add&c=$this')}" title="{PHP.L.Add}" class="button icon add">{PHP.L.Add}</a><!-- ENDIF -->
+							<!-- IF {ADMIN_STRUCTURE_JUMPTO_URL} --><a href="{ADMIN_STRUCTURE_JUMPTO_URL}" title="{PHP.L.short_open}" class="button special positive export icon">{PHP.L.short_open}</a><!-- ENDIF -->
+							<!-- IF {PHP.n} == 'page' --><a href="{PHP.structure_code|cot_url('page', 'm=add&c=$this')}" title="{PHP.L.Add}" class="button icon circled-plus">{PHP.L.Add}</a><!-- ENDIF -->
 							
 							<!-- IF {PHP.dozvil} --><a href="{ADMIN_STRUCTURE_UPDATE_DEL_URL}" title="{PHP.L.short_delete}" class="confirmLink negative button trash icon">{PHP.L.short_delete}</a><!-- ENDIF -->
 						</div>

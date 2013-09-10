@@ -13,14 +13,10 @@
 
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 <div class="quick-actions">
-	<a title="{PHP.L.Configuration}" href="{ADMIN_PAGE_URL_CONFIG}" class="quick-action">
-		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/settings.png"/></span>{PHP.L.Configuration}</a>
-	<a href="{ADMIN_PAGE_URL_EXTRAFIELDS}" class="quick-action">
-		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/flash.png"/></span>{PHP.L.adm_extrafields_table} {PHP.db_pages}</a>
-	<a href="{ADMIN_PAGE_URL_STRUCTURE}" class="quick-action">
-		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/folder.png"/></span>{PHP.L.Categories}</a></li>
-<a href="{ADMIN_PAGE_URL_ADD}" class="quick-action">
-	<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/document.png"/></span>{PHP.L.page_addtitle}</a>
+	<a title="{PHP.L.Configuration}" href="{ADMIN_PAGE_URL_CONFIG}" class="quick-action icon cog">{PHP.L.Configuration}</a>
+	<a href="{ADMIN_PAGE_URL_EXTRAFIELDS}" class="quick-action icon database">{PHP.L.adm_extrafields_table} {PHP.db_pages}</a>
+	<a href="{ADMIN_PAGE_URL_STRUCTURE}" class="quick-action icon folder">{PHP.L.Categories}</a>
+	<a href="{ADMIN_PAGE_URL_ADD}" class="quick-action icon circled-plus">{PHP.L.page_addtitle}</a>
 </div>
 <div class="block">
 	<h3>{PHP.L.Pages} ({ADMIN_PAGE_TOTALDBPAGES}):</h3>

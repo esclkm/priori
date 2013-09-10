@@ -7,12 +7,14 @@
 		width: 100px;
 	}
 	#navbar>ul>li>a {
-
-		padding: 6px 0 5px;
-
+		padding: 36px 0 5px;
 	}
-	#navbar>ul>li>a>span {
+	#navbar>ul>li>a:before {
 		display: block;
+		display: block;
+		top:10px;
+		left:4px;
+		right:4px;
 	}
 	h1, #sitetitle {
 		text-shadow: 0 1px 0 #104266;
@@ -50,11 +52,13 @@
 		width: 100%;
 	}
 	#navbar>ul>li>a {
-		padding: 6px 0 5px;
+		padding: 36px 0 5px;
 	}
-	#navbar>ul>li>a>span {
+	#navbar>ul>li>a:before {
 		display: block;
-		font-size: 32px;
+		top:6px;
+		left:4px;
+		right:4px;
 	}
 	.body {
 		padding-left: 100px;
@@ -83,22 +87,23 @@
 	}
 }
 
-@media only screen and (min-width: 1680px) { 
+@media only screen and (min-width: 1660px) { 
 
 	#navbar {
 		width: 200px;
 	}	
 
 	#navbar>ul>li>a {
-		padding: 6px 0 10px;
+		padding: 8px 0 10px 48px;
 		text-align: left;
 		font-size: 14px;
 	}
-	#navbar>ul>li>a>span {
+	#navbar>ul>li>a:before {
 		display: block;
 		float: left;
-		font-size: 32px;
-		padding: 0 10px;
+		left:6px;
+		top:6px;
+		width:32px;
 	}
 	#navbar>ul>li.bottom{
 		display: block;
@@ -110,7 +115,7 @@
 		right: auto;
 		bottom: 0px;
 		position: absolute;
-		width: 200px;
+		width: 152px;
 	}
 	.body {
 		padding-left: 200px;
@@ -137,7 +142,7 @@
 		display: none;
 		background-color: #333!important;
 		left: 0px;
-		bottom: 45px;
+		bottom: 41px;
 		width: 200px;
 		position: absolute;
 	}

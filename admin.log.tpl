@@ -1,7 +1,6 @@
 <!-- BEGIN: MAIN -->
 <div class="quick-actions">
-	<a title="{PHP.L.adm_purgeall}" href="{ADMIN_LOG_URL_PRUNE}" class="ajax quick-action">
-		<span><img src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/trash.png"/></span>
+	<a title="{PHP.L.adm_purgeall}" href="{ADMIN_LOG_URL_PRUNE}" class="ajax quick-action icon trash">
 		{PHP.L.adm_purgeall}</a>
 </div>
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
