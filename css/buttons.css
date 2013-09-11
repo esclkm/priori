@@ -159,12 +159,10 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 }
 #saveconfig input[type=text], #saveconfig textarea { width:98%; }
 .button.icon:before {
-	font:28px/0 'EntypoRegular';
+	font-size:28px;
 	color:#333333;
 	margin:auto 4px auto 0px;
 	width:13px;
-	display:block;
-	position:absolute;
 	left:5px;
 	top:5px;
 }
@@ -260,13 +258,8 @@ a.quick-action span {
 	padding:0px 0px 2px;
 }
 a.quick-action.icon:before {
-	font:68px/0 'EntypoRegular';
+	font-size:68px;
 	color:#333333;
-	margin:auto 0px auto 0px;
-	text-align:center;
-	display:block;
-	height:34px;
-	position:absolute;
 	left:5px;
 	right:5px;
 	top:8px;

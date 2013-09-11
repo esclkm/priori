@@ -11,7 +11,21 @@
     font-style: normal;
 
 }
-
+.icon:before {
+	position:absolute;
+    display: block;
+    font-family: 'EntypoRegular';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 0em;
+    text-align: center;
+    text-decoration: inherit;
+    position:absolute;
+    width: 1em;
+    vertical-align:bottom;
+    margin: auto; 
+    padding:0px;
+}
 .icon.phone:before {content: "\1F4DE";}
 .icon.mobile:before {content: "\1F4F1";}
 .icon.mouse:before {content: "\E789";}

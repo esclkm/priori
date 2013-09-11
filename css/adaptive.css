@@ -103,6 +103,7 @@
 		float: left;
 		left:6px;
 		top:6px;
+		margin: auto 0;
 		width:32px;
 	}
 	#navbar>ul>li.bottom{
