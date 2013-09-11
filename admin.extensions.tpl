@@ -232,7 +232,7 @@
 		{PHP.L.adm_sort_alphabet}</a>
 	<a href="{ADMIN_EXTENSIONS_SORT_CAT_URL}" class="quick-action icon archive <!-- IF {ADMIN_EXTENSIONS_SORT_CAT_SEL} -->special<!-- ENDIF -->">
 		{PHP.L.adm_sort_category}</a>
-	<a href="{ADMIN_EXTENSIONS_HOOKS_URL}" class="quick-action icon hair-cross">{PHP.L.Hooks}</a>
+	<a href="{ADMIN_EXTENSIONS_HOOKS_URL}" class="quick-action icon target">{PHP.L.Hooks}</a>
 </div>
 
 <!-- BEGIN: SECTION -->

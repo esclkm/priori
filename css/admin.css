@@ -61,7 +61,7 @@ body {
 }
 #navbar>ul>li>a:before {
 	display: none;
-	font-size:56px;
+	font-size:28px;
 	color: #eaeef4;
 	height:28px;
 	left:2px;

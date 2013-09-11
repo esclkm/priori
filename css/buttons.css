@@ -159,12 +159,12 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 }
 #saveconfig input[type=text], #saveconfig textarea { width:98%; }
 .button.icon:before {
-	font-size:28px;
+	font-size:14px;
 	color:#333333;
 	margin:auto 4px auto 0px;
-	width:13px;
+	width:14px;
 	left:5px;
-	top:5px;
+	top:4px;
 }
 .button.icon:hover:before { color:#fff; }
 .button.icon:active:before { color:#fff; }
@@ -258,7 +258,7 @@ a.quick-action span {
 	padding:0px 0px 2px;
 }
 a.quick-action.icon:before {
-	font-size:68px;
+	font-size:34px;
 	color:#333333;
 	left:5px;
 	right:5px;
