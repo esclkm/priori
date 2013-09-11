@@ -149,7 +149,7 @@
 							<!-- IF {ADMIN_STRUCTURE_OPTIONS_URL} --><a href="{ADMIN_STRUCTURE_OPTIONS_URL}" title="{PHP.L.Edit}" class="ajax button list icon">{PHP.L.Edit}</a><!-- ENDIF -->
 							<!-- IF {ADMIN_STRUCTURE_RIGHTS_URL} --><a href="{ADMIN_STRUCTURE_RIGHTS_URL}" title="{PHP.L.short_rights}" class="button lock icon">{PHP.L.short_rights}</a><!-- ENDIF -->
 							<!-- IF {ADMIN_STRUCTURE_JUMPTO_URL} --><a href="{ADMIN_STRUCTURE_JUMPTO_URL}" title="{PHP.L.short_open}" class="button special positive export icon">{PHP.L.short_open}</a><!-- ENDIF -->
-							<!-- IF {PHP.n} == 'page' --><a href="{PHP.structure_code|cot_url('page', 'm=add&c=$this')}" title="{PHP.L.Add}" class="button icon circled-plus">{PHP.L.Add}</a><!-- ENDIF -->
+							<!-- IF {PHP.n} == 'page' --><a href="{PHP.structure_code|cot_url('page', 'm=add&c=$this')}" title="{PHP.L.Add}" class="button icon plus-circled">{PHP.L.Add}</a><!-- ENDIF -->
 							
 							<!-- IF {PHP.dozvil} --><a href="{ADMIN_STRUCTURE_UPDATE_DEL_URL}" title="{PHP.L.short_delete}" class="confirmLink negative button trash icon">{PHP.L.short_delete}</a><!-- ENDIF -->
 						</div>

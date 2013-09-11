@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: 'EntypoRegular';
-    src: url('entypo.eot');
-    src: url('entypo.eot?#iefix') format('embedded-opentype'),
-         url('entypo.woff') format('woff'),
-         url('entypo.ttf') format('truetype'),
-         url('entypo.svg#entypo') format('svg');
+    src: url('entypo.eot?54679863');
+    src: url('entypo.eot?54679863#iefix') format('embedded-opentype'),
+         url('entypo.woff?54679863') format('woff'),
+         url('entypo.ttf?54679863') format('truetype'),
+         url('entypo.svg?54679863#entypo') format('svg');
     font-weight: normal;
     font-style: normal;
 
