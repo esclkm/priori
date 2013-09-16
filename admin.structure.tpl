@@ -38,9 +38,11 @@
 
 
 <!-- BEGIN: OPTIONS -->
-<div class="block">
+
 	<form name="savestructure" id="savestructure" action="{ADMIN_STRUCTURE_UPDATE_FORM_URL}" method="post" enctype="multipart/form-data">
-		<table class="cells">
+<div class="block">
+<h3>{PHP.row.structure_title}</h3>
+	<table class="cells">
 			<tr>
 				<td class="width20">{PHP.L.Path}:</td>
 				<td class="width80">{ADMIN_STRUCTURE_PATH}</td>
@@ -79,9 +81,14 @@
 			</tr>
 			<!-- END: EXTRAFLD -->
 		</table>
-			
+	</div>		
+
 		<!-- BEGIN: CONFIG -->
+
+		<div class="block">
+		<h3>{PHP.L.Configuration}</h3>{CONFIG_HIDDEN}
 		{ADMIN_CONFIG_EDIT_CUSTOM}
+
 		<table class="cells">
 			<tr>
 				<td class="coltop width250px">{PHP.L.Key}</td>
