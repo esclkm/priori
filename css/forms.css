@@ -1,0 +1,39 @@
+input[type="text"], input[type="file"], textarea, select {
+	display:inline-block;
+	font:13px/1.4 Helvetica, arial, freesans, clean, sans-serif;
+	padding:4px 6px;
+	margin-bottom:3px;
+	line-height:18px;
+	color:#555555;
+	border:1px solid #cccccc;
+	border-radius:2px;
+}
+input[type="text"], textarea, select {
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition:border linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition:border linear 0.2s, box-shadow linear 0.2s;
+	-ms-transition:border linear 0.2s, box-shadow linear 0.2s;
+	-o-transition:border linear 0.2s, box-shadow linear 0.2s;
+	transition:border linear 0.2s, box-shadow linear 0.2s;
+	max-width:700px;
+}
+input[type="text"]:focus, textarea:focus, select:focus {
+	border-color:rgba(82,168,236,0.8);
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075), 0 0 4px rgba(82,168,236,0.6);
+	-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075), 0 0 4px rgba(82,168,236,0.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,0.075), 0 0 4px rgba(82,168,236,0.6);
+}
+select, input[type="file"] {
+	height:26px;
+	line-height:26px;
+}
+select { min-width:150px; }
+select[multiple], select[size] { height:auto; }
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+	background-color:#eeeeee;
+	border-color:#ddd;
+	cursor:not-allowed;
+}
+#saveconfig input[type=text], #saveconfig textarea { width:98%; }

@@ -16,7 +16,7 @@
 	<a title="{PHP.L.Configuration}" href="{ADMIN_PAGE_URL_CONFIG}" class="quick-action icon cog">{PHP.L.Configuration}</a>
 	<a href="{ADMIN_PAGE_URL_EXTRAFIELDS}" class="quick-action icon database">{PHP.L.adm_extrafields_table} {PHP.db_pages}</a>
 	<a href="{ADMIN_PAGE_URL_STRUCTURE}" class="quick-action icon folder">{PHP.L.Categories}</a>
-	<a href="{ADMIN_PAGE_URL_ADD}" class="quick-action icon circled-plus">{PHP.L.page_addtitle}</a>
+	<a href="{ADMIN_PAGE_URL_ADD}" class="quick-action icon doc-text">{PHP.L.page_addtitle}</a>
 </div>
 <div class="block">
 	<h3>{PHP.L.Pages} ({ADMIN_PAGE_TOTALDBPAGES}):</h3>
@@ -71,9 +71,9 @@
 				</td>
 				<td class="action {ADMIN_PAGE_ODDEVEN}">
 					<!-- IF {PHP.row.page_state} == 1 --><a title="{PHP.L.Validate}" href="{ADMIN_PAGE_URL_FOR_VALIDATED}" class="confirmLink button check icon">{PHP.L.Validate}</a><!-- ENDIF -->
-					<a title="{PHP.L.Delete}" href="{ADMIN_PAGE_URL_FOR_DELETED}" class="confirmLink button trash icon">{PHP.L.short_delete}</a>
-					<a title="{PHP.L.Open}" href="{ADMIN_PAGE_ID_URL}" target="_blank" class="button special file icon">{PHP.L.short_open}</a>
-					<a title="{PHP.L.Edit}" href="{ADMIN_PAGE_URL_FOR_EDIT}" target="_blank" class="button pen icon">{PHP.L.Edit}</a>
+					<a title="{PHP.L.Delete}" href="{ADMIN_PAGE_URL_FOR_DELETED}" class="confirmLink negative button trash icon">{PHP.L.short_delete}</a>
+					<a title="{PHP.L.Open}" href="{ADMIN_PAGE_ID_URL}" target="_blank" class="button special export icon">{PHP.L.short_open}</a>
+					<a title="{PHP.L.Edit}" href="{ADMIN_PAGE_URL_FOR_EDIT}" target="_blank" class="button list icon">{PHP.L.Edit}</a>
 				</td>
 			</tr>
 			<!-- END: PAGE_ROW -->

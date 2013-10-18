@@ -1,25 +1,26 @@
 <!-- BEGIN: MAIN -->
-		<h2>{PHP.L.Rights}</h2>
+		
 		{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 		<div class="block">
+		<h3>{PHP.L.Rights}</h3>	
 			<form name="saverightsbyitem" id="saverightsbyitem" action="{ADMIN_RIGHTSBYITEM_FORM_URL}" method="post" class="ajax">
 				<table class="cells">
 					<tr>
-						<td class="coltop width5" rowspan="2"></td>
-						<td class="coltop width25" rowspan="2">{PHP.L.Groups}</td>
-						<td class="coltop width40" colspan="{ADMIN_RIGHTSBYITEM_ADV_COLUMNS}">{PHP.L.Rights}</td>
-						<td class="coltop width15" rowspan="2">{PHP.L.Open}</td>
-						<td class="coltop width15" rowspan="2">{PHP.L.adm_setby}</td>
-					</tr>
-					<tr>
+						<td class="coltop width5"></td>
+						<td class="coltop width15">{PHP.L.Groups}</td>
 						<td class="coltop">{PHP.R.admin_icon_auth_r}</td>
 						<td class="coltop">{PHP.R.admin_icon_auth_w}</td>
+						
 						<!-- IF {PHP.advanced} OR {PHP.ic} == 'page' --><td class="coltop">{PHP.R.admin_icon_auth_1}</td><!-- ENDIF -->
-						<!-- IF {PHP.advanced} --><td class="coltop">{PHP.R.admin_icon_auth_2}</td>
+						<!-- IF {PHP.advanced} -->
+						<td class="coltop">{PHP.R.admin_icon_auth_2}</td>
 						<td class="coltop">{PHP.R.admin_icon_auth_3}</td>
 						<td class="coltop">{PHP.R.admin_icon_auth_4}</td>
-						<td class="coltop">{PHP.R.admin_icon_auth_5}</td><!-- ENDIF -->
+						<td class="coltop">{PHP.R.admin_icon_auth_5}</td>
+						<!-- ENDIF -->
 						<td class="coltop">{PHP.R.admin_icon_auth_a}</td>
+						<td class="coltop width25">{PHP.L.Open}</td>
+						<td class="coltop width15">{PHP.L.adm_setby}</td>
 					</tr>
 <!-- BEGIN: RIGHTSBYITEM_ROW -->
 					<tr>
@@ -33,22 +34,22 @@
 							<!-- IF !{PHP.out.tpl_rights_parseline_locked} --><input type="checkbox" class="checkbox" name="{ADMIN_RIGHTSBYITEM_ROW_ITEMS_NAME}"{ADMIN_RIGHTSBYITEM_ROW_ITEMS_CHECKED}{ADMIN_RIGHTSBYITEM_ROW_ITEMS_DISABLED} /><!-- ENDIF -->
 						</td>
 <!-- END: ROW_ITEMS -->
-						<td class="centerall"><a title="{PHP.L.Open}" href="{ADMIN_RIGHTSBYITEM_ROW_JUMPTO}" class="button special">{PHP.L.Open}</a><a title="{PHP.L.Open}" href="{ADMIN_RIGHTSBYITEM_ROW_LINK}" class="button">{PHP.L.Rights}</a> </td>
+						<td class="centerall">
+							<a title="{PHP.L.Edit}" href="{ADMIN_RIGHTSBYITEM_ROW_JUMPTO}" class="button special icon list">{PHP.L.Edit}</a>
+							<a title="{PHP.L.Open}" href="{ADMIN_RIGHTSBYITEM_ROW_JUMPTO}" class="button special icon export">{PHP.L.Open}</a>
+							<a title="{PHP.L.Rights}" href="{ADMIN_RIGHTSBYITEM_ROW_LINK}" class="button icon lock">{PHP.L.Rights}</a> </td>
 						<td class="textcenter">{ADMIN_RIGHTSBYITEM_ROW_USER}{ADMIN_RIGHTSBYITEM_ROW_PRESERVE}</td>
 						
 					</tr>
 <!-- END: RIGHTSBYITEM_ROW -->
-					<tr>
-						<td class="textcenter" colspan="{ADMIN_RIGHTSBYITEM_4ADV_COLUMNS}">
-							<a href="{ADMIN_RIGHTSBYITEM_ADVANCED_URL}">{PHP.L.More}</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="valid" colspan="{ADMIN_RIGHTSBYITEM_4ADV_COLUMNS}">
-							<input type="submit" class="submit" value="{PHP.L.Update}" />
-						</td>
-					</tr>
+			
 				</table>
+				<div class="action_bar valid">
+					<button type="submit" class="submit">{PHP.L.Update}</button>
+					<!-- IF {ADMIN_RIGHTSBYITEM_4ADV_COLUMNS} < 12 -->
+						<a href="{ADMIN_RIGHTSBYITEM_ADVANCED_URL}" class="button">{PHP.L.More}</a>
+					<!-- ENDIF -->
+				</div>
 			</form>
 		</div>
 <!-- END: MAIN -->

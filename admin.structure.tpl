@@ -167,7 +167,7 @@
 			<div class="action_bar valid">
 				
 				<p class="paging">{ADMIN_STRUCTURE_PAGINATION_PREV}{ADMIN_STRUCTURE_PAGNAV}{ADMIN_STRUCTURE_PAGINATION_NEXT} <span>{PHP.L.Total}: {ADMIN_STRUCTURE_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_STRUCTURE_COUNTER_ROW}</span></p>
-				<input type="submit" class="submit" value="{PHP.L.Update}" />
+				<button type="submit" class="submit">{PHP.L.Update}</button>
 			</div>
 		</form>
 	</div>
@@ -212,7 +212,7 @@
 			<!-- END: EXTRAFLD -->
 		</table>
 		<div class="action_bar valid">
-			<input type="submit" class="submit" value="{PHP.L.Add}" />
+			<button type="submit" class="submit">{PHP.L.Add}</button>
 		</div>
 	</div>
 </form>

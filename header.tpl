@@ -19,6 +19,7 @@
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/framework.css" type="text/css" rel="stylesheet" />
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/admin.css" type="text/css" rel="stylesheet" />
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/buttons.css" type="text/css" rel="stylesheet" />
+		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/forms.css" type="text/css" rel="stylesheet" />
 		<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/adaptive.css" type="text/css" rel="stylesheet" />
 		<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/respond.min.js" type="text/javascript"></script>
 		<!-- IF {PHP.cfg.jquery} -->

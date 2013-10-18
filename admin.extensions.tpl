@@ -295,17 +295,17 @@
 				<!-- ENDIF -->
 				<!-- IF {ADMIN_EXTENSIONS_VERSION_INSTALLED} AND {PHP.part_status} != 3 AND {ADMIN_EXTENSIONS_VERSION} > {ADMIN_EXTENSIONS_VERSION_INSTALLED} -->
 					<!-- IF {PHP.code} -->
-						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=update")}&{PHP.arg}={PHP.code}" class="button special positive check icon">
+						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=details&b=update")}&{PHP.arg}={PHP.code}" class="button special positive check icon">
 					<!-- ELSE -->
-						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=update")}&{PHP.arg}={PHP.x}" class="button special positive check icon">
+						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=details&b=update")}&{PHP.arg}={PHP.x}" class="button special positive check icon">
 					<!-- ENDIF -->
 					{PHP.L.adm_opt_update}</a>
 				<!-- ENDIF -->
 				<!-- IF {ADMIN_EXTENSIONS_STATUS} == {PHP.R.admin_code_notinstalled} -->
 					<!-- IF {PHP.code} -->
-						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=install")}&{PHP.arg}={PHP.code}" class="button special positive check icon">
+						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=details&b=install")}&{PHP.arg}={PHP.code}" class="button special positive check icon">
 					<!-- ELSE -->
-						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=edit&b=install")}&{PHP.arg}={PHP.x}" class="button special positive check icon">
+						<a title="{PHP.L.adm_opt_install_explain}" href="{PHP|cot_url('admin', "m=extensions&a=details&b=install")}&{PHP.arg}={PHP.x}" class="button special positive check icon">
 					<!-- ENDIF -->
 					{PHP.L.adm_opt_install}</a>
 				<!-- ENDIF -->

@@ -1,25 +1,23 @@
 <!-- BEGIN: MAIN -->
-		<h2>{PHP.L.Rights}</h2>
 		{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 		<form name="saverights" id="saverights" action="{ADMIN_RIGHTS_FORM_URL}" method="post" class="ajax">
 			<!-- IF {PHP.g} > 5 -->
-			<table class="cells">
-				<tr>
-					<td><input type="checkbox" class="checkbox" name="ncopyrightsconf" />{PHP.L.adm_copyrightsfrom}: {ADMIN_RIGHTS_SELECTBOX_GROUPS} &nbsp; <input type="submit" class="submit" value="{PHP.L.Update}" /></td>
-				</tr>
-			</table>
+			<div class="block">
+				<div class="padding10"> 
+				<input type="checkbox" class="checkbox" name="ncopyrightsconf" />{PHP.L.adm_copyrightsfrom}: {ADMIN_RIGHTS_SELECTBOX_GROUPS}
+				</div>
+				<div class="action_bar valid">
+					<button type="submit" class="submit">{PHP.L.Update}</button>
+				</div>
+			</div>
 			<!-- ENDIF -->
 <!-- BEGIN: RIGHTS_SECTION -->
+			<div class="block">
 			<h3>{RIGHTS_SECTION_TITLE}:</h3>
 			<table class="cells">
 				<tr>
-					<td class="coltop width5" rowspan="2"></td>
-					<td class="coltop width25" rowspan="2">{PHP.L.Section}</td>
-					<td class="coltop width40" colspan="{ADMIN_RIGHTS_ADV_COLUMNS}">{PHP.L.Rights}</td>
-					<td class="coltop width15" rowspan="2">{PHP.L.adm_rightspergroup}</td>
-					<td class="coltop width15" rowspan="2">{PHP.L.adm_setby}</td>
-				</tr>
-				<tr>
+					<td class="coltop width5"></td>
+					<td class="coltop width25">{PHP.L.Section}</td>
 					<td class="coltop">{PHP.R.admin_icon_auth_r}</td>
 					<td class="coltop">{PHP.R.admin_icon_auth_w}</td>
 					<td class="coltop">{PHP.R.admin_icon_auth_1}</td>
@@ -29,7 +27,9 @@
 					<td class="coltop">{PHP.R.admin_icon_auth_4}</td>
 					<td class="coltop">{PHP.R.admin_icon_auth_5}</td>
 					<!-- ENDIF -->
-					<td class="coltop">{PHP.R.admin_icon_auth_a}</td>
+					<td class="coltop">{PHP.R.admin_icon_auth_a}</td>					
+					<td class="coltop width15">{PHP.L.adm_rightspergroup}</td>
+					<td class="coltop width15">{PHP.L.adm_setby}</td>
 				</tr>
 <!-- BEGIN: RIGHTS_ROW -->
 				<tr>
@@ -40,7 +40,7 @@
 					<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>
 					<!-- ENDIF -->
 					</td>
-					<td> <a href="{ADMIN_RIGHTS_ROW_LINK}">{ADMIN_RIGHTS_ROW_TITLE}</a></td>
+					<td>{ADMIN_RIGHTS_ROW_TITLE}</td>
 <!-- BEGIN: RIGHTS_ROW_ITEMS -->
 					<td class="centerall">
 						<!-- IF {PHP.out.tpl_rights_parseline_locked} AND {PHP.out.tpl_rights_parseline_state} -->
@@ -55,16 +55,20 @@
 						<!-- ENDIF -->
 					</td>
 <!-- END: RIGHTS_ROW_ITEMS -->
-					<td class="centerall"><a title="{PHP.L.Rights}" href="{ADMIN_RIGHTS_ROW_RIGHTSBYITEM}" class="button">{PHP.L.Rights}</a><a title="{PHP.L.Rights}" href="{ADMIN_RIGHTS_ROW_LINK}" class="button special">{PHP.L.Open}</a></td>
+					<td class="centerall">			
+						<a title="{PHP.L.Rights}" href="{ADMIN_RIGHTS_ROW_LINK}" class="button special icon export">{PHP.L.Open}</a>
+						<a title="{PHP.L.Rights}" href="{ADMIN_RIGHTS_ROW_RIGHTSBYITEM}" class="button icon lock">{PHP.L.Rights}</a>
+					</td>
 					<td class="textcenter">{ADMIN_RIGHTS_ROW_USER}{ADMIN_RIGHTS_ROW_PRESERVE}</td>
 				</tr>
 <!-- END: RIGHTS_ROW -->
 			</table>
-<!-- END: RIGHTS_SECTION -->
-			<div style="text-align:center">
-				<a href="{ADMIN_RIGHTS_ADVANCED_URL}">{PHP.L.More}</a><br /><br />
-				<input type="submit" class="submit" value="{PHP.L.Update}" />
+				<div class="action_bar valid">
+					<button type="submit" class="submit">{PHP.L.Update}</button>
+					<a href="{ADMIN_RIGHTS_ADVANCED_URL}" class="button">{PHP.L.More}</a>
+				</div>
 			</div>
+<!-- END: RIGHTS_SECTION -->
 		</form>
 <!-- END: MAIN -->
 
